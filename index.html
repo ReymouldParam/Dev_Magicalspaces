@@ -7,10 +7,10 @@
     <title>Magical Space</title>
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,14 +19,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./Assets/figma.css">
 </head>
 
 
 <body>
-                                <!-- Header part -->
+    <!-- -------------------------------------------------------Header part------------------------------------------------------- -->
     <div id="majorbody">
-        <div id="minibody">
+        <!-- <div id="minibody"> -->
             <div id="header_background">
                 <div id="header_slider">
                     <div class="header_sliderImages">
@@ -44,14 +47,22 @@
                 </div>
                 <header id="header">
                     <div id="logo">
-                        <h1 id="logoText">LOGO</h1>
+                        <img src="./Assets/Images/magical space temp.jpg" alt="" id="logoText">
                     </div>
                     <div id="options">
-                        <a href="" id="navlinks">HOME</a>
-                        <a href="" id="navlinks">SERVICES </a>
-                        <a href="" id="navlinks">ABOUT US</a>
-                        <a href="" id="navlinks">PORTAFOLIO</a>
-                        <a href="" id="navlinks">CONTACT</a>
+                        <a href="" class="navlinks" id="home">HOME</a>
+                        <a href="" class="navlinks">SERVICES </a>
+                        <a href="" class="navlinks">ABOUT US</a>
+                        <a href="" class="navlinks">PORTAFOLIO</a>
+                        <a href="" class="navlinks">CONTACT</a>
+                    </div>
+                    <div id="bar_options">
+                        <i class="fa-regular fa-circle-xmark" id="cross"></i>
+                        <a href="" class="navlinks" id="home">HOME</a>
+                        <a href="" class="navlinks">SERVICES </a>
+                        <a href="" class="navlinks">ABOUT US</a>
+                        <a href="" class="navlinks">PORTAFOLIO</a>
+                        <a href="" class="navlinks">CONTACT</a>
                     </div>
                     <div id="socialmedia">
                         <a href=""><img src="./Assets/Images/facebook.png" alt="facebook" id="socialmedialogos"></a>
@@ -59,44 +70,53 @@
                         <a href=""><img src="./Assets/Images/twitter.png" alt="twitter" id="socialmedialogos"></a>
                         <a href=""><img src="./Assets/Images/linkedin.png" alt="linkedin" id="socialmedialogos"></a>
                     </div>
-                </header>
+                    </header>
+                <i class="fa-solid fa-bars" id="bar"></i>
                 <div id="headingContent">
                     <div id="heading_sliding">
                         <div class="headline">
                             <div class="heading_contentblock">
-                                <p class="headingText">Where your <span id="dream">dreams</span> meet equisite <span id="dream">design</span>.</p>
-                                <h2 class="headingCaption">Evaluate your living space with designs that inspire and enchant</h2>
+                                <h1 class="headingText">Where your <span id="dream">dreams</span> meet equisite <span
+                                        id="dream">design</span>.</h1>
+                                <h3 class="headingCaption">Evaluate your living spaces with designs that inspire and
+                                    enchant.</h3>
                             </div>
                         </div>
                         <div class="headline">
                             <div class="heading_contentblock">
-                                <p class="headingText">Wher1 you1 <span id="dream">dreams</span> mee1 equisite <span id="dream">design</span>.</p>
-                                <h2 class="headingCaption">Evaluate your living space with designs that inspire and enchant</h2>
+                                <h1 class="headingText">Wher1 you1 <span id="dream">dreams</span> mee1 equisite <span
+                                        id="dream">design</span>.</h1>
+                                <h3 class="headingCaption">Evaluate your living spaces with designs that inspire and
+                                    enchant.</h3>
                             </div>
                         </div>
                         <div class="headline">
                             <div class="heading_contentblock">
-                            <p class="headingText">Wher2 you2 <span id="dream">dreams</span> mee2 equisite <span id="dream">design</span>.</p>
-                            <h2 class="headingCaption">Evaluate your living space with designs that inspire and enchant</h2>
+                                <h1 class="headingText">Wher2 you2 <span id="dream">dreams</span> mee2 equisite <span
+                                        id="dream">design</span>.</h1>
+                                <h3 class="headingCaption">Evaluate your living spaces with designs that inspire and
+                                    enchant.</h3>
                             </div>
                         </div>
                         <div class="headline">
                             <div class="heading_contentblock">
-                            <p class="headingText">Wher3 you3 <span id="dream">dreams</span> mee3 equisite <span id="dream">design</span>.</p>
-                            <h2 class="headingCaption">Evaluate your living space with designs that inspire and enchant</h2>
+                                <h1 class="headingText">Wher3 you3 <span id="dream">dreams</span> mee3 equisite <span
+                                        id="dream">design</span>.</h1>
+                                <h3 class="headingCaption">Evaluate your living spaces with designs that inspire and
+                                    enchant.</h3>
                             </div>
                         </div>
                     </div>
                     <div class="getcontainer">
-                        <button class="getbtn getbtn1"><a href="" id="getInTouch">Get In Touch <img src="./Assets/Images/getin arrow.png" alt="" id="getArrow"></a></button>
+                        <button class="getbtn getbtn1"><a href="" id="getInTouch">Get In Touch <img
+                                    src="./Assets/Images/getin arrow.png" alt="" id="getArrow"></a></button>
                     </div>
                     <!-- <button class="getin getin2"><a href="" id="getInTouch">Get In Touch <img src="./Assets/Images/getin arrow.png" alt="" id="getArrow"></a></button> -->
                 </div>
-            </div>
         </div>
     </div>
     <hr>
-                                <!-- Our Services -->
+    <!-- --------------------------------------------------------Our Services-------------------------------------------------- -->
     <div id="majorbody2">
         <div id="ourservices">
             <div id="ourservicesimage">
@@ -120,11 +140,12 @@
                 </div>
                 <div class="our_service_slider">
                     <div>
-                    <h1 class="our res our_service_selection">SELECTION OF MATERIALS</h1>
-                    <h3 class="our experince our_service_selection_experience">Experience the perfect blend of functionality and elegance</h3>
-                    <a href="" class="our aboutArrow our_service_selection_Arrow">
-                        <img src="./Assets/Images/arrow.png" alt="" class="our_Arrow">
-                    </a>
+                        <h1 class="our res our_service_selection">SELECTION OF MATERIALS</h1>
+                        <h3 class="our experince our_service_selection_experience">Experience the perfect blend of
+                            functionality and elegance</h3>
+                        <a href="" class="our aboutArrow our_service_selection_Arrow">
+                            <img src="./Assets/Images/arrow.png" alt="" class="our_Arrow">
+                        </a>
                     </div>
                 </div>
                 <div class="our_service_slider">
@@ -158,73 +179,73 @@
             </div>
             <div class="ourserviceAsideImages">
                 <div class="our_service_mini_slider">
-                <img src="./Assets/Images/our services category1 3.png" alt="hall" class="category1">
-                <img src="./Assets/Images/our services category2 3.png" alt="dianing table" class="category1">
+                    <img src="./Assets/Images/our services category1 3.png" alt="hall" class="category1">
+                    <img src="./Assets/Images/our services category2 3.png" alt="dianing table" class="category1">
                 </div>
             </div>
             <div class="ourserviceAsideImages">
                 <div class="our_service_mini_slider">
-                <img src="./Assets/Images/our services category1 4.png" alt="hall" class="category1">
-                <img src="./Assets/Images/our services category2 4.png" alt="dianing table" class="category1">
+                    <img src="./Assets/Images/our services category1 4.png" alt="hall" class="category1">
+                    <img src="./Assets/Images/our services category2 4.png" alt="dianing table" class="category1">
                 </div>
             </div>
         </div>
     </div>
     <hr>
-                                <!-- About Company -->
+    <!-- -------------------------------------------------------About Company--------------------------------------------------- -->
     <div class="majorbody3">
-        <div id="aboutcompanyblock">
-            <div id="aboutcompany">
-                <div id="aboutcomapnyLogoblock">
-                    <h1 id="aboutCompanyAbout">ABOUT</h1>
-                    <h1 id="aboutCompanyCompany">COMPANY</h1>
-                    <img src="./Assets/Images/Line 23.png" alt="Line" id="aboutCompanyline">
+        <!-- <div class="about_company_block"> -->
+            <div id="aboutcompanyblock">
+                <div id="aboutcompany">
+                    <div id="aboutcomapnyLogoblock">
+                        <h1 id="aboutCompanyAbout">ABOUT</h1>
+                        <h1 id="aboutCompanyCompany">COMPANY</h1>
+                        <img src="./Assets/Images/Line 23.png" alt="Line" id="aboutCompanyline">
+                    </div>
+                    <!-- <img src="./Assets/Images/ABOUT COMPANY.png" alt="About Company" id="aboutcompanyimage"> -->
+                    <h1 id="aboutText">Crafting Inspired Spaces for You.</h1>
+                    <a href="" id="aboutArrow">
+                        <img src="./Assets/Images/arrow.png" alt="">
+                    </a>
                 </div>
-                <!-- <img src="./Assets/Images/ABOUT COMPANY.png" alt="About Company" id="aboutcompanyimage"> -->
-                <h1 id="aboutText">Crafting Inspired Spaces for You.</h1>
-                <a href="" id="aboutArrow">
-                    <img src="./Assets/Images/arrow.png" alt="">
-                </a>
-            </div>
-            <div>
-                <!-- <img src="./Assets/Images/Line 23.png" alt="line" id="aboutcompanyline"> -->
-            </div>
-            <div id="aboutminicompanyblock">
-                <div id="aboutcompanycontentblock">
-                    <div class="block">
-                        <h1 class="aboutText text">45+</h1>
-                        <h1 class="aboutText text">DESIGN PROJECTS</h1>
-                        <h1 class="aboutText caption">Experience the perfect blend of functionality.</h1>
-                    </div><br>
-                    <img src="./Assets/Images/about company line.png" alt="line" id="aboutcomapanyline">
-                    <div class="block transform_right2">
-                        <h1 class="aboutText text">40+</h1>
-                        <h1 class="aboutText text">EMPLOYEES</h1>
-                        <h1 class="aboutText caption">Experience the perfect blend of functionality.</h1>
-                    </div><br>
-                    <img src="./Assets/Images/about company line.png" alt="line" id="aboutcomapanyline">
-                    <div class="block transform_right3">
-                        <h1 class="aboutText text">150+</h1>
-                        <h1 class="aboutText text">CONTROCTORS</h1>
-                        <h1 class="aboutText caption">Experience the perfect blend of functionality.</h1>
+                
+                <div id="aboutminicompanyblock">
+                    <div id="aboutcompanycontentblock">
+                        <div class="block" data-aos="fade-right" data-aos-duration="1000">
+                            <h1 class="aboutText text">45+</h1>
+                            <h1 class="aboutText text">DESIGN PROJECTS</h1>
+                            <h1 class="aboutText caption">Experience the perfect blend of functionality.</h1>
+                        </div><br>
+                        <img src="./Assets/Images/about company line.png" alt="line" id="aboutcomapanyline">
+                        <div class="block transform_right2" data-aos="fade-right" data-aos-duration="1000">
+                            <h1 class="aboutText text">40+</h1>
+                            <h1 class="aboutText text">EMPLOYEES</h1>
+                            <h1 class="aboutText caption">Experience the perfect blend of functionality.</h1>
+                        </div><br>
+                        <img src="./Assets/Images/about company line.png" alt="line" id="aboutcomapanyline">
+                        <div class="block transform_right3" data-aos="fade-right" data-aos-duration="1000">
+                            <h1 class="aboutText text">150+</h1>
+                            <h1 class="aboutText text">CONTROCTORS</h1>
+                            <h1 class="aboutText caption">Experience the perfect blend of functionality.</h1>
+                        </div>
                     </div>
-                </div>
-                <div id="aboutimagesalign">
-                    <div class="image2">
-                        <img src="./Assets/Images/aboutcompany1.png" alt="" class="aboutcompanyimages1">
-                    </div>
-                    <div class="aboutcompanyimages image2">
-                        <img src="./Assets/Images/aboutcompany2.png" alt="" class="aboutcompanyimages2">
-                    </div>
-                    <div class="aboutcompanyimages image2">
-                        <img src="./Assets/Images/aboutcompany3.png" alt="" class="aboutcompanyimages3">
+                    <div id="aboutimagesalign">
+                        <div class="aboutcompanyimages image2" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="./Assets/Images/aboutcompany1.png" alt="" class="aboutcompanyimages1">
+                        </div>
+                        <div class="aboutcompanyimages image2" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="./Assets/Images/aboutcompany2.png" alt="" class="aboutcompanyimages2">
+                        </div>
+                        <div class="aboutcompanyimages image2" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="./Assets/Images/aboutcompany3.png" alt="" class="aboutcompanyimages3">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <hr>
-                                <!-- Our Project Block -->
+    <!-- ---------------------------------------------------------Our Project Block-------------------------------------------- -->
     <div id="ourprojectblock">
         <div id="ourprojectminiblock">
             <div id="ourproject">
@@ -271,16 +292,35 @@
                     <div class="Mini_slider">
                         <img src="./Assets/Images/ourprojectslider5.png" alt="photo5" class="sliderimages">
                     </div>
-                    
+
                 </div>
                 <div>
 
                 </div>
             </div>
+            <div id="our_project_caption">
+                <div id="our_project_slider_content_caption">
+                    <div class="our_project_caption">
+                        <h4 class="our_project_caption_text">RESIDENTAL INTERIOR DESIGN</h4>
+                    </div>
+                    <div class="our_project_caption">
+                        <h4 class="our_project_caption_text">COMMERCIAL INTERIOR DESIGN</h4>
+                    </div>
+                    <div class="our_project_caption">
+                        <h4 class="our_project_caption_text">RESIDENTAL INTERIOR DESIGN</h4>
+                    </div>
+                    <div class="our_project_caption">
+                        <h4 class="our_project_caption_text">RESIDENTAL INTERIOR DESIGN</h4>
+                    </div>
+                    <div class="our_project_caption">
+                        <h4 class="our_project_caption_text">COMMERCIAL INTERIOR DESIGN</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <hr>
-                                <!-- Our Portfolio Block -->
+    <!-- ---------------------------------------------------------Our Portfolio Block-------------------------------------------- -->
     <div id="ourportfolioblock">
         <div id="ourportfoliominiblock">
             <div id="ourportfolio">
@@ -306,7 +346,7 @@
         </div>
     </div>
     <hr>
-                                <!-- Our Testimonal Block -->
+    <!-- ---------------------------------------------------------Our Testimonal Block---------------------------------------------- -->
     <div id="ourtestblock">
         <div id="ourtestminiblock">
             <div id="ourTest">
@@ -321,43 +361,63 @@
             </div>
         </div>
         <div id="ourTestimage1">
-            <div class="ourTestAside"> 
-                <div class="ourTest_block_container">
-                    <div class="ourTestAsideText">
-                        <p class="ourTestTextAside">"Transforming spaces into timeless reflections of your unique
-                        style.<b>Your expert team blends creativity with
-                            functionality to craft interiors that inspire and delight. </b>The art of living beautifully
-                        with spoke design solutions."</p>
-                        <h3 class="ourTestRegards">Anjali Raut</h3>
-                        <p class="ourTestCEO">CEO, Zipo.com</p>
-                    </div>
-                    <div>
-                    <img src="./Assets/Images/laughing girl.png" alt="" class="ourTestimage2">
-                    </div>
-                </div>
-            </div>
-            
-        <div class="ourTestAside">
-            <div class="ourTest_block_container">
-                <div class="ourTestAsideText">
-                    <p class="ourTestTextAside">"Transforming spaces into timeless reflections of your unique
-                        style.<b>Your expert team blends creativity with
-                            functionality to craft interiors that inspire and delight. </b>The art of living beautifully
-                        with spoke design solutions."</p>
-                    <h3 class="ourTestRegards">Anjali Raut</h3>
-                    <p class="ourTestCEO">CEO, Zipo.com</p>
-                </div>
-                <div>
-                    <img src="./Assets/Images/laughing girl.png" alt="" class="ourTestimage2">
-                </div>
-            </div>
-        </div>
             <div class="ourTestAside">
                 <div class="ourTest_block_container">
                     <div class="ourTestAsideText">
                         <p class="ourTestTextAside">"Transforming spaces into timeless reflections of your unique
                             style.<b>Your expert team blends creativity with
-                                functionality to craft interiors that inspire and delight. </b>The art of living beautifully
+                                functionality to craft interiors that inspire and delight. </b>The art of living
+                            beautifully
+                            with spoke design solutions."</p>
+                        <h3 class="ourTestRegards">Anjali Raut</h3>
+                        <p class="ourTestCEO">CEO, Zipo.com</p>
+                    </div>
+                    <div>
+                        <img src="./Assets/Images/laughing girl.png" alt="" class="ourTestimage2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ourTestAside">
+                <div class="ourTest_block_container">
+                    <div class="ourTestAsideText">
+                        <p class="ourTestTextAside">"Transforming spaces into timeless reflections of your unique
+                            style.<b>Your expert team blends creativity with
+                                functionality to craft interiors that inspire and delight. </b>The art of living
+                            beautifully
+                            with spoke design solutions."</p>
+                        <h3 class="ourTestRegards">Anjali Raut</h3>
+                        <p class="ourTestCEO">CEO, Zipo.com</p>
+                    </div>
+                    <div>
+                        <img src="./Assets/Images/laughing girl.png" alt="" class="ourTestimage2">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ourTestAside">
+                <div class="ourTest_block_container">
+                    <div class="ourTestAsideText">
+                        <p class="ourTestTextAside">"Transforming spaces into timeless reflections of your unique
+                            style.<b>Your expert team blends creativity with
+                                functionality to craft interiors that inspire and delight. </b>The art of living
+                            beautifully
+                            with spoke design solutions."</p>
+                        <h3 class="ourTestRegards">Anjali Raut</h3>
+                        <p class="ourTestCEO">CEO, Zipo.com</p>
+                    </div>
+                    <div>
+                        <img src="./Assets/Images/laughing girl.png" alt="" class="ourTestimage2">
+                    </div>
+                </div>
+            </div>
+            <div class="ourTestAside">
+                <div class="ourTest_block_container">
+                    <div class="ourTestAsideText">
+                        <p class="ourTestTextAside">"Transforming spaces into timeless reflections of your unique
+                            style.<b>Your expert team blends creativity with
+                                functionality to craft interiors that inspire and delight. </b>The art of living
+                            beautifully
                             with spoke design solutions."</p>
                         <h3 class="ourTestRegards">Anjali Raut</h3>
                         <p class="ourTestCEO">CEO, Zipo.com</p>
@@ -370,10 +430,27 @@
         </div>
     </div>
     <hr>
-                                <!-- Form Block -->
+    <!-- -----------------------------------------------------------Form Block--------------------------------------------------- -->
     <div id="ourFormblock">
         <div id="ourFormMiniblock">
-            <img src="./Assets/Images/formimage.png" alt="Form Image" id="ourFormimage">
+            <div id="ourFormImages_sliding">
+                <div class="ourFormImages">
+                    <img src="./Assets/Images/formimage.png" alt="">
+                </div>
+                <div class="ourFormImages">
+                    <img src="./Assets/Images/form image2.png" alt="">
+                </div>
+                <div class="ourFormImages">
+                    <img src="./Assets/Images/form image3.png" alt="">
+                </div>
+                <div class="ourFormImages">
+                    <img src="./Assets/Images/form image4.png" alt="">
+                </div>
+                <div class="ourFormImages">
+                    <img src="./Assets/Images/form image5.png" alt="">
+                </div>
+            </div>
+            <!-- <img src="./Assets/Images/formimage.png" alt="Form Image" id="ourFormimage"> -->
             <div id="form_container">
                 <h1 id="form_Heading">Contact With Us</h1>
                 <p id="form_Caption">Crafting Timeless Interiors and Exteriors Tailored Just for You.</p><br>
@@ -393,11 +470,11 @@
             </div>
         </div>
     </div>
-                                <!-- Footer Block -->
+    <!-- -----------------------------------------------------------Footer Block--------------------------------------------------- -->
     <div id="info_Block">
         <div id="info_Logo">
             <img src="./Assets/Images/vertical line.png" alt="line">
-            <img src="./Assets/Images/footer COMPANY LOGO.png" alt="Companylogo" class="footerlogo">
+            <img src="./Assets/Images/magical space temp.jpg" alt="" class="footerlogo">
         </div>
         <div id="info_mail">
             <img src="./Assets/Images/vertical line.png" alt="line">
@@ -428,11 +505,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./Assets/figma.js"></script>
-    
+
 </body>
 
 </html>

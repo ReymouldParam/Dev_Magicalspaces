@@ -1,35 +1,82 @@
-
-let image3 = document.getElementById('ourFormimage');
-let header_background = document.getElementById('header_background');
-let category3_images = ["./Assets/Images/form image2.png", "./Assets/Images/form image3.png", "./Assets/Images/form image4.png", "./Assets/Images/form image5.png"]
-let bgc_images = ["./Assets/Images/bgcphoto2.png", "./Assets/Images/bgcphoto3.png", "./Assets/Images/bgcphoto4.png", "./Images/Headerbackground.png"]
-setInterval(function () {
-    let random = Math.floor(Math.random() * 3);
-    image3.src = category3_images[random];
-    header_background.style.backgroundImage = 'url(' + bgc_images[random] + ')';
-}, 2000)
-
 let getIn = document.getElementById("getInTouch");
 let getArrow = document.getElementById("getArrow");
-getIn.addEventListener("mouseenter",()=>{
+getIn.addEventListener("mouseenter", () => {
     getArrow.style.visibility = "visible";
 })
-getIn.addEventListener("mouseleave",()=>{
+getIn.addEventListener("mouseleave", () => {
     getArrow.style.visibility = "hidden";
 })
+let bar = document.getElementById("bar");
+let cross = document.getElementById("cross");
+let bar_options = document.getElementById("bar_options");
+bar.addEventListener("click", () => {
+    bar_options.style.visibility = "visible";
+})
+cross.addEventListener("click", () => {
+    bar_options.style.visibility = "hidden";
+});
+$('#header_slider').slick({
 
-
-$('#slider_content').slick({
-    centerMode: true,
-    // center:true,
-    centerPadding: 10,
-    slidesToShow: 5,
+    slidesToShow: 1,
+    pauseOnHover: false,
     Infinity: true,
     autoplay: true,
+    arrows: false,
+    fade: true,
+    css: 'linear',
+    asNavFor: '#heading_sliding',
+    // dots: true,
+    autoplaySpeed: 2500,
+    responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                arrows: false
+            }
+        },
+        {
+            // breakpoint: 480,
+            // settings: {
+            //     arrows: false,
+            //     centerMode: true,
+            //     centerPadding: '40px',
+            //     slidesToShow: 1
+            // }
+        }
+    ]
+});
+$('#heading_sliding').slick({
+    slidesToShow: 1,
+    Infinity: true,
+    autoplay: true,
+    arrows: false,
     dots: true,
-    autoplaySpeed: 1000,
-    nextArrow: "<button class='slick_btn next_btn'><i class='fa-solid fa-chevron-right'></i></button>",
-    prevArrow: "<button class='slick_btn prev_btn'><i class='fa-solid fa-chevron-left'></i></button>",
+    css: 'ease-in-out',
+    asNavFor: '#header_slider',
+    responsive: [
+        {
+            // breakpoint: 480,
+            // settings: {
+            //     arrows: false,
+            //     centerMode: true,
+            //     centerPadding: '40px',
+            //     slidesToShow: 1
+            // }
+        }
+    ]
+});
+$('.ourServiceSlider').slick({
+    // centerMode: true,
+    // center:true,
+    centerPadding: 50,
+    slidesToShow: 1,
+    Infinity: true,
+    // autoplay: true,
+    fade: true,
+    arrows: false,
+    cssEase: 'linear',
+    asNavFor: '#ourserviceAside',
+    // autoplaySpeed: 1000,
     responsive: [
         {
             // breakpoint: 768,
@@ -57,52 +104,42 @@ $('#ourserviceAside').slick({
     slidesToShow: 1,
     Infinity: true,
     autoplay: true,
+    dots: true,
     fade: true,
     autoplaySpeed: 1000,
     slidesToScroll: 1,
+    asNavFor: '.ourServiceSlider',
     nextArrow: "<button class='slick_btn next_btn'><i class='fa-solid fa-chevron-right'></i></button>",
     prevArrow: "<button class='slick_btn prev_btn'><i class='fa-solid fa-chevron-left'></i></button>",
     responsive: [
         {
-            // breakpoint: 768,
-            // settings: {
-            //     arrows: false,
-            //     centerMode: true,
-            //     centerPadding: '0px',
-            //     slidesToShow: 5
-            // }
-        },
-        {
-            breakpoint: 480,
-            // settings: {
-            //     arrows: false,
-            //     centerMode: true,
-            //     centerPadding: '40px',
-            //     slidesToShow: 1
-            // }
+            breakpoint: 500,
+            settings: {
+                nextArrow: false,
+            }
         }
     ]
 });
-$('.ourServiceSlider').slick({
-    // centerMode: true,
+$('#slider_content').slick({
+    centerMode: true,
     // center:true,
-    centerPadding: 50,
-    slidesToShow: 1,
+    centerPadding: 10,
+    slidesToShow: 5,
     Infinity: true,
     autoplay: true,
-    fade: true,
-    arrows:false,
-    cssEase: 'linear',
+    arrows: false,
+    asNavFor: '#our_project_slider_content_caption',
+    // dots: true,
     autoplaySpeed: 1000,
+    nextArrow: "<button class='slick_btn next_btn'><i class='fa-solid fa-chevron-right'></i></button>",
+    prevArrow: "<button class='slick_btn prev_btn'><i class='fa-solid fa-chevron-left'></i></button>",
     responsive: [
         {
-            // breakpoint: 768,
-            // settings: {
-            //     arrows: false,
-            //     centerMode: true,
-            //     centerPadding: '0px',
-            //     slidesToShow: 5
-            // }
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
         },
         {
             // breakpoint: 480,
@@ -115,17 +152,21 @@ $('.ourServiceSlider').slick({
         }
     ]
 });
-$('#header_slider').slick({
+$('#our_project_slider_content_caption').slick({
     // centerMode: true,
     // center:true,
     // centerPadding: 10,
+    nextArrow: "<button class='slick_btn next_btn'><i class='fa-solid fa-chevron-right'></i></button>",
+    prevArrow: "<button class='slick_btn prev_btn'><i class='fa-solid fa-chevron-left'></i></button>",
+
     slidesToShow: 1,
     Infinity: true,
     autoplay: true,
-    arrows:false,
+    // arrows: false,
+    dots: true,
     fade: true,
-    css:'ease-in-out',
-    // dots: true,
+    // arrows:true,
+    asNavFor: '#slider_content',
     autoplaySpeed: 1000,
     responsive: [
         {
@@ -152,6 +193,7 @@ $('#ourTestimage1').slick({
     slidesToShow: 1,
     Infinity: true,
     autoplay: true,
+    dots: true,
     // centerPadding: '0px',
     nextArrow: "<button class='slick_btn next_btn'><i class='fa-solid fa-chevron-right'></i></button>",
     prevArrow: "<button class='slick_btn prev_btn'><i class='fa-solid fa-chevron-left'></i></button>",
@@ -178,13 +220,16 @@ $('#ourTestimage1').slick({
         }
     ]
 });
-$('#heading_sliding').slick({
+$('#ourFormImages_sliding').slick({
+    // centerMode: true,
+    // centerPadding: 30,
     slidesToShow: 1,
     Infinity: true,
     autoplay: true,
-    arrows:false,
-    css:'ease-in-out',
-    autoplaySpeed: 1000,
+    fade: true,
+    autoplaySpeed: 1500,
+    slidesToScroll: 1,
+    arrows: false,
     responsive: [
         {
             // breakpoint: 768,
@@ -196,7 +241,7 @@ $('#heading_sliding').slick({
             // }
         },
         {
-            // breakpoint: 480,
+            breakpoint: 480,
             // settings: {
             //     arrows: false,
             //     centerMode: true,
@@ -207,18 +252,21 @@ $('#heading_sliding').slick({
     ]
 });
 
-let about_company = document.getElementsByClassName("majorbody3")[0];
-let about_com = document.getElementsByClassName("block")[0];
-let about_com1 = document.getElementsByClassName("block")[1];
-let about_com2 = document.getElementsByClassName("block")[2];
-let about_comimg1 = document.getElementsByClassName("image2")[0];
-let about_comimg2 = document.getElementsByClassName("image2")[1];
-let about_comimg3 = document.getElementsByClassName("image2")[2];
-about_company.addEventListener("mouseenter", () => {
-    about_com.classList.add("transform_right1")
-    about_com1.classList.add("transform_right1")
-    about_com2.classList.add("transform_right1")
-    about_comimg1.classList.add("about_Company_slider_images")
-    about_comimg2.classList.add("about_Company_slider_images")
-    about_comimg3.classList.add("about_Company_slider_images")
+$('#slider_content').on('afterChange', function () {
+    ourProjectCarosels()
+    // alert("hello")
 });
+
+function ourProjectCarosels() {
+    let our_project_slides = document.querySelectorAll(".Mini_slider")
+    let array = Array.from(our_project_slides)
+    console.log(array)
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].classList.contains("slick-current")) {
+            array[i - 2].classList.remove("small_slides")
+            array[i + 2].classList.remove("small_slides")
+            array[i - 1].classList.add("small_slides")
+            array[i + 1].classList.add("small_slides")
+        }
+    }
+}
