@@ -1,0 +1,39 @@
+.defaultPosition {
+    transform: translateX(0) translateY(0) translateZ(0) !important;
+    opacity: 1 !important;
+}
+
+.defaultWidth {
+    width: 100% !important;
+}
+
+
+.startLeft {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.7s ease-out;
+    overflow: hidden;
+}
+
+.startRight {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.7s ease-out;
+    transition-delay: 0.7s;
+    overflow: hidden;
+}
+
+.startTop {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    transition-delay: 0.5s;
+    overflow: hidden;
+}
+
+.startBottom {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease-out;
+    overflow: hidden;
+}
