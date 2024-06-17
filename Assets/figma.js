@@ -22,7 +22,7 @@ $('.section1-heading').slick({
     autoplay: true,
     arrows: false,
     dots: true,
-    // centerPadding:20,
+    centerPadding:20,
     autoplaySpeed: 3000,
     pauseOnHover: false,
     css: 'ease-in-out',
@@ -93,31 +93,28 @@ $('#slider_content').slick({
     infinity: true,
     autoplay: true,
     arrows: false,
-    // asNavFor: '#our_project_slider_content_caption',
+    asNavFor: '#our_project_slider_content_caption',
     // dots: true,
     autoplaySpeed: 2000,
     responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                // center:true,
+                centerPadding: 10
+            }
+        },
         {
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                // dots: true
+
             }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -142,10 +139,12 @@ $('.ourproject-section-slider-block2').slick({
         {
             breakpoint: 500,
             settings: {
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 2,
-                arrows:false
+                // centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false
             }
         }
     ]
@@ -179,13 +178,11 @@ $('#test-aside2-caresel').slick({
 
 $('#slider_content').on('afterChange', function () {
     ourProjectCarosels()
-    // alert("hello")
 });
 
 function ourProjectCarosels() {
     let our_project_slides = document.querySelectorAll(".Mini_slider")
     let array = Array.from(our_project_slides)
-    // console.log(array)
     for (var i = 0; i < array.length; i++) {
         if (array[i].classList.contains("slick-current")) {
             array[i - 2].classList.remove("small_slides")
@@ -229,4 +226,12 @@ $('#our_project_slider_content_caption').slick({
             // }
         }
     ]
+});
+
+
+let closeButton = document.querySelector('.close');
+let home_page_mail = document.querySelector('.mail-success-box');
+closeButton.addEventListener('click', () => {
+    home_page_mail.style.display = "none";
+    $("body").css("overflow", "auto");
 });
