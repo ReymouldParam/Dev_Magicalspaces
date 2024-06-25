@@ -16,6 +16,7 @@ cross.addEventListener("click", () => {
     bar_options.style.visibility = "hidden";
 });
 
+$(document).ready(function () {
 $('.section1-heading').slick({
     slidesToShow: 1,
     Infinity: true,
@@ -23,7 +24,7 @@ $('.section1-heading').slick({
     arrows: false,
     dots: true,
     centerPadding:20,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     pauseOnHover: false,
     css: 'ease-in-out',
     responsive: [
@@ -38,6 +39,64 @@ $('.section1-heading').slick({
         }
     ]
 });
+    function updateBackgroundAndIndex(event, slick, currentSlide) {
+      
+        // 'url(' + bgc_images[currentSlide] + ')';
+        bgci(currentSlide);
+        // console.log(currentSlide)
+    }
+
+    // Event listener for when the slide changes
+    $('.section1-heading').on('beforeChange', updateBackgroundAndIndex);
+
+});
+let bgcImages = ['url(./Images/Headerbackground.png)', 'url(./Images/bgcphoto2.png)', 'url(./Images/bgcphoto3.png)', 'url(./Images/bgcphoto4.png)']
+function bgci(indexvalue){
+    let headerBackground = document.getElementsByClassName('section-background')[0];
+    // console.log(headerBackground.style.backgroundImage)
+    // console.log(indexvalue)
+    // let urls='url(' + bgcImages[indexvalue] + ')';
+    console.log(indexvalue)
+    switch (indexvalue){
+        case 0:{
+            headerBackground.classList.add('bgcimage1');
+            headerBackground.classList.remove('bgcimage2');
+            headerBackground.classList.remove('bgcimage3');
+            headerBackground.classList.remove('bgcimage4');
+            break;
+        }
+        case 1:{
+            headerBackground.classList.remove('bgcimage1');
+            headerBackground.classList.add('bgcimage2');
+            headerBackground.classList.remove('bgcimage3');
+            headerBackground.classList.remove('bgcimage4');
+            break;
+        }
+        case 2:{
+            headerBackground.classList.remove('bgcimage1');
+            headerBackground.classList.remove('bgcimage2');
+            headerBackground.classList.add('bgcimage3');
+            headerBackground.classList.remove('bgcimage4');
+            break;
+        }
+        case 3:{
+            headerBackground.classList.remove('bgcimage1');
+            headerBackground.classList.remove('bgcimage2');
+            headerBackground.classList.remove('bgcimage3');
+            headerBackground.classList.add('bgcimage4');
+            break;
+        }
+        default: {
+            headerBackground.classList.remove('bgcimage1');
+            headerBackground.classList.remove('bgcimage2');
+            headerBackground.classList.add('bgcimage3');
+            headerBackground.classList.remove('bgcimage4');
+            break;
+        }
+    }
+    // headerBackground.style.backgroundImage = bgcImages[indexvalue];
+}
+bgci(4);
 $('.ourService-aside-slider1').slick({
     slidesToShow: 1,
     Infinity: true,
@@ -46,7 +105,7 @@ $('.ourService-aside-slider1').slick({
     dots: false,
     fade: true,
     pauseOnHover: false,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 10000,
     asNavFor: '.ourService-aside-slider2',
     css: 'ease-in-out',
     responsive: [
@@ -95,7 +154,7 @@ $('#slider_content').slick({
     arrows: false,
     asNavFor: '#our_project_slider_content_caption',
     // dots: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 10000,
     responsive: [
         {
             breakpoint: 500,
@@ -122,33 +181,6 @@ $('#slider_content').slick({
         // instead of a settings object
     ]
 });
-$('.ourproject-section-slider-block2').slick({
-    slidesToShow: 1,
-    Infinity: true,
-    autoplay: true,
-    arrows: true,
-    dots: true,
-    fade: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: false,
-    nextArrow: "<button class='slick_btn next_btn'><i class='fa-solid fa-chevron-right'></i></button>",
-    prevArrow: "<button class='slick_btn prev_btn'><i class='fa-solid fa-chevron-left'></i></button>",
-    // asNavFor: '.ourproject-slider1',
-    css: 'ease-in-out',
-    responsive: [
-        {
-            breakpoint: 500,
-            settings: {
-                // centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                dots: false
-            }
-        }
-    ]
-});
 
 $('#test-aside2-caresel').slick({
     slidesToShow: 1,
@@ -156,7 +188,7 @@ $('#test-aside2-caresel').slick({
     autoplay: true,
     arrows: true,
     dots: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     pauseOnHover: false,
     nextArrow: "<button class='slick_btn next_btn'><i class='fa-solid fa-chevron-right'></i></button>",
     prevArrow: "<button class='slick_btn prev_btn'><i class='fa-solid fa-chevron-left'></i></button>",
@@ -173,8 +205,6 @@ $('#test-aside2-caresel').slick({
         }
     ]
 });
-
-
 
 $('#slider_content').on('afterChange', function () {
     ourProjectCarosels()
@@ -205,7 +235,7 @@ $('#our_project_slider_content_caption').slick({
     fade: true,
     // arrows:true,
     asNavFor: '#slider_content',
-    autoplaySpeed: 1000,
+    autoplaySpeed: 5000,
     responsive: [
         {
             // breakpoint: 768,
@@ -227,7 +257,6 @@ $('#our_project_slider_content_caption').slick({
         }
     ]
 });
-
 
 let closeButton = document.querySelector('.close');
 let home_page_mail = document.querySelector('.mail-success-box');

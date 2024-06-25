@@ -40,38 +40,36 @@ body {
     background-size: cover;
     border-radius: 50px;
     height: fit-content;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
     margin: 0px 1%;
-    /* transition: all 0.2 ease-in-out; */
-    animation-name: head-bgc;
-    animation-duration: 13s;
-    animation-delay: 0s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    transition: all 1s linear;
 }
 
-@keyframes head-bgc {
-    0% {
-        background-image: url(./Images/Headerbackground.png);
-    }
-    33% {
-        background-image: url(./Images/bgcphoto2.png);
-    }
-    66% {
-        background-image: url(./Images/bgcphoto3.png);
-    }
-    /* 75%{
-        background-image: url(./Images/bgcphoto4.png);
-    } */
-    100% {
-        background-image: url(./Images/bgcphoto4.png);
-    }
+.section-background.bgcimage1 {
+    background-image: url(./Images/bgcphoto2.png);
+    background-position: 0% 100%;
+}
+
+.section-background.bgcimage2 {
+    background-image: url(./Images/Headerbackground.png);
+    background-position: 100% 0%;
+}
+
+.section-background.bgcimage3 {
+    background-image: url(./Images/bgcphoto3.png);
+    background-position: 100% 100%;
+}
+
+.section-background.bgcimage4 {
+    background-image: url(./Images/bgcphoto4.png);
+    background-position: 0% 0%;
 }
 
 .header-section {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
+    flex-direction: row;
 }
 
 .logo {
@@ -80,12 +78,18 @@ body {
 
 .logo-section {
     padding-top: 50px;
-    padding-right: 200px;
+    margin-left: 5%;
 }
-#home{
+
+#home {
     text-decoration: underline;
     text-underline-offset: 7px;
 }
+
+.nav-section {
+    margin-left: 14%;
+}
+
 .nav-list-options {
     display: flex;
     gap: 60px;
@@ -130,11 +134,16 @@ body {
     display: flex;
     gap: 15px;
     padding-top: 25px;
+    margin-left: 4%;
 }
 
 .socialmedialogos {
     color: white;
     font-size: 16px;
+}
+
+.socialmedialogos:hover {
+    color: blueviolet;
 }
 
 .section1-heading {
@@ -358,9 +367,7 @@ body {
     font-family: "gallient regular", serif;
     font-weight: 400;
 }
-
 .ourserviceOur {
-    /* padding-top: 10px; */
     margin-left: 5%;
     color: black;
 }
@@ -429,8 +436,8 @@ body {
 
 .ourService-aside-slider2 .prev_btn {
     /* top: 0px; */
-    bottom: -50px;
-    left: 0px;
+    bottom: -40px;
+    left: -15px;
 }
 
 .ourService-aside-slider2 .slick-dots li {
@@ -481,6 +488,13 @@ body {
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between;
+    width: 100%;
+}
+
+.ourser-images1,
+.ourser-images2 {
+    width: 50%;
+    height: auto;
 }
 
 /* ------------------------------------section3 about company------- */
@@ -642,7 +656,7 @@ body {
 }
 
 .our-project-our {
-    margin-left: 7%;
+    margin-left: 8%;
 }
 
 .our-project-pro {
@@ -864,11 +878,12 @@ body {
 
 .ourport-caption {
     padding-top: 50px;
+    margin-left: 19%;
 }
 
 .our_port_Arrow {
     padding-top: 200px;
-    padding-left: 21%;
+    padding-left: 19%;
 }
 
 .portfolio {
@@ -908,13 +923,13 @@ body {
 }
 
 .client-says {
-    margin-left: -8%;
+    margin-left: -10%;
     padding-top: 5%;
 }
 
 .our_test_Arrow {
     padding-top: 100px;
-    padding-left: 19%;
+    padding-left: 17%;
 }
 
 .section5-block {
@@ -933,14 +948,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 30px;
-}
-
-.test-content-head {
-
-    background-position-y: -80px;
-    background-position-x: 20px;
-    margin-left: 30px;
-
 }
 
 .test-content-parent {
@@ -1174,7 +1181,7 @@ body {
 
 #sendimage {
     position: relative;
-    top: 5px;
+    top: 7px;
 }
 
 #formpre {
@@ -1187,19 +1194,16 @@ body {
 
 /* ---------------------------------------------footer-------------- */
 .footer {
-    margin-left: 10%;
+    width: 80%;
+    /* margin-left: 10%;
     margin-right: 10%;
-    margin-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px; */
+    margin: auto;
+    padding: 10px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.footerlogo {
-    margin-left: 40px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    align-items: center;
 }
 
 .footer-logo-tab {
@@ -1207,16 +1211,18 @@ body {
 }
 
 .info-mail-block {
+    width: 25%;
     display: flex;
-    gap: 20px;
-    margin-top: -60px !important;
-    padding-left: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #51372A;
+    padding: 3% 0%;
+    gap: 10px;
 }
-
-.info-phone-block {
-    margin-top: -65px !important;
+.info-phone-block{
+    margin-left: 2%;
 }
-
 .footercon {
     color: #51372A;
     font-size: 16px;
@@ -1245,47 +1251,53 @@ body {
 /* -----------------------------------mail dialog box----- */
 .mail-success-box {
     height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0px;
-        background-color: rgba(0, 0, 0, .1);
-        backdrop-filter: blur(5px);
-        right: 0px;
-        left: 0px;
-        bottom: 0px;
-        z-index: 10;
-        display: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5px);
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+    object-fit: cover;
+    display: none;
 }
-.mail-notification-block{
-    border: 2px solid white;
-        background-image: url(./Images/form\ bgc.png);
-        background-position-y: -50px;
-        background-position-x: 20px;
-        border-radius: 20px;
-        background-size: cover;
-        width: auto;
-        padding: 20px;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
+.mail-notification-block {
+    border: 2px solid black;
+    background-image: url(./Images/form\ bgc.png);
+    background-position-y: -50px;
+    background-position-x: 0px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-#mail-message{
+
+#mail-message {
     color: white;
     font-family: "gallient regular", serif;
     font-size: 40px;
     font-weight: 200;
     /* letter-spacing: 1px; */
-    
+
 }
-#mail-message-caption{
+
+#mail-message-caption {
     color: white;
     font-family: "Microsoft YaHei";
 }
+
 .close {
     background-color: rgb(4, 19, 4);
     color: white;
