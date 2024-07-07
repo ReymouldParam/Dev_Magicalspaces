@@ -1,0 +1,1115 @@
+@font-face {
+    font-family: "Gallient Regular";
+    src: url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.eot");
+    src: url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.svg#Gallient Regular")format("svg");
+}
+
+@font-face {
+    font-family: "Microsoft YaHei";
+    src: url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot");
+    src: url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.svg#Microsoft YaHei")format("svg");
+}
+
+.section1 {
+    background-color: #fff;
+    border-bottom: 0.5px solid black;
+    padding: 1%;
+    margin: 0px 3%;
+    padding-bottom: 30px;
+}
+
+.section-background {
+    background-size: cover;
+    border-radius: 50px;
+    height: fit-content;
+    padding-bottom: 50px;
+    margin: 0px 1%;
+    transition: all 1s linear;
+}
+
+.section-background.bgcimage1 {
+    background-image: url(/Assets/Images/banner-img/banner-img1.webp);
+}
+
+.section-background.bgcimage2 {
+        background-image: url(/Assets/Images/banner-img/banner-img3.webp);
+}
+
+.section-background.bgcimage3 {
+    background-image: url(/Assets/Images/banner-img/banner-img4.webp);
+}
+
+
+.section-background.bgcimage4 {
+        background-image: url(/Assets/Images/banner-img/banner-img2.webp);
+}
+
+.section1-heading {
+    visibility: hidden;
+    width: 62%;
+    overflow: hidden !important;
+    padding-left: 50px;
+}
+
+.section1-heading-content {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-left: 80px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.section1-heading-text {
+    font-size: 0px;
+}
+
+#dream {
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.7px;
+}
+
+.section1-heading-caption {
+    color: white;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+}
+
+.getcontainer {
+    width: 100%;
+    text-align: end;
+    margin-top: 450px;
+    padding-right: 10%;
+    height: 50px;
+    transform: translateY(50px);
+}
+
+.getbtn {
+    height: 40px;
+    width: 180px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.getbtn1 {
+    color: #fff;
+}
+
+.getbtn1:hover {
+    color: #fff;
+}
+
+.getbtn::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 15%;
+    height: 100%;
+    background: #FFFFFF26 !important;
+    /* z-index: 1; */
+    transition: 0.8s;
+}
+
+.getbtn1::before {
+    top: 0;
+    border-radius: 20px;
+}
+
+.getbtn1:hover::before {
+    width: 100%;
+}
+
+#getInTouch {
+    text-decoration: none;
+    color: white;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    left: 5px;
+    top: -6px;
+}
+
+#getArrow {
+    width: 30px;
+    height: 30px;
+    /* border: 2px solid red; */
+    position: relative;
+    top: 9px;
+    left: 5px;
+    visibility: hidden;
+    z-index: 45;
+}
+
+.section1-heading .slick-dots {
+    padding-top: 70px;
+    display: flex;
+    gap: 10px;
+}
+
+.section1-heading .slick-dots li {
+    list-style-type: none;
+}
+
+.section1-heading .slick-dots li button {
+    width: 0px;
+    height: 0px;
+    color: transparent;
+    /* color: red; */
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    font-size: 0px;
+    transition: all 1s linear;
+}
+
+.section1-heading .slick-dots .slick-active button {
+    width: 0px;
+    height: 0px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 0px;
+}
+
+/* --------------------------------------Our Services----------- */
+.section2 {
+    margin: 0px 3%;
+    /* padding-bottom: 0px; */
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding-top: 30px;
+    /* overflow: hidden !important; */
+}
+
+.ourservice-section {
+    display: flex !important;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.section2-ourservices-aside1 {
+    width: 36%;
+}
+
+.section2-ourserives-aside2 {
+    width: 64%;
+    padding-left: 3%;
+    padding-left: 2%;
+}
+
+.our {
+    font-family: "Microsoft YaHei";
+    font-weight: 500;
+}
+
+.headingour {
+    font-size: 60px;
+    font-family: "gallient regular", serif;
+    font-weight: 400;
+}
+
+.ourserviceOur {
+    margin-left: 5%;
+    color: black;
+}
+
+.ourserviceService {
+    color: #51372A;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 15px;
+    padding-top: 0;
+    margin-left: 21%;
+    margin-bottom: -20px;
+}
+
+.ourservicesCaption {
+    font-size: 20px;
+    margin-left: 21%;
+}
+
+.oursercaption {
+    padding-top: 10%;
+}
+
+.miniheading {
+    color: #51372A;
+    font-size: 36px;
+    padding-top: 150px;
+    margin-left: 21%;
+}
+
+.miniheading-caption {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 21%;
+}
+
+.our-service-slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.our_ser_Arrow {
+    padding-left: 450px !important;
+    transform: translateY(-110px);
+}
+
+.ourService-aside-slider2 .slick_btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 900;
+    padding-left: 50px;
+    position: absolute;
+    cursor: pointer !important;
+    /* left: -50px;
+    top: 355px; */
+}
+
+.ourService-aside-slider2 .next_btn {
+    right: 40px;
+    bottom: -60px;
+}
+
+.ourService-aside-slider2 .prev_btn {
+    /* top: 0px; */
+    bottom: -60px;
+    left: -15px;
+}
+
+.ourService-aside-slider2 .slick-dots li {
+    list-style-type: none;
+    height: 25%;
+}
+
+.ourService-aside-slider2 .slick-dots {
+    width: 1px;
+    height: 95%;
+    border-radius: 10px;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    /* transform: translateY(-517px); */
+    background-color: #D9D9D9;
+    gap: 0px;
+}
+
+.ourService-aside-slider2 .slick-dots li button {
+    width: 5px;
+    height: 100%;
+    color: transparent;
+    /* padding-right: 2px; */
+    transform: translateX(-2px);
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 5px;
+    transition: all 1s linear;
+    cursor: pointer !important;
+}
+
+.ourService-aside-slider2 .slick-dots .slick-active button {
+    border-radius: 20px;
+    border: none;
+    background-color: #51372A;
+    font-size: 5px;
+}
+
+.section2-ourserives-aside2 {
+    padding-right: 20px !important;
+}
+
+/*   section part 2*/
+.ourservices-images {
+    /* overflow: hidden !important; */
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.ourser-images1,
+.ourser-images2 {
+    width: 45%;
+    height: 70vh;
+    border-radius: 30px;
+}
+
+/* ------------------------------------section3 about company------- */
+.section3 {
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    margin: 0px 3%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.about-company-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutCompanyline {
+    padding-left: 160px;
+    margin-bottom: 10px !important;
+}
+
+.aboutText {
+    padding-top: 50px;
+}
+
+.aboutcompany-caption {
+    padding-top: 40px;
+    padding-left: 5%;
+    margin-left: 0;
+}
+
+.ourcompany-caption {
+    padding-left: 100px;
+}
+
+.our_com_Arrow {
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.aboutcompany-block {
+    /* width: 80%; */
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    margin-left: 15%;
+    /* justify-content: space-evenly; */
+    gap: 25%;
+    /* align-items: center; */
+    position: relative;
+}
+
+.aboutcompanyaside1-card1 {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutcompanyaside1-card2 {
+    margin-top: -4%;
+    padding-top: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutcompanyaside1-card3 {
+    margin-top: -10px;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutcompany-block * {
+    position: relative;
+    z-index: 1;
+}
+
+.aboutcompany-block .about-bg-border {
+    position: absolute;
+    top: 5%;
+    left: -6%;
+    width: 70%;
+    height: 95%;
+    z-index: 0;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.aboutcompany-text,
+.about-text-caption {
+    font-family: "Microsoft YaHei";
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.about-text-caption {
+    font-size: 20px;
+}
+
+
+.aboutcompany-aside2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 100px;
+}
+
+.aboutcompany-content-line {
+    margin-top: -10px;
+    margin-left: -4%;
+}
+
+.aboutcompanyaside1-card1-content {
+    margin-top: 5%;
+    margin-left: -4%;
+}
+
+.aboutcompanyaside1-card2-content {
+    margin-top: 2%;
+}
+
+.aboutcompanyaside1-card3-content {
+    margin-top: 2%;
+}
+
+.about-company-aside2-card1 {
+    margin-left: 10%;
+}
+
+.about-company-aside2-card2 {
+    margin-top: -20px;
+    margin-left: 10%;
+}
+
+.about-company-aside2-card3 {
+    margin-top: -20px;
+    margin-left: 10%;
+}
+
+.about-text {
+    margin-left: 10%;
+}
+
+.our-company-text {
+    margin-left: 55%;
+}
+
+/* ----------------------------------------Our Project------------------- */
+
+/* **************************** */
+#ourprojectblock {
+    background-color: white;
+    border-bottom: 1px solid black;
+    /* border: 2px solid red; */
+    margin: 0 3%;
+    padding: 30px 0 40px;
+}
+
+.our-project-our {
+    margin-left: 8%;
+}
+
+.our-project-pro {
+    margin-left: 32%;
+}
+
+#ourproject {
+    display: flex;
+    position: relative;
+    left: 65px;
+    top: 20px;
+}
+
+#ourProjectOur {
+    font-family: "gallient regular", serif;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+#ourProjectProject {
+    font-family: "gallient regular", serif;
+    font-weight: 400;
+    font-size: 70px;
+    position: relative;
+    left: 85px;
+    color: rgb(74, 21, 21);
+}
+
+#ourprojectText {
+    color: black;
+    position: relative;
+    top: 71px;
+    left: 55px;
+    font-family: "Microsoft YaHei";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#ourprojectArrow {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 372px;
+    top: 72px;
+    border: none;
+}
+
+#ourprojectimage {
+    position: relative;
+    top: 20px;
+    left: -42px;
+}
+
+#slider_contentblock {
+    width: 70%;
+    height: 650px;
+    margin: auto;
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+
+#slider_content {
+    width: 100%;
+    /* height: inherit; */
+    /* border: 2px solid blue; */
+    padding: 90px 0 0;
+}
+
+#slider_content * {
+    overflow: visible;
+}
+
+.Mini_slider {
+    scale: 1;
+    transition: all 0.3s linear;
+    z-index: 6;
+    position: relative;
+}
+
+#slider_content .sliderimages {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    top: 30px;
+    filter: blur(5px);
+}
+
+#slider_content .slick-current {
+    scale: 1.4 !important;
+    z-index: 10;
+    position: relative;
+    width: 200px !important;
+    /* height: 650px; */
+    /* position: relative;
+    top: 30px; */
+}
+
+.small_slides {
+    scale: 1.2;
+    z-index: 8;
+}
+
+#slider_content .slick-current .sliderimages {
+    filter: blur(0px);
+}
+
+#our_project_slider_content_caption .slick_btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    /* position: relative; */
+    /* top: 50%; */
+    z-index: 2000000 !important;
+    cursor: pointer !important;
+}
+
+#our_project_slider_content_caption .next_btn {
+    left: 170%;
+    top: -10px;
+    cursor: pointer !important;
+}
+
+#our_project_slider_content_caption .prev_btn {
+    right: 185%;
+    top: -10px;
+    cursor: pointer !important;
+}
+
+#our_project_slider_content_caption .slick-dots {
+    position: relative;
+    left: 85px;
+    display: flex;
+    gap: 3px;
+}
+
+#our_project_slider_content_caption .slick-dots li {
+    list-style-type: none;
+}
+
+#our_project_slider_content_caption .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    /* color: red; */
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    font-size: 5px;
+    transition: all 1s linear;
+    cursor: pointer !important;
+}
+
+#our_project_slider_content_caption .slick-dots .slick-active button {
+    width: 23px;
+    height: 10px;
+    margin-top: 7px;
+    /* margin-left: 10px; */
+    /* color: red; */
+    border-radius: 20px;
+    border: none;
+    background-color: #D9BC72;
+    font-size: 5px;
+}
+
+#our_project_caption {
+    width: 350px;
+    /* height: 50px; */
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#our_project_slider_content_caption {
+    height: inherit;
+    width: inherit;
+    position: relative;
+    /* top: -10px; */
+    left: 25px;
+}
+
+.our_project_caption_text {
+    font-family: "Microsoft YaHei";
+    font-weight: 400;
+    font-size: 18px;
+    /* color: red; */
+}
+
+/* **************************** */
+
+/* -------------------------------------------------Our portfolio-------------------- */
+.section4 {
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    margin: 0px 3%;
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+.our-port-section {
+    display: flex;
+}
+
+#aboutportline {
+    width: 525px;
+    padding-left: 150px;
+    margin-bottom: 10px;
+}
+
+.our-port-section1 {
+    width: 40%;
+}
+
+.ourport-caption {
+    padding-top: 50px;
+    margin-left: 19%;
+}
+
+.our_port_Arrow {
+    padding-top: 200px;
+    padding-left: 19%;
+}
+
+.portfolio {
+    margin-left: 19%;
+}
+
+.our-port-section2 {
+    width: 60%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 53px;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.ourport-section2-block1,
+.our-port-section2-block2 {
+    width: 100%;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.ourportimage1 {
+    width: 100%;
+    height: 55vh;
+    border-radius: 20px;
+}
+
+.ourportimage2 {
+    width: 100%;
+    height: 20vh;
+    border-radius: 20px;
+}
+
+/* ---------------------------------------------------testimonial section----------------------- */
+
+.section5 {
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    margin: 0px 3%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.test-aside1 {
+    width: 43%;
+}
+
+.test-aside2 {
+    width: 57%;
+}
+
+.testmonial {
+    margin-left: 5% !important;
+}
+
+.client-says {
+    margin-left: -10%;
+    padding-top: 5%;
+}
+
+.our_test_Arrow {
+    padding-top: 100px;
+    padding-left: 17%;
+}
+
+.section5-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.test-content {
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 95%;
+    margin: 10px 0px 0 0;
+    padding: 30px 0 0px;
+    background-image: url(./Images/quote.png);
+    background-size: 22%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 30px;
+}
+
+.test-content-parent {
+    padding: 20px 30px;
+}
+
+.test-content-parent2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 50px 30px;
+}
+
+.test-text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3%;
+    line-height: 23px;
+}
+
+.test-name {
+    margin-top: 100px;
+}
+
+.name-of-person {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.test-image {
+    object-fit: cover;
+}
+
+#test-smile-image {
+    height: 100%;
+}
+
+#test-aside2-caresel .slick_btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 900;
+    padding-left: 0px;
+    position: absolute;
+    left: -80px;
+    top: 300px;
+    cursor: pointer !important;
+}
+
+#test-aside2-caresel .next_btn {
+    left: -82px;
+}
+
+#test-aside2-caresel .prev_btn {
+    left: -153px;
+}
+
+#test-aside2-caresel .slick-dots li {
+    list-style-type: none;
+    width: 50%;
+}
+
+.text-content-parent2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#test-aside2-caresel .slick-dots {
+    width: 95%;
+    /* width: 1200px; */
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: row !important;
+    background-color: #D9D9D9;
+    /* border: 2px solid black; */
+    gap: 0px;
+}
+
+#test-aside2-caresel .slick-dots li button {
+    /* width: 197px; */
+    width: 94%;
+    height: 8px;
+    position: relative;
+    top: -5px;
+    left: 4px;
+    color: transparent;
+    /* color: red; */
+    border-radius: 10px;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 5px;
+    transition: all 1s linear;
+    cursor: pointer !important;
+}
+
+#test-aside2-caresel .slick-dots .slick-active button {
+    /* margin-left: 10px; */
+    /* color: red; */
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    font-size: 5px;
+}
+
+/* ------------------------------------------contact page----------------------- */
+.section6 {
+    background-color: #fff;
+    margin: 0px 3%;
+    padding-bottom: 10px;
+}
+
+.section6-contactus {
+    padding-top: 30px;
+}
+
+.section-contact {
+    width: 80%;
+    padding: 30px;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    background-image: url(/Assets/Images/form\ bgc.png);
+    background-size: cover;
+}
+
+.slider-contact {
+    width: 40% !important;
+    height: 500px;
+    object-fit: cover;
+}
+
+.footer-image-container {
+    width: 100%;
+}
+
+.footer-images {
+    width: 100%;
+    height: 70vh;
+    border-radius: 40px;
+}
+
+.form-container {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.form-heading {
+    font-family: "Microsoft YaHei";
+    font-weight: 700;
+    font-size: 32px;
+    color: #E2DDD0;
+}
+
+.form-caption {
+    color: #E2DDD0;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.label1 {
+    color: #E2DDD0;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+.fullName {
+    width: 570px;
+    height: 52px;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    background: transparent;
+    border: 1.2px solid #E2DDD0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.form-block {
+    padding-top: 20px;
+}
+
+.fullName::placeholder {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.comment {
+    width: 570px;
+    height: 100px;
+    border-radius: 15px;
+    background: transparent;
+    border: 1.2px solid #E2DDD0;
+}
+
+.send {
+    width: 157px;
+    height: 50px;
+    border: 1.5px solid #E2DDD0;
+    border-radius: 15px;
+    background: transparent;
+    color: white;
+    cursor: pointer !important;
+}
+
+#sendimage {
+    position: relative;
+    top: 7px;
+}
+
+#formpre {
+    position: relative;
+    top: -15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #E2DDD0;
+}
+
+/* -----------------------------------mail dialog box----- */
+.mail-success-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5px);
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+    object-fit: cover;
+    display: none;
+}
+
+.mail-notification-block {
+    border: 2px solid black;
+    background-image: url(./Images/form\ bgc.png);
+    background-position-y: -50px;
+    background-position-x: 0px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mail-message {
+    color: white;
+    font-family: "gallient regular", serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+#mail-message-caption {
+    color: white;
+    font-family: "Microsoft YaHei";
+}
+
+.close {
+    background-color: rgb(4, 19, 4);
+    color: white;
+    margin-top: 20px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}

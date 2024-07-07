@@ -22,7 +22,8 @@
 
     <!-- AOS -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <link rel="stylesheet" href="./Assets/figma.css">
+    <link rel="stylesheet" href="./Assets/global.css">
+    <link rel="stylesheet" href="./Assets/css/home.css">
     <link rel="stylesheet" href="./Assets/Animations.css">
     <link rel="stylesheet" href="./Assets/MediaQueries.css">
 </head>
@@ -30,47 +31,44 @@
 
 <body>
     <!-- -------------------------------------------------------Header part------------------------------------------------------- -->
+    <header class="header-section">
+        <div class="logo-section">
+            <img src="./Assets/Images/magical space temp.jpg" alt="" class="header-logo">
+        </div>
+        <div class="nav-section">
+            <ul class="nav-list-options">
+                <li><a href="." id="home">HOME</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="bar"></i>
+        <div id="bar_options">
+            <i class="fa-regular fa-circle-xmark" id="cross"></i>
+            <a href="" class="navlinks" id="home">HOME</a>
+            <a href="" class="navlinks">SERVICES </a>
+            <a href="" class="navlinks">ABOUT US</a>
+            <a href="" class="navlinks">PORTAFOLIO</a>
+            <a href="" class="navlinks">CONTACT</a>
+            <div id="socialmedia-phone">
+                <a href="" class="socialmedialogos"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="socialmedialogos"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="socialmedialogos"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" class="socialmedialogos"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="socialmedia-section">
+            <a href="" class="socialmedialogos"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" class="socialmedialogos"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="socialmedialogos"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="" class="socialmedialogos"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </header>
     <div class="section1">
         <div class="section-background">
-            <div class="header-section">
-                <div class="logo-section">
-                    <img src="./Assets/Images/magical space temp.jpg" alt="" class="logo footerlogo header-logo-mobile">
-                </div>
-                <div class="nav-section">
-                    <ul class="nav-list-options">
-                        <li><a href="." id="home">HOME</a></li>
-                        <li><a href="">SERVICE</a></li>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">PORTFOLIO</a></li>
-                        <li><a href="">CONTACT</a></li>
-                    </ul>
-                </div>
-                <i class="fa-solid fa-bars" id="bar"></i>
-                <div id="bar_options">
-                    <i class="fa-regular fa-circle-xmark" id="cross"></i>
-                    <a href="" class="navlinks" id="home">HOME</a>
-                    <a href="" class="navlinks">SERVICES </a>
-                    <a href="" class="navlinks">ABOUT US</a>
-                    <a href="" class="navlinks">PORTAFOLIO</a>
-                    <a href="" class="navlinks">CONTACT</a>
-                    <div id="socialmedia-phone">
-                        <a href="" class="socialmedialogos"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="" class="socialmedialogos"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="" class="socialmedialogos"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="" class="socialmedialogos"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="socialmedia-section">
-                    <!-- <i class="fa-brands fa-facebook-f" class="socialmedialogos"></i>
-                    <i class="fa-brands fa-instagram" class="socialmedialogos"></i>
-                    <i class="fa-brands fa-x-twitter" class="socialmedialogos"></i>
-                    <i class="fa-brands fa-linkedin-in" class="socialmedialogos"></i> -->
-                    <a href="" class="socialmedialogos"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="" class="socialmedialogos"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="" class="socialmedialogos"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="" class="socialmedialogos"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-            </div>
+
 
             <div class="section1-heading-content">
                 <div class="section1-heading">
@@ -165,27 +163,34 @@
                     <div class="ourService-aside-slider2">
                         <div>
                             <div class="ourservices-images">
-                                <img src="./Assets/Images/ourservices dianing table.png" alt="dianing table"
+                                <img src="./Assets/Images/our-service-images/ourservive-img1.webp" alt="dianing table"
                                     class="ourser-images1">
-                                <img src="./Assets/Images/ourservices hall.png" alt="hall" class="ourser-images2">
+                                <img src="./Assets/Images/our-service-images/ourservice-img2.webp" alt="hall"
+                                    class="ourser-images2">
                             </div>
                         </div>
                         <div>
                             <div class="ourservices-images">
-                                <img src="./Assets/Images/our services category1 2.png" alt="" class="ourser-images1">
-                                <img src="./Assets/Images/our services category2 2.png" alt="" class="ourser-images2">
+                                <img src="./Assets/Images/our-service-images/ourservice-img3.webp" alt=""
+                                    class="ourser-images1">
+                                <img src="./Assets/Images/our-service-images/ourservice-img4.webp" alt=""
+                                    class="ourser-images2">
                             </div>
                         </div>
                         <div>
                             <div class="ourservices-images">
-                                <img src="./Assets/Images/our services category1 3.png" alt="" class="ourser-images1">
-                                <img src="./Assets/Images/our services category2 3.png" alt="" class="ourser-images2">
+                                <img src="./Assets/Images/our-service-images/ourservice-img5.webp" alt=""
+                                    class="ourser-images1">
+                                <img src="./Assets/Images/our-service-images/ourservice-img6.webp" alt=""
+                                    class="ourser-images2">
                             </div>
                         </div>
                         <div>
                             <div class="ourservices-images">
-                                <img src="./Assets/Images/our services category1 4.png" alt="" class="ourser-images1">
-                                <img src="./Assets/Images/our services category2 4.png" alt="" class="ourser-images2">
+                                <img src="./Assets/Images/our-service-images/ourservice-img7.webp" alt=""
+                                    class="ourser-images1">
+                                <img src="./Assets/Images/our-service-images/ourservice-img8.webp" alt=""
+                                    class="ourser-images2">
                             </div>
                         </div>
                     </div>
@@ -214,7 +219,7 @@
         <div class="aboutcompany-block">
             <div class="aboutcompanyaside1-card1">
                 <div class="aboutcompanyaside1-card1-content scrollAnimationFixed startLeft">
-                    <h2 class="aboutcompany-text increase-numbers" data-target="45" data-val="45">0</h2>
+                    <h2 class="aboutcompany-text increase-numbers" data-target="50" data-val="50">0</h2>
                     <h2 class="aboutcompany-text">DESIGN PROJECTS</h2>
                     <p class="about-text-caption">Experience the perfect blend of functionality.</p>
                 </div>
@@ -229,8 +234,8 @@
 
                 <div
                     class="aboutcompanyaside1-card1-content aboutcompanyaside1-card2-content scrollAnimationFixed startLeft">
-                    <h2 class="aboutcompany-text increase-numbers" data-target="40" data-val="50">0</h2>
-                    <h2 class="aboutcompany-text">EMPLOYEES</h2>
+                    <h2 class="aboutcompany-text increase-numbers" data-target="20" data-val="20">0</h2>
+                    <h2 class="aboutcompany-text">EXPERIENCE</h2>
                     <p class="about-text-caption">Experience the perfect blend of functionality.</p>
                 </div>
                 <div class="about-company-aside2-card2 scrollAnimationFixed startRight">
@@ -245,7 +250,7 @@
 
                 <div
                     class="aboutcompanyaside1-card1-content aboutcompanyaside1-card3-content scrollAnimationFixed startLeft">
-                    <h2 class="aboutcompany-text increase-numbers" data-target="150" data-val="150">0</h2>
+                    <h2 class="aboutcompany-text">MULTIPLE</h2>
                     <h2 class="aboutcompany-text">CONTRACTORS</h2>
                     <p class="about-text-caption">Experience the perfect blend of functionality.</p>
                 </div>
@@ -349,12 +354,12 @@
 
             <div class="our-port-section2">
                 <div class="ourport-section2-block1">
-                    <img src="./Assets/Images/ourportfolio1.png" alt="" class="ourportimage1">
-                    <img src="./Assets/Images/ourportfolio2.png" alt="" class="ourportimage1">
+                    <img src="./Assets/Images/OurPortfolio-img/ourport-img1.webp" alt="" class="ourportimage1">
+                    <img src="./Assets/Images/OurPortfolio-img/ourport-img2.webp" alt="" class="ourportimage2">
                 </div>
                 <div class="ourport-section2-block2">
-                    <img src="./Assets/Images/ourportfolio2.png" alt="" class="ourportimage1">
-                    <img src="./Assets/Images/ourportfolio3.png" alt="" class="ourportimage1">
+                    <img src="./Assets/Images/OurPortfolio-img/ourport-img3.webp" alt="" class="ourportimage2">
+                    <img src="./Assets/Images/OurPortfolio-img/ourport-img4.webp" alt="" class="ourportimage1">
                 </div>
             </div>
         </div>
@@ -496,6 +501,26 @@
         <div class="section6-contactus">
             <div class="section-contact">
                 <div class="slider-contact">
+                    <div class="mini-slider">
+                        <div class="footer-image-container">
+                            <img src="./Assets/Images/footer-images/footer-img1.webp" alt="" class="footer-images">
+                        </div>
+                    </div>
+                    <div class="mini-slider">
+                        <div class="footer-image-container">
+                            <img src="./Assets/Images/footer-images/footer-img2.webp" alt="" class="footer-images">
+                        </div>
+                    </div>
+                    <div class="mini-slider">
+                        <div class="footer-image-container">
+                            <img src="./Assets/Images/footer-images/footer-img3.webp" alt="" class="footer-images">
+                        </div>
+                    </div>
+                    <div class="mini-slider">
+                        <div class="footer-image-container">
+                            <img src="./Assets/Images/footer-images/footer-img5.webp" alt="" class="footer-images">
+                        </div>
+                    </div>
                 </div>
                 <div class="form-container">
                     <div>
@@ -522,64 +547,64 @@
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <div class="logo-block footer-logo-tab footer-logo-phone">
-                    <img src="./Assets/Images/magical space temp.jpg" alt=""
-                        class="logo footerlogo footer-logo-laptop footer-logo-tab">
-                </div>
-               
-                <div class="info-mail-block">
-                        <i class="fa-regular fa-envelope"></i>
-                        <h3 class="footercon footermailid">XYZ23@gmail.com</h3>
-                </div>
-                
-                <div class="info-mail-block address-tab">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h3 class="footercon footerAddressName">XYZ, Hyderabad, Telangana, India</h3>
-                </div>
-                
-                
-                <div class="info-mail-block info-phone-block">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h3 class="footercon footerNumber">+91-8686 59 2300</h3>
-                            <h3 class="footercon footerNumber">+91-9542 29 5424</h3>
-                        </div>
-                </div>
-
-            </div>
-            <div class="footer-for-tab">
-                <div class="tab-div1">
-                    <div class="mail-phone-adderss">
-                        <i class="fa-regular fa-envelope"></i>
-                        <h3 class="footercon">XYZ23@gmail.com</h3>
-                    </div>
-                    <div>
-                        <div class="mail-phone-adderss">
-                            <i class="fa-solid fa-phone"></i>
-                            <h3 class="footercon">+91-8686 59 2300 <br>+91-9542 29 5424 </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-div2">
-
-                    <div class="mail-phone-adderss">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h3 class="footercon">XYZ, Hyderabad, Telangana, India</h3>
-                    </div>
-
-                    <div>
-                        <img src="./Assets/Images/magical space temp.jpg" alt="" class="logo footer-logo-tab2">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr id="footer-hr">
-        <div id="licience">
-            <h1 id="licienceName">MagicalSpace | © Copyright @ 2024. All Rights Reserved</h1>
         </div>
     </div>
 
+    <!-- ------ footer ------ -->
+    <div class="footer">
+        <div class="logo-block footer-logo-tab footer-logo-phone">
+            <img src="./Assets/Images/magical space temp.jpg" alt=""
+                class="logo footerlogo footer-logo-laptop footer-logo-tab">
+        </div>
+
+        <div class="info-mail-block">
+            <i class="fa-regular fa-envelope"></i>
+            <h3 class="footercon footermailid">XYZ23@gmail.com</h3>
+        </div>
+
+        <div class="info-mail-block address-tab">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3 class="footercon footerAddressName">XYZ, Hyderabad, Telangana, India</h3>
+        </div>
+
+
+        <div class="info-mail-block info-phone-block">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+                <h3 class="footercon footerNumber">+91-8686 59 2300</h3>
+                <h3 class="footercon footerNumber">+91-9542 29 5424</h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-for-tab">
+        <div class="tab-div1">
+            <div class="mail-phone-adderss">
+                <i class="fa-regular fa-envelope"></i>
+                <h3 class="footercon">XYZ23@gmail.com</h3>
+            </div>
+            <div>
+                <div class="mail-phone-adderss">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3 class="footercon">+91-8686 59 2300 <br>+91-9542 29 5424 </h3>
+                </div>
+            </div>
+        </div>
+        <div class="tab-div2">
+
+            <div class="mail-phone-adderss">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 class="footercon">XYZ, Hyderabad, Telangana, India</h3>
+            </div>
+
+            <div>
+                <img src="./Assets/Images/magical space temp.jpg" alt="" class="logo footer-logo-tab2">
+            </div>
+        </div>
+    </div>
+    <div id="licience">
+        <h6>MagicalSpace | © Copyright @ 2024. All Rights Reserved</h6>
+    </div>
     <div class="mail-success-box">
         <div class="mail-notification-block">
             <h1 id="mail-message">Mail Send Successfully</h1>
@@ -603,9 +628,10 @@
     <!-- <script>
         AOS.init();
     </script> -->
-    <script src="./Assets/figma.js"></script>
-    <script src="./Assets/Animations.js"></script>
-    <script src="./home-page-mail.js"></script>
+    <script src="Assets/globaljs.js"></script>
+    <script src="Assets/js/home.js"></script>
+    <script src="Assets/Animations.js"></script>
+    <script src="home-page-mail.js"></script>
     <!-- <script>
         const slides1 = document.querySelectorAll('.section1-heading-repating');
             // const background = document.querySelector('.section-background');
