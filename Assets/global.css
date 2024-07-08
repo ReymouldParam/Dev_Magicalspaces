@@ -80,14 +80,16 @@ body {
 }
 
 .nav-list-options li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 17px;
     font-family: "Microsoft YaHei";
     font-weight: 400;
     /* padding-bottom: 50px; */
 }
-
+.nav-list-options.nav-list-options2 li a {
+    color: white;
+}
 .nav-list-options li a:hover {
     color: red;
 }
@@ -100,10 +102,12 @@ body {
 }
 
 .socialmedialogos {
-    color: white;
+    color: black;
     font-size: 18px;
 }
-
+.socialmedia-section2 a {
+    color: white;
+}
 .socialmedialogos:hover {
     color: blueviolet;
 }
@@ -232,7 +236,28 @@ body {
 
 
 
+@media screen and (min-width:1850px) {
+    .header-section {
+        width: 100%;
+        margin: auto;
+        padding: 10px 15%;
+    }
 
+    .header2 {
+        width: 100%;
+        /* padding-left: 5%; */
+    }
+
+    .footer {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    #licience {
+        width: 80%;
+        margin: auto;
+    }
+}
 
 @media screen and (min-width:1301px) and (max-width:1430px) {
     .header-section {
@@ -251,6 +276,7 @@ body {
         padding-bottom: 10px;
 
     }
+
     .footer-logo-laptop {
         width: 100%;
     }
@@ -317,21 +343,22 @@ body {
         color: white;
         font-size: 14px;
     }
-.footer-logo-laptop {
-    width: 100%;
-}
 
-#info_mail {
-    margin-left: -20px;
-}
+    .footer-logo-laptop {
+        width: 100%;
+    }
 
-#info_phone {
-    margin-left: -30px;
-}
+    #info_mail {
+        margin-left: -20px;
+    }
 
-.info-mail-block {
-    width: 60%;
-}
+    #info_phone {
+        margin-left: -30px;
+    }
+
+    .info-mail-block {
+        width: 60%;
+    }
 
 }
 
