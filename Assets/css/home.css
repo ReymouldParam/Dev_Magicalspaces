@@ -254,7 +254,7 @@
 .miniheading {
     color: #51372A;
     font-size: 36px;
-    padding-top: 150px;
+    /* padding-top: 50px; */
     margin-left: 21%;
 }
 
@@ -265,14 +265,19 @@
 }
 
 .our-service-slider {
+    padding-top: 50px;
+    /* display: flex;
+    flex-direction: row; */
+}
+.text-arrow-block{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-
-.our_ser_Arrow {
+/* .our_ser_Arrow {
     padding-left: 450px !important;
-    transform: translateY(-110px);
-}
+    transform: translateY(-150px);
+} */
 
 .ourService-aside-slider2 .slick_btn {
     height: 40px;
@@ -689,9 +694,7 @@
 }
 
 #our_project_caption {
-    width: 350px;
-    /* height: 50px; */
-    /* border: 2px solid black; */
+    width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -703,11 +706,12 @@
     width: inherit;
     position: relative;
     /* top: -10px; */
-    left: 25px;
+    /* left: 35px; */
 }
 
 .our_project_caption_text {
     font-family: "Microsoft YaHei";
+    text-align: center;
     font-weight: 400;
     font-size: 18px;
     /* color: red; */
@@ -824,7 +828,7 @@
     width: 95%;
     margin: 10px 0px 0 0;
     padding: 30px 0 0px;
-    background-image: url(./Images/quote.png);
+    background-image: url(/Assets/Images/quote.png);
     background-size: 22%;
     background-repeat: no-repeat;
     background-position: center;
