@@ -737,6 +737,12 @@ width: 90%;
         font-size: 14px;
         text-align: center;
     }
+    .center{
+        text-align: center;
+    }
+        .company-text {
+            padding-left: unset;
+        }
 }
 
 /* ----------------------from mobile to tablet ---------------  */
@@ -837,14 +843,16 @@ width: 90%;
         align-items: flex-start;
         justify-content: center;
     }
-
+.center {
+    text-align: center;
+}
     .headingour {
         font-size: 50px;
     }
 
     .ourserviceService {
-        margin-left: 10%;
-        text-align: start;
+        margin-left: unset;
+        text-align: center;
         margin-top: -15px;
         margin-bottom: 0px;
         padding-bottom: 0;
@@ -856,7 +864,7 @@ width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
+        align-items: center;
     }
 
     .ourservicesCaption {
@@ -934,10 +942,11 @@ width: 90%;
     .about-company-section {
         display: flex;
         flex-direction: column;
-        /* flex-direction: row; */
-        justify-content: space-around;
+        justify-content: center;
     }
-
+.company-text {
+    padding-left: unset;
+}
     /* .our-company-tab{
         margin: 0;
         padding: 0;
@@ -1130,7 +1139,7 @@ width: 90%;
     }
 
     #our_project_caption {
-        width: 100%;
+        width: 90%;
         padding-bottom: 20px;
     }
 #our_project_slider_content_caption .slick-dots {
@@ -1192,7 +1201,7 @@ width: 90%;
 
     .portfolio {
         padding: 0;
-        margin-left: 10%;
+        margin-left: unset;
         /* text-align: center; */
     }
 
@@ -1227,9 +1236,11 @@ width: 90%;
         display: flex;
         flex-direction: column;
     }
-
+.client-says {
+    margin-left: unset;
+}
     .testmonial {
-        margin-left: 10%;
+        margin-left:unset;
     }
 
     #test-aside2-caresel .slick-dots {
@@ -1346,11 +1357,15 @@ width: 90%;
         text-align: center;
     }
 }
-
+@media screen and (min-width:501px) and (max-width:770px) {
+    #our_project_caption {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+}
 /* --------------------------------------------------------- from tablet to medium size laptops  */
 @media screen and (min-width:881px) and (max-width:1130px) {
     .section1 {
-        margin: 0 3%;
         height: auto !important;
         padding-bottom: 30px;
     }
@@ -1422,10 +1437,8 @@ width: 90%;
     }
 
     .section2 {
-        margin: 0px 3%;
         padding-bottom: 0px;
         background-color: white;
-        border-bottom: 1px solid black;
         padding-top: 30px;
         overflow: hidden;
     }
@@ -1545,16 +1558,9 @@ width: 90%;
     } */
 
     .section3 {
-        margin: 0px 3%;
         padding-bottom: 20px;
         padding-top: 20px;
         overflow: hidden;
-    }
-
-    .about-company-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
     }
 
     .headingour {
@@ -1671,10 +1677,6 @@ width: 90%;
         padding-right: 20%;
     }
 
-    #ourprojectblock {
-        margin: 0px 3%;
-    }
-
     #slider_contentblock {
         width: 80%;
         height: 650px;
@@ -1691,9 +1693,10 @@ width: 90%;
         right: 155%;
         top: -10px;
     }
-
+#our_project_slider_content_caption .slick-dots {
+    left: 70px;
+}
     .section4 {
-        margin: 0px 3%;
         padding-bottom: 20px;
     }
 
@@ -1710,7 +1713,7 @@ width: 90%;
 
     .portfolio {
         padding: 0;
-        margin-left: 1% !important;
+        margin-left: -5% !important;
         text-align: center;
     }
 
@@ -1735,13 +1738,12 @@ width: 90%;
     }
 
     .our-project-pro {
-        margin-left: 0% !important;
+        margin-left: 25% !important;
     }
 
     .section5 {
         background-color: #fff;
         border-bottom: 1px solid black;
-        margin: 0px 3%;
         padding-top: 30px;
         padding-bottom: 40px;
     }
@@ -1753,14 +1755,13 @@ width: 90%;
     .test-aside2 {
         width: 60%;
     }
-
-    .testmonial {
-        margin-left: 5% !important;
-    }
-
+.testmonial {
+    
+    margin-left: 0 !important;
+}
     .client-says {
+        margin-left: 15%;
         margin-top: 100px;
-        margin-left: -5%;
     }
 
     .our_test_Arrow {
@@ -1870,12 +1871,6 @@ width: 90%;
         background-position-y: 100px;
     }
 
-
-    .section6 {
-        background-color: #fff;
-        margin: 0px 3%;
-    }
-
     .slider-contact {
         object-fit: cover;
         width: 40% !important;
@@ -1910,245 +1905,21 @@ width: 90%;
         font-size: 32px;
     }
 }
-
-@media screen and (min-width:1131px) and (max-width:1430px) {
-    .section1 {
-        margin: 0 3%;
-        height: auto !important;
-        padding-bottom: 30px;
-    }
-
-    .section-background {
-        margin: 0%;
-        height: auto;
-        background-size: cover;
-        border-radius: 50px;
-        padding-bottom: 100px;
-    }
-
-    .section1-heading-text {
-        font-size: 60px;
-        padding-left: 2%;
-    }
-
-    .section1-heading-content {
-        display: block;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-top: 60px;
-    }
-
-    .section1-heading {
-        width: 62%;
-        padding-left: 0;
-    }
-
-    .section1-heading-caption {
-        font-size: 20px;
-        font-weight: 100;
-        letter-spacing: 1px;
-        padding-top: 20px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        padding-left: 2%;
-    }
-
-    .getcontainer {
-        margin-top: 350px;
-    }
-
-    .section1-heading .slick-dots {
-        padding-top: 50px;
-        display: flex;
-        gap: 10px;
-        padding-left: 2%;
-    }
-
-    .section1-heading .slick-dots li button {
-        width: 20px;
-        height: 20px;
-    }
-
-    .section1-heading .slick-dots .slick-active button {
-        width: 60px;
-        height: 20px;
-    }
-
-    .section2 {
-        margin: 0px 3%;
-        padding-bottom: 0px;
-        background-color: white;
-        border-bottom: 1px solid black;
-        padding-top: 30px;
-    }
-
-    .ourservice-section {
-        display: flex !important;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-evenly;
-    }
-.selection-of-materials{
-    width: 50%;
+@media screen and (min-width:881px) and (max-width:1024px) {
+    #our_project_slider_content_caption .slick-dots {
+            left: 30px;
+        }
+                        #slider_contentblock {
+                            width: 70%;
+                        }
 }
-    .section2-ourservices-aside1 {
-        width: 40%;
-    }
-
-    .section2-ourserives-aside2 {
-        width: 60%;
-    }
-
-    .our {
-        font-family: "Microsoft YaHei";
-        font-weight: 500;
-    }
-
-    .headingour {
-        font-size: 50px;
-        font-family: "gallient regular", serif;
-        font-weight: 400;
-    }
-
-    .ourserviceOur {
-        margin-left: 3% !important;
-        font-size: 50px !important;
-        color: black;
-    }
-
-    .ourserviceService {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 0;
-
-        font-size: 50px !important;
-        margin-left: 15% !important;
-        margin-bottom: -20px;
-    }
-
-    .ourservicesCaption {
-        font-size: 20px;
-        margin-left: 10%;
-    }
-
-    .oursercaption {
-        padding-top: 10%;
-        margin-left: 15%;
-    }
-
-    .miniheading {
-        font-size: 30px;
-        margin-left: 15%;
-    }
-
-    .miniheading-caption {
-        font-size: 20px;
-        margin-top: 10px;
-        margin-left: 15%;
-    }
-    .ourService-aside-slider2 .slick_btn {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        background-color: transparent;
-        border: none;
-        color: black;
-        font-size: 16px;
-        font-weight: 900;
-        padding-left: 50px;
-        position: absolute;
-    }
-
-    .ourService-aside-slider2 .next_btn {
-        right: 40px;
-    }
-
-    .ourService-aside-slider2 .prev_btn {
-        bottom: -55px;
-        left: 0px;
-    }
-
-    .ourService-aside-slider2 .slick-dots {
-        top: 16px;
-        left: -10px;
-    }
-
-    .section2-ourserives-aside2 {
-        padding-left: 20px !important;
-    }
-
-    .ourser-images1,
-    .ourser-images2 {
-        width: 48%;
-        height: 70vh;
-        border-radius: 30px;
-    }
-
-    /* .ourser-images1,
-    .ourser-images2 {
-        height: 150% !important;
-        width: 50%;
-    } */
-
-    .section3 {
-        margin: 0px 3%;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        overflow: hidden;
-    }
-
-    .about-company-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .headingour {
-        font-size: 40px;
-    }
-
-    .ourserviceOur {
-        margin-left: 40px;
-        color: black;
-    }
-
-    .ourcompany-caption {
-        transform: translate(100%, -80px);
-        padding-top: 10px;
-    }
-
-    .aboutcompany-caption {
-        padding-right: 0px;
-        margin-left: 0%;
-        font-size: 16px;
-    }
-
-    .aboutcompany-aside1 {
-        padding-left: 10%;
-        padding-top: 10px;
-    }
-
-    .aboutcompany-text {
-        font-size: 25px;
-    }
-
+@media screen and (min-width:1131px) and (max-width:1430px) {
+    
     .aboutcompany-block {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 2% 0px 0px 0%;
-    }
-
-    .aboutcompany-text {
-        font-size: 30px;
-    }
-
-    .about-text-caption {
-        font-size: 16px;
     }
 
     .aboutcompanyaside1-card1,
@@ -2221,11 +1992,6 @@ width: 90%;
         padding-right: 20%;
     }
 
-    #ourprojectblock {
-        margin: 0px 3%;
-
-    }
-
     #slider_contentblock {
         width: 80%;
         height: 650px;
@@ -2242,23 +2008,16 @@ width: 90%;
         right: 155%;
         top: -10px;
     }
-
-    .section4 {
-        margin: 0px 3%;
-        padding-bottom: 20px;
-    }
-
+#our_project_slider_content_caption .slick-dots {
+    position: relative;
+    left: 80px;
+    display: flex;
+    gap: 3px;
+}
     .ourportimage1 {
         width: 100%;
         padding: 0% 2%;
     }
-
-    .ourport-caption {
-        padding-top: 50px;
-        text-align: start;
-        font-size: 20px;
-    }
-
     .portfolio {
         padding: 0;
         margin-left: -15% !important;
@@ -2268,33 +2027,13 @@ width: 90%;
     .our-port-section1 {
         width: 40%;
     }
-
     .our_port_Arrow {
         padding-top: 100px;
-        padding-left: 15%;
-    }
-
-    .our-port-section2 {
-        width: 60%;
-        margin-right: 2%;
-        justify-content: space-between;
-        padding-top: 20px;
+        /* padding-left: 15%; */
     }
 
     .our-project-our {
         margin-left: -40% !important;
-    }
-
-    .our-project-pro {
-        margin-left: -15% !important;
-    }
-
-    .section5 {
-        background-color: #fff;
-        border-bottom: 1px solid black;
-        margin: 0px 3%;
-        padding-top: 30px;
-        padding-bottom: 40px;
     }
 
     .test-aside1 {
@@ -2303,20 +2042,6 @@ width: 90%;
 
     .test-aside2 {
         width: 60%;
-    }
-
-    .testmonial {
-        margin-left: 5% !important;
-    }
-
-    .client-says {
-        margin-top: 100px;
-        margin-left: -5%;
-    }
-
-    .our_test_Arrow {
-        padding-top: 100px;
-        padding-left: 15%;
     }
 
     .section5-block {
@@ -2422,11 +2147,6 @@ width: 90%;
     }
 
 
-    .section6 {
-        background-color: #fff;
-        margin: 0px 3%;
-    }
-
     .slider-contact {
         object-fit: cover;
         width: 40% !important;
@@ -2470,77 +2190,8 @@ width: 90%;
         font-size: 32px;
     }
 }
-@media screen and (min-width:1131px) and (max-width:1430px) {
-    .ourserviceOur {
-            margin-left: 20px !important;
-        }
-                .about-text {
-                    margin-left: -80px !important;
-                }
-                                .our-project-our {
-                                    margin-left: -70px !important;
-                                }
-}
-@media screen and (min-width:1431px) and (max-width:1518px) {
 
-    .section1-heading-text {
-        font-size: 64px;
-        padding-left: 2%;
-    }
 
-    .section1-heading-content {
-        display: block;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding-bottom: 10px;
-        padding-left: 50px;
-        padding-top: 60px;
-    }
-
-    .section1-heading {
-        width: 62%;
-        padding-left: 0;
-    }
-
-    .section1-heading-caption {
-        font-size: 20px;
-        font-weight: 100;
-        letter-spacing: 1px;
-        padding-top: 20px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        padding-left: 2%;
-    }
-
-    /* 
-    .getcontainer {
-        justify-content: start;
-        text-align: end;
-        margin-top: 0px;
-        padding-right: 110px;
-        padding-top: 20px;
-        height: 50px;
-    } */
-
-    .section1-heading .slick-dots {
-        padding-top: 50px;
-        display: flex;
-        gap: 10px;
-        padding-left: 2%;
-    }
-
-    .section1-heading .slick-dots li button {
-        width: 20px;
-        height: 20px;
-    }
-
-    .section1-heading .slick-dots .slick-active button {
-        width: 60px;
-        height: 20px;
-    }
-}
 
 /* -------------------from 15 inchs to large screen------------ */
 @media screen and (min-width:1550px) and (max-width:1822px) {
@@ -2616,9 +2267,11 @@ width: 90%;
     }
 
     .our-project-pro {
-        margin-left: 39%;
+        margin-left: 20%;
     }
-
+.company-text {
+    padding-left: 10%;
+}
     .section3 {
         margin: 0px 10%;
         /* overflow: hidden; */
@@ -2635,10 +2288,17 @@ width: 90%;
     }
 
     #our_project_slider_content_caption .prev_btn {
-        right: 195%;
+        right: 175%;
         top: -10px;
     }
-
+.our_project_caption_text {
+    text-align: center;
+    /* transform: translate(25%); */
+    font-size: 20px;
+}
+#our_project_slider_content_caption .slick-dots {
+    left: 120px;
+}
     .section4 {
         margin: 0px 10%;
         /* overflow: hidden; */

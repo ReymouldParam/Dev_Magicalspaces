@@ -1,28 +1,8 @@
-@font-face {
-    font-family: "Gallient Regular";
-    src: url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.eot");
-    src: url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.svg#Gallient Regular")format("svg");
-}
-
-@font-face {
-    font-family: "Microsoft YaHei";
-    src: url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot");
-    src: url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.svg#Microsoft YaHei")format("svg");
-}
 
 .section1 {
     background-color: #fff;
     border-bottom: 0.5px solid black;
     padding: 1%;
-    margin: 0px 3%;
     padding-bottom: 30px;
 }
 
@@ -31,7 +11,6 @@
     border-radius: 50px;
     height: fit-content;
     padding-bottom: 50px;
-    margin: 0px 1%;
     transition: all 1s linear;
 }
 
@@ -40,7 +19,7 @@
 }
 
 .section-background.bgcimage2 {
-        background-image: url(/Assets/Images/banner-img/banner-img3.webp);
+    background-image: url(/Assets/Images/banner-img/banner-img3.webp);
 }
 
 .section-background.bgcimage3 {
@@ -49,7 +28,7 @@
 
 
 .section-background.bgcimage4 {
-        background-image: url(/Assets/Images/banner-img/banner-img2.webp);
+    background-image: url(/Assets/Images/banner-img/banner-img2.webp);
 }
 
 .section1-heading {
@@ -80,7 +59,7 @@
 
 .section1-heading-caption {
     color: white;
-    font-family: "Microsoft YaHei";
+    font-family: var(--font2);
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 1.5px;
@@ -139,7 +118,7 @@
 #getInTouch {
     text-decoration: none;
     color: white;
-    font-family: "Microsoft YaHei";
+    font-family: var(--font2);
     font-size: 20px;
     font-weight: 400;
     position: relative;
@@ -191,11 +170,11 @@
 
 /* --------------------------------------Our Services----------- */
 .section2 {
-    margin: 0px 3%;
+    padding: 30px 1%;
     /* padding-bottom: 0px; */
     background-color: white;
     border-bottom: 1px solid black;
-    padding-top: 30px;
+    
     /* overflow: hidden !important; */
 }
 
@@ -203,7 +182,7 @@
     display: flex !important;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .section2-ourservices-aside1 {
@@ -211,40 +190,31 @@
 }
 
 .section2-ourserives-aside2 {
-    width: 64%;
-    padding-left: 3%;
-    padding-left: 2%;
+    width: 61%;
 }
 
 .our {
-    font-family: "Microsoft YaHei";
+    font-family: var(--font2);
     font-weight: 500;
 }
 
-.headingour {
-    font-size: 60px;
-    font-family: "gallient regular", serif;
-    font-weight: 400;
-}
-
 .ourserviceOur {
-    margin-left: 5%;
+    /* margin-left: 5%; */
     color: black;
 }
 
 .ourserviceService {
-    color: #51372A;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 15px;
     padding-top: 0;
-    margin-left: 21%;
+    margin-left: 10%;
     margin-bottom: -20px;
 }
 
 .ourservicesCaption {
     font-size: 20px;
-    margin-left: 21%;
+    margin-left: 10%;
 }
 
 .oursercaption {
@@ -252,16 +222,16 @@
 }
 
 .miniheading {
-    color: #51372A;
+    color: var(--brown-color);
     font-size: 36px;
     /* padding-top: 50px; */
-    margin-left: 21%;
+    margin-left: 10%;
 }
 
 .miniheading-caption {
     font-size: 20px;
     margin-top: 10px;
-    margin-left: 21%;
+    margin-left: 10%;
 }
 
 .our-service-slider {
@@ -269,11 +239,13 @@
     /* display: flex;
     flex-direction: row; */
 }
-.text-arrow-block{
+
+.text-arrow-block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 /* .our_ser_Arrow {
     padding-left: 450px !important;
     transform: translateY(-150px);
@@ -317,7 +289,7 @@
     border-radius: 10px;
     position: absolute;
     top: 16px;
-    left: 0px;
+    left: -10px;
     /* transform: translateY(-517px); */
     background-color: #D9D9D9;
     gap: 0px;
@@ -344,22 +316,18 @@
     font-size: 5px;
 }
 
-.section2-ourserives-aside2 {
-    padding-right: 20px !important;
-}
-
 /*   section part 2*/
 .ourservices-images {
     /* overflow: hidden !important; */
     display: flex !important;
     flex-direction: row !important;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 
 .ourser-images1,
 .ourser-images2 {
-    width: 45%;
+    width: 48%;
     height: 70vh;
     border-radius: 30px;
 }
@@ -368,7 +336,7 @@
 .section3 {
     background-color: #fff;
     border-bottom: 1px solid black;
-    margin: 0px 3%;
+    padding: 1%;
     padding-bottom: 30px;
     padding-top: 30px;
     overflow: hidden;
@@ -378,8 +346,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
+.company-text{
+    padding-left: 7%;
+}
 #aboutCompanyline {
     padding-left: 160px;
     margin-bottom: 10px !important;
@@ -390,18 +361,9 @@
 }
 
 .aboutcompany-caption {
-    padding-top: 40px;
-    padding-left: 5%;
-    margin-left: 0;
-}
-
-.ourcompany-caption {
-    padding-left: 100px;
-}
-
-.our_com_Arrow {
-    padding-right: 100px;
-    padding-top: 20px;
+    /* padding-top: 40px; */
+    /* padding-left: 5%; */
+    /* margin-left: 0; */
 }
 
 .aboutcompany-block {
@@ -454,7 +416,7 @@
 
 .aboutcompany-text,
 .about-text-caption {
-    font-family: "Microsoft YaHei";
+    font-family: var(--font2);
     font-size: 36px;
     font-weight: 400;
 }
@@ -503,10 +465,6 @@
     margin-left: 10%;
 }
 
-.about-text {
-    margin-left: 10%;
-}
-
 .our-company-text {
     margin-left: 36%;
 }
@@ -517,17 +475,11 @@
 #ourprojectblock {
     background-color: white;
     border-bottom: 1px solid black;
-    /* border: 2px solid red; */
-    margin: 0 3%;
-    padding: 30px 0 40px;
-}
-
-.our-project-our {
-    margin-left: 8%;
+    padding: 1%;
 }
 
 .our-project-pro {
-    margin-left: 38%;
+    margin-left: 18%;
 }
 
 #ourproject {
@@ -537,14 +489,8 @@
     top: 20px;
 }
 
-#ourProjectOur {
-    font-family: "gallient regular", serif;
-    font-weight: 400;
-    font-size: 70px;
-}
-
 #ourProjectProject {
-    font-family: "gallient regular", serif;
+    font-family: var(--font1);
     font-weight: 400;
     font-size: 70px;
     position: relative;
@@ -552,15 +498,6 @@
     color: rgb(74, 21, 21);
 }
 
-#ourprojectText {
-    color: black;
-    position: relative;
-    top: 71px;
-    left: 55px;
-    font-family: "Microsoft YaHei";
-    font-weight: 400;
-    font-size: 20px;
-}
 
 #ourprojectArrow {
     border-radius: 50%;
@@ -582,14 +519,11 @@
     width: 70%;
     height: 650px;
     margin: auto;
-    /* border: 2px solid black; */
     overflow: hidden;
 }
 
 #slider_content {
     width: 100%;
-    /* height: inherit; */
-    /* border: 2px solid blue; */
     padding: 90px 0 0;
 }
 
@@ -617,9 +551,6 @@
     z-index: 10;
     position: relative;
     width: 200px !important;
-    /* height: 650px; */
-    /* position: relative;
-    top: 30px; */
 }
 
 .small_slides {
@@ -646,20 +577,20 @@
 }
 
 #our_project_slider_content_caption .next_btn {
-    left: 170%;
+    left: 175%;
     top: -10px;
     cursor: pointer !important;
 }
 
 #our_project_slider_content_caption .prev_btn {
-    right: 185%;
+    right: 175%;
     top: -10px;
     cursor: pointer !important;
 }
 
 #our_project_slider_content_caption .slick-dots {
     position: relative;
-    left: 85px;
+    left: 100px;
     display: flex;
     gap: 3px;
 }
@@ -710,7 +641,7 @@
 }
 
 .our_project_caption_text {
-    font-family: "Microsoft YaHei";
+    font-family: var(--font2);
     text-align: center;
     font-weight: 400;
     font-size: 18px;
@@ -723,13 +654,14 @@
 .section4 {
     background-color: #fff;
     border-bottom: 1px solid black;
-    margin: 0px 3%;
-    padding-bottom: 60px;
+    padding: 1%;
+    padding-bottom: 30px;
     padding-top: 30px;
 }
 
 .our-port-section {
     display: flex;
+    justify-content: space-between;
 }
 
 #aboutportline {
@@ -744,21 +676,17 @@
 
 .ourport-caption {
     padding-top: 50px;
-    margin-left: 19%;
+    margin-left: 10%;
 }
 
 .our_port_Arrow {
     padding-top: 200px;
-    padding-left: 19%;
+    padding-left: 10%;
 }
 
-.portfolio {
-    margin-left: 19%;
-}
 
 .our-port-section2 {
     width: 60%;
-    margin-right: 2%;
     display: flex;
     flex-direction: row;
     padding-left: 53px;
@@ -790,31 +718,30 @@
 .section5 {
     background-color: #fff;
     border-bottom: 1px solid black;
-    margin: 0px 3%;
+    padding: 1%;
     padding-top: 30px;
     padding-bottom: 40px;
 }
 
 .test-aside1 {
     width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .test-aside2 {
     width: 57%;
 }
-
-.testmonial {
-    margin-left: 5% !important;
+.testmonial{
+    margin-left: 0;
 }
-
 .client-says {
-    margin-left: -10%;
-    padding-top: 5%;
+    margin-left: 9%;
 }
 
 .our_test_Arrow {
-    padding-top: 100px;
-    padding-left: 17%;
+    padding-left: 9%;
 }
 
 .section5-block {
@@ -948,7 +875,7 @@
 /* ------------------------------------------contact page----------------------- */
 .section6 {
     background-color: #fff;
-    margin: 0px 3%;
+    padding: 1%;
     padding-bottom: 10px;
 }
 
@@ -979,7 +906,7 @@
 
 .footer-images {
     width: 100%;
-    height: 70vh;
+    height: 69vh;
     border-radius: 40px;
 }
 
@@ -989,7 +916,7 @@
 }
 
 .form-heading {
-    font-family: "Microsoft YaHei";
+    font-family: var(--font2);
     font-weight: 700;
     font-size: 32px;
     color: #E2DDD0;
@@ -997,7 +924,7 @@
 
 .form-caption {
     color: #E2DDD0;
-    font-family: "Montserrat";
+    font-family: var(--font2);
     font-size: 16px;
     font-weight: 400;
     padding-top: 5px;
@@ -1005,7 +932,7 @@
 
 .label1 {
     color: #E2DDD0;
-    font-family: "Montserrat";
+    font-family: var(--font2);
     font-size: 16px;
 }
 
@@ -1017,7 +944,7 @@
     color: white;
     background: transparent;
     border: 1.2px solid #E2DDD0;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font2);
     font-size: 16px;
 }
 
@@ -1056,7 +983,7 @@
 #formpre {
     position: relative;
     top: -15px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font2);
     font-size: 16px;
     color: #E2DDD0;
 }
@@ -1099,14 +1026,14 @@
 
 #mail-message {
     color: white;
-    font-family: "gallient regular", serif;
+    font-family: var(--font1);
     font-size: 40px;
     font-weight: 200;
 }
 
 #mail-message-caption {
     color: white;
-    font-family: "Microsoft YaHei";
+    font-family: var(--font2);
 }
 
 .close {

@@ -1,0 +1,167 @@
+.section1 {
+    padding: 1% 7% 2%;
+}
+
+.section1-parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section1 .mini-container1 {
+    width: 42%;
+}
+
+.section1 .mini-container2 {
+    width: 47%;
+}
+
+.image-container {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-heading {
+    font-size: 30px;
+    font-family: var(--font2);
+    font-weight: 400;
+}
+
+.fullName {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border: 1px solid black;
+    font-family: var(--font2);
+}
+
+.fullName::placeholder {
+    font-family: var(--font2);
+    font-size: 16px;
+}
+
+form {
+    padding-top: 10px;
+}
+
+.label1 {
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+
+.send {
+    width: 25%;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.send i {
+    padding-left: 5px;
+    font-size: 18px;
+    transform: translateY(3px) rotate(-45deg);
+}
+
+.comment {
+    padding-top: 10px;
+    height: 80px;
+}
+
+/*********** section2 */
+.section2 {
+    padding: 0% 0 0% 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E2DDD04A;
+    ;
+}
+
+.section2-mini-block1 {
+    width: 42%;
+}
+
+.section2-mini-block2 {
+    width: 51%;
+}
+
+.socialmedia-section-parent {
+    padding-top: 20px;
+}
+
+.socialmedia-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.icon-block {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: var(--brown-color);
+    overflow: hidden;
+}
+
+.location {
+    height: 40px;
+    width: 40px;
+    padding-left: 18px;
+}
+
+.adderss-text-block {
+    width: 90%;
+}
+
+.socialmedia-section i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.section2-image-block {
+    width: 100%;
+    border-radius: 40px 0 0 40px;
+    overflow: hidden;
+}
+
+.section2-image {
+    width: 100%;
+    height: auto;
+}
+
+/********************** section3 */
+.section3 {
+    padding: 2% 0;
+}
+
+.cards {
+    padding-left: 10px;
+}
+
+.scrolling-image-block {
+    width: 100%;
+    height: auto;
+}
+
+.scrolling-image {
+    width: 100%;
+    height: 100%;
+}

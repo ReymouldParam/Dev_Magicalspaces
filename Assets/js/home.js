@@ -238,13 +238,11 @@ $('#our_project_slider_content_caption').slick({
     autoplaySpeed: 5000,
     responsive: [
         {
-            // breakpoint: 768,
-            // settings: {
-            //     arrows: false,
-            //     centerMode: true,
-            //     centerPadding: '0px',
-            //     slidesToShow: 5
-            // }
+            breakpoint: 880,
+            settings: {
+                arrows: false,
+                dots: false                
+            }
         },
         {
             // breakpoint: 480,
