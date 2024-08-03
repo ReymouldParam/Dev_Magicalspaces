@@ -45,9 +45,17 @@ body {
     position: relative;
 }
 
-.heading-font {
+.heading-font1 {
     font-size: 60px;
     font-family: var(--font1);
+    color: var(--brown-color);
+    font-weight: 400;
+}
+
+.heading-font2 {
+    font-size: 60px;
+    font-family: var(--font1);
+    color: var(--black-color);
     font-weight: 400;
 }
 
@@ -57,15 +65,45 @@ body {
     font-weight: 400;
 }
 
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    .heading-font1 {
+        font-size: 45px;
+        font-family: var(--font1);
+        color: var(--brown-color);
+        font-weight: 400;
+    }
+
+    .heading-font2 {
+        font-size: 45px;
+        font-family: var(--font1);
+        color: var(--black-color);
+        font-weight: 400;
+    }
+
+    .para {
+        font-size: 20px;
+        font-family: var(--font2);
+        font-weight: 400;
+    }
+
+}
+
+/* General Styles for Navbar */
 .navbar {
     background-color: #000000;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 2%;
+    /* Adjust for toggler alignment */
+    padding: 1%;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    position: fixed;
+    top: 0;
+    width: 92%;
+    /* Full width for the navbar */
+    z-index: 1000;
 }
 
 .logo {
@@ -74,7 +112,14 @@ body {
     font-family: "Microsoft YaHei";
     font-weight: 400;
 }
-
+.logo-container{
+    width:auto;
+    height:auto;
+}
+.logo-icon{
+    width:100%;
+    height: 60px;
+}
 .nav-item {
     font-family: "Microsoft YaHei";
     font-size: 17px;
@@ -83,14 +128,14 @@ body {
     list-style-type: none;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .ul-align {
     display: flex;
     gap: 50px;
-}
-
-.anchor {
-    text-decoration: none;
-    color: #ffffff;
 }
 
 .icons-align {
@@ -103,6 +148,104 @@ body {
     height: 40px;
 }
 
+/* Toggler Button Styles */
+.toggler {
+    display: none;
+    /* Hidden by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    z-index: 1001;
+    /* Ensure it is above other elements */
+}
+
+.toggler-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #ffffff;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* smaller laptop screens */
+
+@media screen and (min-width:1020px) and (max-width:1280px) {
+    .navbar {
+        width: 90%;
+        background-color: #000000;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        /* Adjust for toggler alignment */
+        padding: 2%;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+    .global-section {
+        margin: 0;
+    }
+
+    .heading-font1 {
+        margin-top: 15%;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .ul-align {
+        display: none;
+        /* Hide menu by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 60px;
+        /* Adjust according to navbar height */
+        left: 0;
+        padding: 10px 0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        gap: 0;
+    }
+
+    .ul-align.active {
+        display: flex;
+        /* Show menu when active */
+    }
+
+    .nav-item {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .toggler {
+        display: block;
+        /* Show toggler on mobile */
+    }
+
+    .toggler-icon.open {
+        transform: rotate(45deg);
+        background: transparent;
+    }
+}
+
+/* Transition for the menu */
+.ul-align {
+    transition: max-height 0.3s ease-out;
+}
+
 /* ********** footer */
 footer {
     padding: 0 5% 1% 7%;
@@ -113,9 +256,15 @@ footer {
 }
 
 .footer-text {
-    font-size: 16px;
+    font-size: 20px;
     font-family: var(--font2);
-    color: var(--brown-color);
+    font-weight: 400;
+}
+
+@media screen and (max-width:550px) {
+    .footer-text {
+        font-size: 12px;
+    }
 }
 
 .footer-blocks {
@@ -162,6 +311,127 @@ footer {
 .licience-text {
     text-align: center;
     font-size: 10px;
+    font-family: var(--font2);
+    font-weight: 400;
+}
+
+@media screen and (min-width:1020px) and (max-width:1280px) {
+    .footer-text {
+        font-size: 20px;
+        font-family: var(--font2);
+        font-weight: 400;
+    }
+
+}
+/* large */
+@media screen and (min-width: 1600px) {
+    footer {
+        padding: 0 7% 3% 8%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-text {
+        font-size: 24px; /* Increased font size for larger screens */
+    }
+
+    .footer-blocks {
+        height: 120px; /* Adjusted height for larger screens */
+        padding-left: 15px; /* Added padding for better spacing */
+    }
+
+    .footer-blocks1, .footer-blocks2 {
+        width: auto; /* Adjust width to better fit larger screens */
+    }
+
+    .footer-logo-block {
+        width: 70%; /* Adjust width for better layout on larger screens */
+    }
+
+    .footer-icon-block {
+        width: 50px; /* Increased width for larger icons */
+    }
+
+    .footer-icon-block i {
+        font-size: 24px; /* Increased icon font size */
+    }
+
+    .licience {
+        border-top: 2px solid black; /* Adjusted border thickness */
+        padding: 10px; /* Added padding for better spacing */
+    }
+
+    .licience-text {
+        font-size: 12px; /* Increased font size for larger screens */
+    }
+}
+
+
+/* mobile view  */
+@media screen and (max-width: 550px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        /* padding: 10px; */
+    }
+
+    .footer-blocks {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        border-left: none;
+        border-bottom: 1px solid var(--brown-color);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-blocks:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-logo-block {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 30%;
+        /* Adjust as needed */
+    }
+
+    .footer-icon-block {
+        width: 30px;
+    }
+
+    .footer-icon-block i {
+        font-size: 16px;
+    }
+
+    .footer-blocks1,
+    .footer-blocks2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.licience {
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+.licience-text {
+    text-align: center;
+    font-size: 20px;
     font-family: var(--font2);
     font-weight: 400;
 }

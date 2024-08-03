@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Gallient Regular";
     src: url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.eot");
     src: url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.eot?#iefix")format("embedded-opentype"),
@@ -8,7 +8,7 @@
         url("https://db.onlinewebfonts.com/t/ecce6fb92d2957e8e04867dc281f666b.svg#Gallient Regular")format("svg");
 }
 
-/* @font-face {
+@font-face {
     font-family: "Microsoft YaHei";
     src: url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot");
     src: url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.eot?#iefix")format("embedded-opentype"),
@@ -17,6 +17,8 @@
         url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.ttf")format("truetype"),
         url("https://db.onlinewebfonts.com/t/e63653407669814f5b0eb9bbdc175f77.svg#Microsoft YaHei")format("svg");
 } */
+
+
 * {
     padding: 0;
     margin: 0;
