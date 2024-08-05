@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+}
+
+.section1 {
+    width: 100%;
+}
+
+.project-list-align {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    gap: 35%;
+}
+
+.img-container {
+    width: 80%;
+}
+
+.images-in-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+.numeric-para {
+    font-family: "Microsoft YaHei";
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+}
+
+.head-para {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.numeric-para2 {
+    font-family: "Microsoft YaHei";
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    width: 50%;
+}
+
+.project-images-alignment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-container img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.interiors-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(139, 69, 19, 0.8);
+    color: white;
+    padding: 16px;
+    transform: translateY(100px);
+    opacity: 0;
+    width: 90%;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.interiors-card.show {
+    transform: translateY(0);
+    opacity: 0.8;
+    border-radius: 22px;
+}

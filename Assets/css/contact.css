@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 8%;
 }
 
 .section1 .mini-container1 {
@@ -17,7 +18,7 @@
 }
 
 .image-container {
-    width: 100%;
+    width: 90%;
     height: 70vh;
     object-fit: cover;
     border-radius: 20px;
@@ -80,6 +81,267 @@ form {
     height: 80px;
 }
 
+.label1 {
+    color:
+        #141414;
+    font-family: var(--font2);
+    font-size: 20px;
+}
+
+/* smaller screen */
+@media screen and (min-width:1600px) {
+    .section1 {
+        padding: 1% 7% 2%;
+    }
+
+    .section1-parent-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 8%;
+    }
+
+    .section1 .mini-container1 {
+        width: 42%;
+    }
+
+    .section1 .mini-container2 {
+        width: 47%;
+    }
+
+    .image-container {
+        width: 90%;
+        margin: auto;
+        height: 55vh;
+        object-fit: cover;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .form-heading {
+        font-size: 30px;
+        font-family: var(--font2);
+        font-weight: 400;
+    }
+
+    .fullName {
+        width: 90%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        border: 1px solid black;
+        font-family: var(--font2);
+    }
+
+    .fullName::placeholder {
+        font-family: var(--font2);
+        font-size: 16px;
+    }
+
+    form {
+        padding-top: 10px;
+    }
+
+    .label1 {
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+
+    .send {
+        width: 25%;
+        cursor: pointer;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+
+    .send i {
+        padding-left: 5px;
+        font-size: 18px;
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+    .comment {
+        padding-top: 10px;
+        height: 80px;
+    }
+
+    .label1 {
+        color:
+            #141414;
+        font-family: var(--font2);
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    .section1 {
+        padding: 1% 7% 2%;
+    }
+
+    .section1-parent-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 8%;
+    }
+
+    .section1 .mini-container1 {
+        width: 42%;
+    }
+
+    .section1 .mini-container2 {
+        width: 47%;
+    }
+
+
+    .form-heading {
+        font-size: 30px;
+        font-family: var(--font2);
+        font-weight: 400;
+        margin-top: 8%;
+    }
+
+    .fullName {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        border: 1px solid black;
+        font-family: var(--font2);
+    }
+
+    .image-container {
+        width: 90%;
+        height: 49vh;
+        object-fit: cover;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 10%;
+    }
+
+    .fullName::placeholder {
+        font-family: var(--font2);
+        font-size: 16px;
+    }
+
+    form {
+        padding-top: 10px;
+    }
+
+    .label1 {
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+
+    .send {
+        width: 25%;
+        cursor: pointer;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+
+    .send i {
+        padding-left: 5px;
+        font-size: 18px;
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+    .comment {
+        padding-top: 10px;
+        height: 80px;
+    }
+
+    .label1 {
+        color:
+            #141414;
+        font-family: var(--font2);
+        font-size: 20px;
+    }
+
+}
+
+/* mobile view  */
+@media only screen and (max-width: 768px) {
+    .section1 {
+        padding: 2% 5%;
+        padding-top: 20%;
+    }
+
+    .section1-parent-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .section1 .mini-container1,
+    .section1 .mini-container2 {
+        width: 100%;
+    }
+
+    .form-heading {
+        font-size: 24px;
+        text-align: center;
+        /* Reduced font size for mobile */
+    }
+
+    .para {
+        font-size: 20px;
+        font-family: var(--font2);
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .fullName {
+        height: 40px;
+        /* Adjust height for better mobile usability */
+        font-size: 16px;
+        width: 94%;
+        /* Slightly smaller font size for mobile */
+    }
+
+    .fullName::placeholder {
+        font-size: 14px;
+        /* Adjust placeholder font size */
+    }
+
+    .send {
+        width: 100%;
+        /* Full width for mobile view */
+        font-size: 16px;
+        /* Slightly smaller font size for mobile */
+    }
+
+    .send i {
+        font-size: 16px;
+        /* Adjust icon size */
+    }
+
+    .comment {
+        height: 100px;
+        /* Adjust height for better fit */
+        font-size: 16px;
+        /* Slightly smaller font size for mobile */
+    }
+
+    .label1 {
+        font-size: 16px;
+        /* Adjust font size for mobile view */
+    }
+}
+
 /*********** section2 */
 .section2 {
     padding: 0% 0 0% 7%;
@@ -89,10 +351,7 @@ form {
     align-items: center;
     background-color: #E2DDD04A;
     ;
-}
-
-.section2-mini-block1 {
-    width: 42%;
+    overflow: hidden;
 }
 
 .section2-mini-block2 {
@@ -140,11 +399,98 @@ form {
     width: 100%;
     border-radius: 40px 0 0 40px;
     overflow: hidden;
+    animation: slideFromTop 2.5s linear forwards;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.section2-mini-block1 {
+    width: 42%;
+    opacity: 0;
+    animation: appearAndSlideFromBottomLeft 4s 1s ease forwards;
 }
 
 .section2-image {
     width: 100%;
     height: auto;
+}
+
+@media screen and (min-width:1600px) {
+    .section2 {
+        padding-left: 8%;
+    }
+}
+
+/* mobile view  */
+@media only screen and (max-width: 768px) {
+    .section2 {
+        padding: 5% 5%;
+        /* Adjust padding for mobile */
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center-align items */
+    }
+
+    .section2-mini-block2,
+    .section2-mini-block1 {
+        width: 100%;
+        /* Full width for mobile view */
+    }
+
+    .socialmedia-section {
+        flex-direction: column;
+        /* Stack social media icons vertically */
+        align-items: center;
+        /* Center-align icons */
+        gap: 10px;
+        /* Reduced gap for mobile */
+    }
+
+    .icon-block {
+        height: 30px;
+        /* Adjust height for mobile */
+        width: 30px;
+        /* Adjust width for mobile */
+        padding-top: 10px;
+        /* Adjust padding for mobile */
+        padding-left: 10px;
+        /* Adjust padding for mobile */
+    }
+
+    .location {
+        height: 30px;
+        /* Adjust height for mobile */
+        width: 30px;
+        /* Adjust width for mobile */
+        padding-left: 10px;
+        /* Adjust padding for mobile */
+    }
+
+    .adderss-text-block {
+        width: 100%;
+        /* Full width for mobile view */
+        text-align: center;
+        /* Center-align address text */
+    }
+
+    .socialmedia-section i {
+        font-size: 20px;
+        /* Reduced icon size for mobile */
+    }
+
+    .section2-image-block {
+        width: 100%;
+        /* Full width for mobile view */
+        border-radius: 20px;
+        /* Adjust border-radius for mobile */
+        animation: slideFromTop 2.5s linear forwards;
+    }
+
+    .section2-image {
+        height: auto;
+        /* Maintain aspect ratio */
+    }
 }
 
 /********************** section3 */
