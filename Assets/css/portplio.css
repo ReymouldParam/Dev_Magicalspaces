@@ -89,3 +89,142 @@ body {
     opacity: 0.8;
     border-radius: 22px;
 }
+
+/* section4 */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Set the desired height here, e.g., 70% of the viewport height */
+}
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* section5 */
+/* section5(contact from) */
+.section5 {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* margin-bottom: -10%; */
+}
+
+.section6-contactus {
+    padding-top: 0px;
+    width: 100%;
+    margin: auto;
+    margin: 0;
+    margin-top: -15px;
+}
+
+.section-contact {
+    width: 82%;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* border-radius: 40px; */
+    background-image: url(/Assets/Images/form\ bgc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slider-contact {
+    width: 40% !important;
+    height: 500px;
+    object-fit: cover;
+}
+
+.footer-image-container {
+    width: 100%;
+}
+
+.footer-images {
+    width: 100%;
+    height: 69vh;
+    border-radius: 40px;
+    margin-top: 2%;
+}
+
+.form-container {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.form-heading {
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: 32px;
+    color: #E2DDD0;
+}
+
+.form-caption {
+    color: #E2DDD0;
+    font-family: var(--font2);
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.label1 {
+    color: #E2DDD0;
+    font-family: var(--font2);
+    font-size: 20px;
+}
+
+.fullName {
+    width: 570px;
+    /* height: 52px; */
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    background: transparent;
+    border: 1.2px solid #E2DDD0;
+    font-family: var(--font2);
+    font-size: 18px;
+}
+
+.form-block {
+    padding-top: 20px;
+}
+
+.fullName::placeholder {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.comment {
+    width: 570px;
+    height: 50px;
+    border-radius: 15px;
+    background: transparent;
+    border: 1.2px solid #E2DDD0;
+}
+
+.send {
+    width: 157px;
+    height: 40px;
+    border: 1.5px solid #E2DDD0;
+    border-radius: 15px;
+    background: transparent;
+    color: white;
+    cursor: pointer !important;
+}
+
+#sendimage {
+    position: relative;
+    top: 7px;
+}
+
+#formpre {
+    position: relative;
+    top: -15px;
+    font-family: var(--font2);
+    font-size: 14px;
+    color: #E2DDD0;
+}
+
