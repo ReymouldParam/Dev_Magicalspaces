@@ -115,6 +115,12 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .heading-con{
+        margin-top: 8%;
+    }
+    .numeric-para{
+        font-size:12px;
+    }
     .project-list-align {
         flex-direction: column-reverse;
         align-items: center;
@@ -123,18 +129,18 @@ body {
         gap: 8%;
         margin: auto;
     }
-    
-#project-list {
-   
-    width: auto;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    overflow: hidden;
-    height: 50vh;
-    margin-top: 10%;
 
-}    
+    #project-list {
+        width: auto;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        overflow: hidden;
+        height: 50vh;
+        margin-top: 10%;
+
+    }
+
     .images-in-colum {
         width: 100%;
         padding-top: 30%;
@@ -199,6 +205,11 @@ body {
     line-height: 24px;
     width: 50%;
     text-align: left;
+}
+@media screen and (max-width:550px){
+    .numeric-para2{
+        font-size:12px;
+    }
 }
 
 .image-container2 {
@@ -396,6 +407,7 @@ body {
     font-size: 14px;
     color: #E2DDD0;
 }
+
 /* large screens */
 @media screen and (min-width: 1600px) {
     .section5 {
@@ -410,23 +422,30 @@ body {
     }
 
     .section-contact {
-        width: 75%; /* Adjusted for large screens while maintaining the layout */
+        width: 75%;
+        /* Adjusted for large screens while maintaining the layout */
         height: auto;
         margin: auto;
         padding: 30px;
         display: flex;
         flex-direction: row;
         background-image: url(/Assets/Images/form\ bgc.png);
-        background-size: cover; /* Ensures the background image covers the section */
+        background-size: cover;
+        /* Ensures the background image covers the section */
         background-repeat: no-repeat;
-        background-position: center; /* Center the background image */
-        border-radius: 40px; /* Optional: Add border-radius if needed for design consistency */
+        background-position: center;
+        /* Center the background image */
+        border-radius: 40px;
+        /* Optional: Add border-radius if needed for design consistency */
     }
 
     .slider-contact {
-        width: 45%; /* Adjusted width to fit larger screens */
-        height: 500px; /* Fixed height for consistency */
-        object-fit: cover; /* Ensures images cover their container */
+        width: 45%;
+        /* Adjusted width to fit larger screens */
+        height: 500px;
+        /* Fixed height for consistency */
+        object-fit: cover;
+        /* Ensures images cover their container */
     }
 
     .footer-image-container {
@@ -435,9 +454,11 @@ body {
 
     .footer-images {
         width: 100%;
-        height: 60vh; /* Adjusted height to fit well within the container */
+        height: 60vh;
+        /* Adjusted height to fit well within the container */
         border-radius: 40px;
-        object-fit: cover; /* Ensures images cover their container */
+        object-fit: cover;
+        /* Ensures images cover their container */
     }
 
     .form-container {
@@ -469,7 +490,8 @@ body {
     .fullName,
     .comment {
         width: 100%;
-        max-width: 570px; /* Ensures form fields don't exceed desired width */
+        max-width: 570px;
+        /* Ensures form fields don't exceed desired width */
         border-radius: 15px;
         padding: 15px;
         background: transparent;
@@ -483,7 +505,8 @@ body {
     }
 
     .comment {
-        height: 100px; /* Increased height for better usability on larger screens */
+        height: 100px;
+        /* Increased height for better usability on larger screens */
     }
 
     .send {

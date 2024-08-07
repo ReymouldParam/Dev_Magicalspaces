@@ -198,6 +198,10 @@ body {
 
     .heading-font1 {
         margin-top: 15%;
+        font-size:20px;
+    }
+    .heading-font2{
+        font-size:20px;
     }
 
     .navbar {
