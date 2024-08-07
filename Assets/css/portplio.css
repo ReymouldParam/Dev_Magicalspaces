@@ -2,40 +2,42 @@ body {
     background-color: black;
 }
 
+.section1 {
+    overflow: hidden;
+}
+
 .heading-con {
     padding-top: 10%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
+
 .project-list-align {
-    padding-top: 5%;
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     margin: auto;
     gap: 8%;
     position: relative;
 }
 
 .overview {
-    padding: 10px;
     font-size: 20px;
     font-family: "Microsoft YaHei";
     font-weight: 400;
-    text-decoration: underline;
-    text-decoration-color: var(--brown-color);
+    color: var(--brown-color);
+    padding-bottom: 5%;
 }
 
 #project-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
     width: 80%;
     position: relative;
     z-index: 1;
     cursor: pointer;
     overflow: hidden;
     height: auto;
-   
+    margin-top: 10%;
+
 }
 
 .project-item {
@@ -43,19 +45,25 @@ body {
     font-size: 20px;
     font-family: "Microsoft YaHei";
     font-weight: 400;
-    border-bottom: 1px solid #ccc;
-    transition: background-color 0.3s, transform 0.5s ease-out, opacity 0.5s ease-out;
+    border-bottom: 1px solid black;
+    transition: background-color 1.5s, transform 1.5s ease-out, opacity 1.5s ease-out;
     opacity: 0;
     position: absolute;
-    width: 100%;
+    width: 70%;
+    text-align: left;
 }
+
 .project-item.active {
-   background-color: #E2DDD0;
-    color: var(--brown-color); /* Text color for active item */
+    /* background-color: #E2DDD0; */
+    font-size: 20px;
+    color: var(--brown-color);
+    /* Text color for active item */
     font-weight: bold;
-    border-bottom: 1px solid #ccc;
-    transform: scale(1.05); /* Slightly scale up the active item */
+    /* border-bottom: 1px solid #ccc; */
+    transform: scale(1.05);
+    /* Slightly scale up the active item */
 }
+
 .project-item.visible {
     opacity: 1;
     position: relative;
@@ -79,29 +87,86 @@ body {
     align-items: flex-start;
     transform: translateY(100%);
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+    margin-top: -30%;
 }
 
 .image-container.visible {
-    transform: translateY(0);
+    transform: translateY(-50px);
     opacity: 1;
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    height: 100%;
     display: block;
     margin-top: 10%;
 }
+
 
 .numeric-para {
     font-family: "Microsoft YaHei";
     color: #000000;
     font-size: 20px;
     line-height: 24px;
-    width: 80%;
+    width: 100%;
     text-align: left;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .project-list-align {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        gap: 8%;
+        margin: auto;
+    }
+    
+#project-list {
+   
+    width: auto;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    height: 50vh;
+    margin-top: 10%;
+
+}    
+    .images-in-colum {
+        width: 100%;
+        padding-top: 30%;
+        height: auto;
+        padding-bottom: 5%;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateY(100%);
+        opacity: 0;
+        transition: transform 0.75s ease-out, opacity 0.75s ease-out;
+    }
+
+    .image-container.visible {
+        transform: translateY(0);
+        opacity: 1;
+        position: relative;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 
 /* section2 */
@@ -123,8 +188,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
-    padding: 20px;
+    padding-bottom: 2%;
+    width: 100%;
 }
 
 .numeric-para2 {
@@ -141,6 +206,7 @@ body {
     display: inline-block;
     width: 100%;
     max-width: 400px;
+    margin: 4px;
 }
 
 .image-container2 img {
@@ -160,14 +226,34 @@ body {
     transform: translateY(100px);
     opacity: 0;
     width: 90%;
-    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition: transform 1.6s ease, opacity 1.6s ease;
 }
 
 .interiors-card.show {
     transform: translateY(0);
-    opacity: 0.8;
+    opacity: 0.6;
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
+    background: rgba(48, 21, 3, 0.9);
+    /* Darker background color */
+    backdrop-filter: blur(10px);
+    /* Adjust the blur value as needed */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Optional: Add a border for more definition */
+}
+
+.interior-head {
+    font-family: "Microsoft YaHei";
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.interior-para {
+    font-family: "Microsoft YaHei";
+    color: #ffffff;
+    font-size: 14px;
 }
 
 /* section4 */
@@ -184,6 +270,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 
 /* section5 */
 /* section5(contact from) */
@@ -308,4 +395,273 @@ body {
     font-family: var(--font2);
     font-size: 14px;
     color: #E2DDD0;
+}
+/* large screens */
+@media screen and (min-width: 1600px) {
+    .section5 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section6-contactus {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .section-contact {
+        width: 75%; /* Adjusted for large screens while maintaining the layout */
+        height: auto;
+        margin: auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        background-image: url(/Assets/Images/form\ bgc.png);
+        background-size: cover; /* Ensures the background image covers the section */
+        background-repeat: no-repeat;
+        background-position: center; /* Center the background image */
+        border-radius: 40px; /* Optional: Add border-radius if needed for design consistency */
+    }
+
+    .slider-contact {
+        width: 45%; /* Adjusted width to fit larger screens */
+        height: 500px; /* Fixed height for consistency */
+        object-fit: cover; /* Ensures images cover their container */
+    }
+
+    .footer-image-container {
+        width: 100%;
+    }
+
+    .footer-images {
+        width: 100%;
+        height: 60vh; /* Adjusted height to fit well within the container */
+        border-radius: 40px;
+        object-fit: cover; /* Ensures images cover their container */
+    }
+
+    .form-container {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .form-heading {
+        font-family: var(--font2);
+        font-weight: 700;
+        font-size: 32px;
+        color: #E2DDD0;
+    }
+
+    .form-caption {
+        color: #E2DDD0;
+        font-family: var(--font2);
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 5px;
+    }
+
+    .label1 {
+        color: #E2DDD0;
+        font-family: var(--font2);
+        font-size: 20px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        max-width: 570px; /* Ensures form fields don't exceed desired width */
+        border-radius: 15px;
+        padding: 15px;
+        background: transparent;
+        border: 1.2px solid #E2DDD0;
+        font-family: var(--font2);
+        font-size: 18px;
+    }
+
+    .fullName::placeholder {
+        font-size: 16px;
+    }
+
+    .comment {
+        height: 100px; /* Increased height for better usability on larger screens */
+    }
+
+    .send {
+        width: auto;
+        max-width: 157px;
+        height: 40px;
+        border: 1.5px solid #E2DDD0;
+        border-radius: 15px;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sendimage {
+        width: 20px;
+    }
+
+    #formpre {
+        font-family: var(--font2);
+        font-size: 14px;
+        color: #E2DDD0;
+        padding-top: 25px;
+    }
+}
+
+/* small screens */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .section5 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section6-contactus {
+        width: 100%;
+    }
+
+    .section-contact {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 30px;
+        flex-direction: row;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .slider-contact {
+        width: 40% !important;
+        height: auto;
+        /* Adjust height based on content */
+    }
+
+    .footer-images {
+        width: 100%;
+        height: 400px;
+    }
+
+    .form-container {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        height: 15px;
+    }
+
+    .send {
+        width: auto;
+    }
+
+    #sendimage {
+        position: relative;
+        /* top: 7px; */
+        width: 20px;
+    }
+
+    #formpre {
+        position: relative;
+        top: -15px;
+        font-family: var(--font2);
+        font-size: 14px;
+        color: #E2DDD0;
+    }
+}
+
+/* mobile view  */
+@media (max-width: 767px) {
+    .section5 {
+        padding: 5%;
+        margin-bottom: 0;
+    }
+
+    .section6-contactus {
+        padding-top: 0px;
+    }
+
+    .section-contact {
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 40px;
+    }
+
+    .slider-contact {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .footer-images {
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    .form-heading {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .form-caption {
+        font-size: 12px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+
+    .comment {
+        height: auto;
+        font-size: 12px;
+    }
+
+    .send {
+        width: 30%;
+        height: auto;
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+
+    #sendimage {
+        position: relative;
+        top: 3px;
+        width: 15px;
+    }
+
+    #formpre {
+        position: relative;
+        top: 0;
+        font-size: 12px;
+    }
+
+    /* Mobile view for mail dialog box */
+    .mail-notification-block {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #mail-message {
+        font-size: 24px;
+    }
+
+    #mail-message-caption {
+        font-size: 14px;
+    }
 }
