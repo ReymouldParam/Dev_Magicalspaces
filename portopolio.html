@@ -77,11 +77,10 @@
         </header>
         <section class="section1">
             <div class="heading-con">
-                <h1 class="heading-font2">
-                    Our
-                    <br />
-                    <span class="heading-font1">PROJECTS</span>
+                <h1 class="heading-font2-port">
+                    OUR
                 </h1>
+                <h1 class="heading-font1-port">PROJECTS</h1>
                 <p class="numeric-para">
                     Experience the perfect blend of functionality
                 </p>
@@ -212,12 +211,10 @@
         <section class="section2">
             <div class="head-para">
                 <div>
-                    <h1 class="heading-font2">
-                        Our<br>
-                        <span class="heading-font1">
-                            PORTFOLIO
-                        </span>
+                    <h1 class="heading-font2-port">
+                        OUR
                     </h1>
+                    <h1 class="heading-font1-port portfolio">PORTFOLIO</h1>
                 </div>
                 <p class="numeric-para2">
                     Experience the perfect blend of functionality and elegance
@@ -229,6 +226,7 @@
             </div>
 
             <div class="project-images-alignment">
+                <div class="div-col1">
                 <div class="image-container2">
                     <div>
                         <img src="./Assets/Images/gallary-img1.png" alt="project-image" />
@@ -256,9 +254,11 @@
                         <p class="interior-para">Experience the perfect blend of functionality and elegance</p>
                     </div>
                 </div>
+                </div>
+                <div  class="div-col-middle">
                 <div class="image-container2">
                     <div>
-                        <img src="./Assets/Images/gallery-img3.png" alt="project-image" />
+                        <img src="./Assets/Images/gallery-img3.png" alt="project-image" class="middle-pic1"/>
                     </div>
                     <div class="interiors-card">
                         <h3 class="interior-head">Dining room interior</h3>
@@ -276,13 +276,15 @@
                 </div>
                 <div class="image-container2">
                     <div>
-                        <img src="./Assets/Images/gallery-img5.png" alt="project-image" />
+                        <img src="./Assets/Images/gallery-img5.png" alt="project-image" class="middle-pic2"/>
                     </div>
                     <div class="interiors-card">
                         <h3 class="interior-head">Dining room interior</h3>
                         <p class="interior-para">Experience the perfect blend of functionality and elegance</p>
                     </div>
                 </div>
+                </div>
+                <div  class="div-col1">
                 <div class="image-container2">
                     <div>
                         <img src="./Assets/Images/gallery-img6.png" alt="project-image" />
@@ -310,8 +312,8 @@
                         <p class="interior-para">Experience the perfect blend of functionality and elegance</p>
                     </div>
                 </div>
+                </div>
             </div>
-
         </section>
         <div class="video-container">
             <video autoplay muted loop>
@@ -416,6 +418,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Java Script -->
     <script src="home-page-mail.js"></script>
+    <!-- carousel -->
     <script>
         $('.slider-contact').slick({
             centerMode: true,
@@ -477,6 +480,9 @@ items.forEach((item, index) => {
     });
 });
 
+    </script>
+    <!-- toggler -->
+     <script src="./Assets/about-page.js">
     </script>
 </body>
 

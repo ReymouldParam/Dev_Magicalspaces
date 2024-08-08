@@ -24,3 +24,4 @@
 
 // // Trigger the scroll function on page load in case section2 is already in view
 // window.addEventListener('load', handleScroll);
+

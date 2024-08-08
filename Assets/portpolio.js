@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -11,3 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const interiorsCards = document.querySelectorAll('.interiors-card');
     interiorsCards.forEach(card => observer.observe(card));
 });
+
+
+

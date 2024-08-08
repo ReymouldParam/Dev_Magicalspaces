@@ -27,12 +27,13 @@ window.addEventListener('load', () => {
 
 
 // toggler navbar
-document.addEventListener('DOMContentLoaded', function () {
-    const toggler = document.querySelector('.toggler');
-    const menu = document.querySelector('.ul-align');
-
-    toggler.addEventListener('click', function () {
-        menu.classList.toggle('active');
-        toggler.classList.toggle('open');
+// jQuery for slideToggle effect
+$(document).ready(function() {
+    $(".toggler").click(function() {
+        $(".ul-align").slideToggle("slow");
+        // Toggle class to animate the hamburger icon
+        $(".toggler-icon").toggleClass("open");
     });
 });
+
+

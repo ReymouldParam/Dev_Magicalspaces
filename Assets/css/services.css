@@ -1,0 +1,228 @@
+
+.heading-con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  padding-top: 10%;
+}
+.heading-font1-port {
+    font-size: 60px;
+    font-family: var(--font1);
+    color: var(--brown-color);
+    font-weight: 400;
+    padding-left: 5%;
+}
+
+.heading-font2-port {
+    font-size: 60px;
+    font-family: var(--font1);
+    color: var(--black-color);
+    font-weight: 400;
+    padding-left: 0%;
+}
+.numeric-para {
+    font-family: "Microsoft YaHei";
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    width: 70%;
+    text-align: left;
+}
+.serve-img-align{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    gap:5%;
+}
+
+
+#project-list {
+    list-style: none;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    margin-top: 10%;
+    padding: 0; /* Remove default padding */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project-item {
+    padding: 10px; /* Adjusted padding for better spacing */
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    color: black; /* Set text color to black */
+    background-color: #ffffff; /* Optional: Set a white background */
+    width: auto; /* Ensure full width of the parent container */
+    text-align: left;
+    opacity: 1; /* Ensure the item is visible */
+    position: relative; /* Relative positioning to ensure natural flow */
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Optional: Add hover effect */
+.project-item:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    transform: translateX(5px); /* Slight shift on hover */
+}
+.service-each{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* testimonial */
+.test-aside1 {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test-aside2 {
+    width: 57%;
+}
+.testmonial{
+    margin-left: 0;
+}
+.client-says {
+    margin-left: 9%;
+}
+
+.our_test_Arrow {
+    padding-left: 9%;
+}
+
+.section5-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.test-content {
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 95%;
+    margin: 10px 0px 0 0;
+    padding: 30px 0 0px;
+    background-image: url(/Assets/Images/quote.png);
+    background-size: 22%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 30px;
+}
+
+.test-content-parent {
+    padding: 20px 30px;
+}
+
+.test-content-parent2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 50px 30px;
+}
+
+.test-text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3%;
+    line-height: 23px;
+}
+
+.test-name {
+    margin-top: 100px;
+}
+
+.name-of-person {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.test-image {
+    object-fit: cover;
+}
+
+#test-smile-image {
+    height: 100%;
+}
+
+#test-aside2-caresel .slick_btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 900;
+    padding-left: 0px;
+    position: absolute;
+    left: -80px;
+    top: 300px;
+    cursor: pointer !important;
+}
+
+#test-aside2-caresel .next_btn {
+    left: -82px;
+}
+
+#test-aside2-caresel .prev_btn {
+    left: -153px;
+}
+
+#test-aside2-caresel .slick-dots li {
+    list-style-type: none;
+    width: 50%;
+}
+
+.text-content-parent2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#test-aside2-caresel .slick-dots {
+    width: 95%;
+    /* width: 1200px; */
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: row !important;
+    background-color: #D9D9D9;
+    /* border: 2px solid black; */
+    gap: 0px;
+}
+
+#test-aside2-caresel .slick-dots li button {
+    /* width: 197px; */
+    width: 94%;
+    height: 8px;
+    position: relative;
+    top: -5px;
+    left: 4px;
+    color: transparent;
+    /* color: red; */
+    border-radius: 10px;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 5px;
+    transition: all 1s linear;
+    cursor: pointer !important;
+}
+
+#test-aside2-caresel .slick-dots .slick-active button {
+    /* margin-left: 10px; */
+    /* color: red; */
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    font-size: 5px;
+}

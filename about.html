@@ -28,7 +28,7 @@
             </button>
             <ul class="ul-align">
                 <li class="nav-item">
-                    <a href="." class="nav-link">HOME</a>
+                    <a href="." class="nav-link ">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a href="./about.html" class="nav-link">ABOUT US</a>
@@ -96,11 +96,12 @@
                         <img src="./Assets/Images/about-page-img1.png" alt="about-img1" />
                         <div>
                             <div class="num-para">
-                                <h3 class="numeric-head">
-                                    45+
-                                    <br />
-                                    DESIGN PROJECTS
+                                <h3 id="projects-count" class="numeric-head">
+                                    0
                                 </h3>
+                                <h4 class="numeric-head">
+                                    DESIGN PROJECTS
+                                </h4>
                                 <p class="numeric-para">
                                     Experience the perfect blend of functionality.
                                 </p>
@@ -111,11 +112,12 @@
                         <img src="./Assets/Images/about-page-img2.png" alt="about-img1" />
                         <div>
                             <div class="num-para">
-                                <h3 class="numeric-head">
-                                    45+
-                                    <br />
-                                    DESIGN PROJECTS
+                                <h3 id="employees-count" class="numeric-head">
+                                    0
                                 </h3>
+                                <h4 class="numeric-head">
+                                    EMPLOYEES
+                                </h4>
                                 <p class="numeric-para">
                                     Experience the perfect blend of functionality.
                                 </p>
@@ -126,11 +128,12 @@
                         <img src="./Assets/Images/about-page-img3.png" alt="about-img1" />
                         <div>
                             <div class="num-para">
-                                <h3 class="numeric-head">
-                                    45+
-                                    <br />
-                                    DESIGN PROJECTS
+                                <h3 id="contractors-count" class="numeric-head">
+                                    0
                                 </h3>
+                                <h4 class="numeric-head">
+                                    CONTRACTORS
+                                </h4>
                                 <p class="numeric-para">
                                     Experience the perfect blend of functionality.
                                 </p>
@@ -139,6 +142,7 @@
                     </div>
                 </div>
             </div>
+            
         </section>
         <section class="section2">
             <div class="section2-div-con1">
@@ -323,7 +327,6 @@
             <p class="licience-text">MagicalSpace | © Copyright @ 2024. All Rights Reserved</p>
         </section>
     </div>
-    <script src="./Assets/about-page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -342,6 +345,33 @@
             dots: false,
             autoplaySpeed: 3000,
         });
+    </script>
+    <!-- numbers timer -->
+    <script>
+        function animateCounter(id, start, end, duration) {
+            let range = end - start;
+            let current = start;
+            let increment = end > start ? 1 : -1;
+            let stepTime = Math.abs(Math.floor(duration / range));
+            let obj = document.getElementById(id);
+        
+            let timer = setInterval(function() {
+                current += increment;
+                obj.textContent = current + '+';
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            animateCounter("projects-count", 0, 45, 2000);
+            animateCounter("employees-count", 0, 45, 2000);
+            animateCounter("contractors-count", 0, 45, 2000);
+        });
+        </script>
+        <!-- toggler -->
+    <script src="./Assets/about-page.js">
     </script>
 </body>
 
