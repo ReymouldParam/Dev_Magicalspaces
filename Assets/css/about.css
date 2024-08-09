@@ -102,7 +102,7 @@
 @media screen and (min-width:1024px) and (max-width: 1280px) {
     .section1 {
         width: 85%;
-        padding-top: 8%;
+        padding-top: 10%;
     }
 
     .img-num-div {
@@ -203,7 +203,7 @@
 
 .section2-div-con2 {
     display: flex;
-    width: 82.5%;
+    width: 87.5%;
     justify-content: space-around;
     background-color: rgba(81, 55, 42, 0.09);
     animation: slideFromLeftAndGrow 1s ease-out forwards;

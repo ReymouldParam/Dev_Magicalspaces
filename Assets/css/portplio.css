@@ -1,4 +1,3 @@
-
 .section1 {
     overflow: hidden;
 }
@@ -125,6 +124,208 @@
     text-align: left;
 }
 
+/* large screens */
+@media screen and (min-width: 1600px) {
+    .heading-con {
+        padding-top: 10%;
+        margin-left: 10%;
+    }
+    
+    .heading-font1-port {
+        font-size: 60px;
+        font-family: var(--font1);
+        color: var(--brown-color);
+        font-weight: 400;
+        padding-left: 5%;
+    }
+    
+    .heading-font2-port {
+        font-size: 60px;
+        font-family: var(--font1);
+        color: var(--black-color);
+        font-weight: 400;
+        padding-left: 0%;
+    }
+    
+    .project-list-align {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        gap: 8%;
+        position: relative;
+    }
+    
+    .overview {
+        font-size: 20px;
+        font-family: "Microsoft YaHei";
+        font-weight: 400;
+        color: var(--brown-color);
+        padding-bottom: 5%;
+    }
+    
+    #project-list {
+        list-style: none;
+        width: 80%;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        overflow: hidden;
+        height: auto;
+        margin-top: 10%;
+    }
+    
+    .project-item {
+        padding: 5px;
+        font-size: 20px;
+        font-family: "Microsoft YaHei";
+        font-weight: 400;
+        border-bottom: 1px solid black;
+        transition: background-color 1.5s, transform 1.5s ease-out, opacity 1.5s ease-out;
+        opacity: 0;
+        position: absolute;
+        width: 70%;
+        text-align: left;
+    }
+    
+    .project-item.active {
+        /* background-color: #E2DDD0; */
+        font-size: 20px;
+        color: var(--brown-color);
+        /* Text color for active item */
+        font-weight: bold;
+        /* border-bottom: 1px solid #ccc; */
+        transform: scale(1.05);
+        /* Slightly scale up the active item */
+    }
+    
+    .project-item.visible {
+        opacity: 1;
+        position: relative;
+    }
+    
+    .images-in-colum {
+        width: 100%;
+        height: 50vh;
+        overflow: visible;
+        position: relative;
+        padding-bottom: 10%;
+    }
+    
+    .image-container {
+        width: 100%;
+        position: absolute;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        transform: translateY(100%);
+        opacity: 0;
+        transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+        margin-top: -30%;
+    }
+    
+    .image-container.visible {
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+    
+    .image-container img {
+        max-width: auto;
+        height: 100%;
+        display: block;
+        margin-top: 10%;
+    }
+    
+    
+    .numeric-para {
+        font-family: "Microsoft YaHei";
+        color: #000000;
+        font-size: 20px;
+        line-height: 24px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* smaller screens */
+@media screen and (min-width: 1020px) and (max-width: 1280px) {
+    .section1 {
+        overflow: hidden;
+        padding-top: 5%;
+    }
+
+    .heading-con {
+        padding-top: 8%;
+        margin-left: 5%;
+        /* Adjusting the padding-top and margin-left for medium screens */
+    }
+
+    .heading-font1-port,
+    .heading-font2-port {
+        font-size: 40px;
+        /* Decrease font size for medium screens */
+    }
+
+    .heading-font1-port {
+        padding-left: 2%;
+        /* Adjust padding for better spacing */
+    }
+
+    .project-list-align {
+        width: 85%;
+        /* Increase width for better fit */
+        gap: 4%;
+        /* Adjust gap for medium screens */
+    }
+
+    .overview {
+        font-size: 18px;
+        /* Decrease font size for medium screens */
+        padding-bottom: 4%;
+        /* Adjust padding for medium screens */
+    }
+
+    #project-list {
+        width: 85%;
+        /* Increase width for better fit */
+        margin-top: 8%;
+        /* Adjust margin-top for medium screens */
+    }
+
+    .project-item {
+        padding: 8px;
+        /* Increase padding for better spacing */
+        font-size: 18px;
+        /* Decrease font size for medium screens */
+    }
+
+    .images-in-colum {
+        height: 55vh;
+        /* Adjust height for medium screens */
+        padding-bottom: 2%;
+        /* Adjust padding for medium screens */
+    }
+
+    .image-container {
+        margin-top: -20%;
+        /* Adjust margin-top for better alignment */
+    }
+
+    .image-container img {
+        margin-top: 5%;
+        width: 100%;
+        /* Adjust margin-top for better fit */
+    }
+
+    .numeric-para {
+        font-size: 18px;
+        /* Decrease font size for medium screens */
+        line-height: 22px;
+        /* Adjust line-height for medium screens */
+    }
+}
 /* Mobile Styles */
 @media (max-width: 768px) {
     .heading-con {
@@ -154,8 +355,10 @@
         margin-top: 10%;
 
     }
-    .heading-font1-port,.heading-font2-port{
-        font-size:20px;
+
+    .heading-font1-port,
+    .heading-font2-port {
+        font-size: 20px;
     }
 
     .images-in-colum {
@@ -190,8 +393,6 @@
     }
 }
 
-
-
 /* section2 */
 .section2 {
     margin-top: 10%;
@@ -211,31 +412,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap: 10px;
     width: 100%;
 }
-.div-col1{
+
+.div-col1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap: 10px;
 }
 
-.div-col-middle{
+.div-col-middle {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap: 10px;
 }
 
-.middle-pic1{
-    width:98% !important;
+.middle-pic1 {
+    width: 98% !important;
     height: 550px !important;
 }
-.middle-pic2{
-    width:98% !important;
+
+.middle-pic2 {
+    width: 98% !important;
     height: 550px !important;
 }
 
@@ -251,6 +454,7 @@
     width: 50%;
     text-align: left;
 }
+
 .image-container2 {
     position: relative;
     display: inline-block;
@@ -305,51 +509,96 @@
     color: #ffffff;
     font-size: 14px;
 }
-
-/* mobile view  */
-@media screen and (max-width:550px) {
-    .numeric-para2 {
-        font-size: 12px;
-        width: 100%;
-        padding-top: 20%;
+/* large screens */
+@media screen and (min-width:1600px) {
+    .section2 {
+        margin-top: 10%;
+        padding-bottom:2%;
     }
+    
     .head-para {
         display: flex;
         align-items: center;
-        justify-content:space-around;
-        padding-left: 2%;
-        padding-bottom: 10px;
-        gap:50px;
+        justify-content: space-around;
+        padding-left: 3%;
+        margin-top: -100px;
+        padding-bottom: 20px;
+    
     }
+    
     .project-images-alignment {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 0;
-    }
-
-    .div-col1, .div-col-middle {
+        justify-content: center;
+        gap: 10px;
         width: 100%;
-        max-width: 100%;
+    }
+    
+    .div-col1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        justify-content: center;
+        gap: 10px;
     }
-
+    
+    .div-col-middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .middle-pic1 {
+        width: 98% !important;
+        height: 550px !important;
+    }
+    
+    .middle-pic2 {
+        width: 98% !important;
+        height: 550px !important;
+    }
+    
+    .portfolio {
+        padding-left: 15%;
+    }
+    
+    .numeric-para2 {
+        font-family: "Microsoft YaHei";
+        color: #000000;
+        font-size: 20px;
+        line-height: 24px;
+        width: 50%;
+        text-align: left;
+    }
+    
     .image-container2 {
-        max-width: 100%;
-        margin: 4px 0; /* Adjust the spacing between images */
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 400px;
+        margin: 4px;
     }
-
+    
     .image-container2 img {
-        width: 90% !important;
-        height: auto; /* Ensure images scale appropriately */
-        margin: auto;
+        display: block;
+        width: auto;
+        height: auto;
     }
+    
     .interiors-card {
-        width: 80%;
-        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(139, 69, 19, 0.8);
+        color: white;
+        padding: 16px;
+        transform: translateY(100px);
+        opacity: 0;
+        width: 90%;
+        transition: transform 1.6s ease, opacity 1.6s ease;
     }
     
     .interiors-card.show {
@@ -367,6 +616,121 @@
         /* Optional: Add a border for more definition */
     }
     
+    .interior-head {
+        font-family: "Microsoft YaHei";
+        color: #ffffff;
+        font-size: 20px;
+    }
+    
+    .interior-para {
+        font-family: "Microsoft YaHei";
+        color: #ffffff;
+        font-size: 14px;
+    }
+}
+/* smaller screens */
+@media screen and (min-width:1020px) and (max-width:1280px) {
+    .head-para {
+        padding-top: 2%;
+    }
+
+    .image-container2 img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .middle-pic1 {
+        width: 98% !important;
+        height: 470px !important;
+    }
+
+    .middle-pic2 {
+        width: 98% !important;
+        height: 500px !important;
+    }
+
+    .project-images-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 95%;
+        margin: auto;
+        padding-bottom: 2%;
+    }
+
+    .interiors-card {
+        width: auto;
+    }
+}
+/* mobile view  */
+@media screen and (max-width:550px) {
+    .numeric-para2 {
+        font-size: 12px;
+        width: 100%;
+        padding-top: 20%;
+    }
+
+    .head-para {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 2%;
+        padding-bottom: 10px;
+        gap: 50px;
+    }
+
+    .project-images-alignment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .div-col1,
+    .div-col-middle {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .image-container2 {
+        max-width: 100%;
+        margin: 4px 0;
+        /* Adjust the spacing between images */
+    }
+
+    .image-container2 img {
+        width: 90% !important;
+        height: auto;
+        /* Ensure images scale appropriately */
+        margin: auto;
+    }
+
+    .interiors-card {
+        width: 80%;
+        margin: auto;
+    }
+
+    .interiors-card.show {
+        transform: translateY(0);
+        opacity: 0.6;
+        border-bottom-left-radius: 22px;
+        border-bottom-right-radius: 22px;
+        background: rgba(48, 21, 3, 0.9);
+        /* Darker background color */
+        backdrop-filter: blur(10px);
+        /* Adjust the blur value as needed */
+        -webkit-backdrop-filter: blur(10px);
+        /* For Safari */
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        /* Optional: Add a border for more definition */
+    }
+
 
     .interior-head {
         font-size: 18px;
@@ -375,14 +739,18 @@
     .interior-para {
         font-size: 14px;
     }
-    .middle-pic1{
+
+    .middle-pic1 {
         width: 90% !important;
-        height: auto !important; /* Ensure images scale appropriately */
+        height: auto !important;
+        /* Ensure images scale appropriately */
         margin: auto;
     }
-    .middle-pic2{
+
+    .middle-pic2 {
         width: 90% !important;
-        height: auto !important; /* Ensure images scale appropriately */
+        height: auto !important;
+        /* Ensure images scale appropriately */
         margin: auto;
     }
 
@@ -670,7 +1038,7 @@
     }
 
     .section-contact {
-        width: 80%;
+        width: 90%;
         height: auto;
         margin: auto;
         padding: 30px;

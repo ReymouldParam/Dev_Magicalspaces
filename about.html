@@ -31,10 +31,10 @@
                     <a href="." class="nav-link ">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./about.html" class="nav-link">ABOUT US</a>
+                    <a href="./services.html" class="nav-link">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">SERVICES</a>
+                    <a href="./about.html" class="nav-link">ABOUT US</a>
                 </li>
                 <li class="nav-item">
                     <a href="./portopolio.html" class="nav-link">PORTFOLIO</a>
@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
         <section class="section2">
             <div class="section2-div-con1">
@@ -354,8 +354,8 @@
             let increment = end > start ? 1 : -1;
             let stepTime = Math.abs(Math.floor(duration / range));
             let obj = document.getElementById(id);
-        
-            let timer = setInterval(function() {
+
+            let timer = setInterval(function () {
                 current += increment;
                 obj.textContent = current + '+';
                 if (current == end) {
@@ -363,16 +363,17 @@
                 }
             }, stepTime);
         }
-        
-        document.addEventListener("DOMContentLoaded", function() {
+
+        document.addEventListener("DOMContentLoaded", function () {
             animateCounter("projects-count", 0, 45, 2000);
             animateCounter("employees-count", 0, 45, 2000);
             animateCounter("contractors-count", 0, 45, 2000);
         });
-        </script>
-        <!-- toggler -->
+    </script>
+    <!-- toggler -->
     <script src="./Assets/about-page.js">
     </script>
+<!--  -->
 </body>
 
 </html>

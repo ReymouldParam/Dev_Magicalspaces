@@ -1,12 +1,12 @@
-
 .heading-con {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2%;
-  padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    padding-top: 10%;
 }
+
 .heading-font1-port {
     font-size: 60px;
     font-family: var(--font1);
@@ -22,6 +22,7 @@
     font-weight: 400;
     padding-left: 0%;
 }
+
 .numeric-para {
     font-family: "Microsoft YaHei";
     color: #000000;
@@ -30,12 +31,191 @@
     width: 70%;
     text-align: left;
 }
-.serve-img-align{
+
+.serve-img-align {
     display: flex;
     align-items: center;
-    width: 85%;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+/* large screens */
+
+@media screen and (min-width: 1600px) {
+    .heading-con {
+        padding: 2% 6%; /* Increase padding for extra-large screens */
+        padding-top: 8%; /* Slightly adjust top padding for balance */
+    }
+
+    .heading-font1-port {
+        font-size: 80px; /* Increase font size for better visibility on larger screens */
+        padding-left: 4%; /* Adjust padding for alignment */
+    }
+
+    .heading-font2-port {
+        font-size: 80px; /* Increase font size for consistency */
+        padding-left: 2%; /* Adjust padding for alignment */
+    }
+
+    .numeric-para {
+        width: 60%; /* Reduce width to use more screen space */
+        font-size: 24px; /* Increase font size for readability */
+        line-height: 28px; /* Increase line height for better readability */
+    }
+    .img-serve{
+        height: auto;
+        width: 100%;
+    }
+    .serve-img-align {
+        padding-bottom: 40px;
+        justify-content: space-evenly; /* Increase padding-bottom for better spacing on larger screens */
+    }
+}
+
+/* smaller screens */
+@media screen and (min-width: 1020px) and (max-width: 1280px) {
+    .heading-con {
+        padding: 2% 4%; /* Adjust padding for the screen size */
+        padding-top: 12%; /* Maintain the top padding adjustment */
+    }
+
+    .heading-font1-port {
+        font-size: 60px; /* Maintain the original font size */
+        padding-left: 4%; /* Adjust padding for alignment */
+    }
+
+    .heading-font2-port {
+        font-size: 60px; /* Maintain the original font size */
+        padding-left: 2%; /* Adjust padding for alignment */
+    }
+    .img-serve{
+        height: auto;
+        width: 90%;
+    }
+    .numeric-para {
+        width: 65%; /* Adjust width for better text fit */
+        font-size: 20px; /* Maintain the original font size */
+        line-height: 24px; /* Maintain the original line height */
+    }
+
+    .serve-img-align {
+        padding-bottom: 30px; /* Maintain the original padding */
+        gap: 15px;
+        margin-left: 25px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .heading-con {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5%;
+        padding-top: 15%;
+    }
+
+    .heading-font1-port, .heading-font2-port {
+        font-size: 40px;
+        padding-left: 0;
+    }
+
+    .numeric-para {
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .serve-img-align {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serve-img-align div {
+        margin-bottom: 20px;
+    }
+
+    .serve-img-align img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+
+/* section2 */
+.services-con {
+    background-color: #000000;
+   
+    width: 100%;
+    height: 70vh;
+    border-radius: 20px;
+    margin-top: 5%;
+
+}
+
+.services-head {
+    color: #ffffff;
+    font-size: 36px;
+    font-family: "Microsoft YaHei";
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.serv-card {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    justify-content: space-evenly;
+    box-shadow: 6px 6px 10px rgba(255, 255, 255, 0.1), -6px 6px 10px rgba(255, 255, 255, 0.1), 6px 12px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.serv-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.3), -8px 8px 20px rgba(255, 255, 255, 0.3), 8px 16px 30px rgba(255, 255, 255, 0.3);
+}
+
+.cards-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2%;
+    width: 88%;
     margin: auto;
-    gap:5%;
+    margin-top: 2%;
+}
+
+.serv-h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+}
+
+.serv-p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Microsoft YaHei";
+}
+
+.sub-serv-heading {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Microsoft YaHei";
+}
+
+.sub-serv-para {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Microsoft YaHei";
+    color: var(--brown-color);
 }
 
 
@@ -45,71 +225,251 @@
     position: relative;
     z-index: 1;
     margin-top: 10%;
-    padding: 0; /* Remove default padding */
+    padding: 0;
+    /* Remove default padding */
     cursor: pointer;
     overflow: hidden;
 }
 
 .project-item {
-    padding: 10px; /* Adjusted padding for better spacing */
+    padding: 10px;
+    /* Adjusted padding for better spacing */
     font-size: 20px;
     font-family: "Microsoft YaHei";
     font-weight: 400;
     border-bottom: 1px solid black;
-    color: black; /* Set text color to black */
-    background-color: #ffffff; /* Optional: Set a white background */
-    width: auto; /* Ensure full width of the parent container */
+    color: black;
+    /* Set text color to black */
+    background-color: #ffffff;
+    /* Optional: Set a white background */
+    width: auto;
+    /* Ensure full width of the parent container */
     text-align: left;
-    opacity: 1; /* Ensure the item is visible */
-    position: relative; /* Relative positioning to ensure natural flow */
+    opacity: 1;
+    /* Ensure the item is visible */
+    position: relative;
+    /* Relative positioning to ensure natural flow */
     transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Optional: Add hover effect */
 .project-item:hover {
-    background-color: #f0f0f0; /* Light gray background on hover */
-    transform: translateX(5px); /* Slight shift on hover */
+    background-color: #f0f0f0;
+    /* Light gray background on hover */
+    transform: translateX(5px);
+    /* Slight shift on hover */
 }
-.service-each{
+
+.service-each {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+/* large screen */
 
-/* testimonial */
-.test-aside1 {
-    width: 43%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+@media screen and (min-width: 1600px) {
+    .services-con {
+        height: 75vh; /* Increase height for better fit */
+        margin-top: 4%; /* Adjust top margin for spacing */
+        border-radius: 25px; /* Increase border-radius for a more balanced look */
+    }
+
+    .services-head {
+        font-size: 48px; /* Increase font size for visibility on large screens */
+        padding-top: 20px; /* Adjust padding for spacing */
+    }
+
+    .serv-card {
+        height: 350px; /* Increase height for better content fit */
+        padding: 3%; /* Increase padding for improved spacing */
+    }
+
+    .cards-align {
+        width: 90%; /* Adjust width to fit larger screens */
+        margin-top: 3%; /* Adjust top margin for spacing */
+        gap: 3%; /* Increase gap between cards */
+    }
+
+    .serv-h1 {
+        font-size: 24px; /* Increase font size for readability */
+    }
+
+    .serv-p {
+        font-size: 20px; /* Increase font size for readability */
+    }
+
+    .sub-serv-heading {
+        font-size: 48px; /* Increase font size for headings */
+    }
+
+    .sub-serv-para {
+        font-size: 20px; /* Increase font size for readability */
+    }
+
+    #project-list {
+        width: 85%; /* Adjust width for a better fit */
+        margin-top: 8%; /* Adjust top margin for spacing */
+    }
+
+    .project-item {
+        font-size: 22px; /* Increase font size for readability */
+        padding: 12px; /* Increase padding for better spacing */
+    }
+}
+
+/* smaller screens */
+@media screen and (min-width: 1020px) and (max-width: 1280px) {
+    .services-con {
+        height: 60vh; /* Adjust height for better fit */
+        margin-top: 4%; /* Adjust top margin for spacing */
+        border-radius: 15px; /* Adjust border-radius for a balanced look */
+    }
+
+    .services-head {
+        font-size: 40px; /* Slightly increase font size for better visibility */
+        padding-top: 20px; /* Adjust padding for spacing */
+    }
+
+    .serv-card {
+        height: 350px; /* Increase height for a better fit */
+        width:100%;
+        padding: 3%; /* Increase padding for better content spacing */
+    }
+
+    .cards-align {
+        width: 80%; /* Adjust width to fit the container */
+        margin-top: 3%;
+        margin: 5%; /* Adjust top margin for spacing */
+        gap: 3%; /* Increase gap between cards */
+    }
+
+    .serv-h1 {
+        font-size: 22px; /* Increase font size for better readability */
+    }
+
+    .serv-p {
+        font-size: 20px; /* Increase font size for better readability */
+    }
+
+    .sub-serv-heading {
+        font-size: 40px; /* Slightly increase font size for headings */
+    }
+
+    .sub-serv-para {
+        font-size: 20px; /* Increase font size for better readability */
+    }
+
+    #project-list {
+        width: 85%; /* Adjust width for better fit */
+        margin-top: 8%; /* Adjust top margin for spacing */
+    }
+
+    .project-item {
+        font-size: 22px; /* Increase font size for better readability */
+        padding: 12px; /* Increase padding for better spacing */
+    }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .services-con {
+        height: auto;
+        width: 93%;
+        margin-top: 10%;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .services-head {
+        font-size: 24px; /* Slightly smaller font size for better fit */
+        padding-top: 15px; /* Adjust padding for spacing */
+        padding-bottom: 15px;
+    }
+
+    .cards-align {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+        width: 100%;
+        margin: auto;
+    }
+    .serv-card {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .serv-h1 {
+        font-size: 16px; /* Slightly smaller heading size */
+    }
+
+    .serv-p {
+        font-size: 14px; /* Reduce paragraph size for better readability */
+        text-align: center;
+    }
+    .service-each {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Align content to the left */
+        justify-content: center; /* Adjust justification */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .sub-serv-heading {
+        font-size: 24px; /* Reduce sub-heading size */
+        margin-bottom: 10px; /* Add margin for spacing */
+        text-align: center;
+    }
+
+    .sub-serv-para {
+        font-size: 16px; /* Reduce paragraph size */
+        color: var(--brown-color); /* Maintain color */
+        text-align: center;
+    }
+
+    #project-list {
+        width: 100%; /* Ensure list takes full width */
+        margin-top: 5%; /* Adjust top margin */
+    }
+
+    .project-item {
+        font-size: 16px; /* Reduce list item size */
+        padding: 8px; /* Reduce padding */
+        border-bottom: 1px solid #ccc; /* Adjust border color for visibility */
+    }
+
+    .project-item:hover {
+        background-color: #e0e0e0; /* Slightly darker background on hover */
+        transform: translateX(0); /* Remove shift on hover for better UX */
+    }
+}
+
+/* section3 */
+.section3 {
+    background-color: #ffffff;
+    padding-bottom: 20px;
 }
 
 .test-aside2 {
     width: 57%;
-}
-.testmonial{
-    margin-left: 0;
-}
-.client-says {
-    margin-left: 9%;
+    margin: 0 auto;
+    /* Centers the container */
 }
 
-.our_test_Arrow {
-    padding-left: 9%;
-}
-
-.section5-block {
+.test-content-parent,
+.test-content-parent2 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Centers content inside the card */
 }
 
 .test-content {
     border: 1px solid black;
     border-radius: 30px;
-    width: 95%;
-    margin: 10px 0px 0 0;
-    padding: 30px 0 0px;
+    width: 85%;
+    margin: auto;
     background-image: url(/Assets/Images/quote.png);
     background-size: 22%;
     background-repeat: no-repeat;
@@ -117,8 +477,17 @@
     background-position-y: 30px;
 }
 
+.content-holder {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
 .test-content-parent {
     padding: 20px 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Microsoft YaHei";
 }
 
 .test-content-parent2 {
@@ -126,31 +495,6 @@
     flex-direction: row;
     gap: 50px;
     padding: 50px 30px;
-}
-
-.test-text {
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 3%;
-    line-height: 23px;
-}
-
-.test-name {
-    margin-top: 100px;
-}
-
-.name-of-person {
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.test-image {
-    object-fit: cover;
-}
-
-#test-smile-image {
-    height: 100%;
 }
 
 #test-aside2-caresel .slick_btn {
@@ -169,13 +513,6 @@
     cursor: pointer !important;
 }
 
-#test-aside2-caresel .next_btn {
-    left: -82px;
-}
-
-#test-aside2-caresel .prev_btn {
-    left: -153px;
-}
 
 #test-aside2-caresel .slick-dots li {
     list-style-type: none;
@@ -187,18 +524,32 @@
     flex-direction: row;
 }
 
+.name-of-person {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Microsoft YaHei";
+}
+
+.name-of-person-caption {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Microsoft YaHei";
+}
+
 #test-aside2-caresel .slick-dots {
-    width: 95%;
+    width: 85%;
+    margin: auto;
     /* width: 1200px; */
     height: 15px;
     border-radius: 10px;
     position: relative;
-    top: 20px;
     display: flex;
     flex-direction: row !important;
     background-color: #D9D9D9;
     /* border: 2px solid black; */
     gap: 0px;
+    margin-bottom: 20px;
+    ;
 }
 
 #test-aside2-caresel .slick-dots li button {
@@ -225,4 +576,534 @@
     border: none;
     background-color: black;
     font-size: 5px;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .test-aside2 {
+        width: 90%; /* Reduce width for better fit on mobile */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .test-content {
+        width: 90%; /* Ensure the testimonial card takes full width */
+        margin: 50px auto; /* Add margin for spacing */
+        border-radius: 20px; /* Reduce border-radius for better appearance on mobile */
+        background-size: 15%; /* Reduce background size for better fit */
+    }
+
+    .test-content-parent {
+        padding: 15px 20px; /* Reduce padding for better fit */
+        font-size: 16px; /* Slightly reduce font size */
+        text-align: center; /* Keep text centered */
+    }
+
+    .test-content-parent2 {
+        flex-direction: column; /* Stack the image and text vertically */
+        gap: 20px; /* Reduce gap between image and text */
+        padding: 20px 20px; /* Reduce padding */
+        text-align: center; /* Center-align the text and image */
+    }
+
+    .test-content-parent2 img {
+        width: 80px; /* Resize image for mobile view */
+        height: 80px; /* Maintain aspect ratio */
+    }
+
+    .name-of-person {
+        font-size: 16px; /* Reduce font size slightly */
+        font-weight: 500; /* Adjust font weight */
+    }
+
+    .name-of-person-caption {
+        font-size: 14px; /* Reduce font size slightly */
+    }
+
+    #test-aside2-caresel .slick_btn {
+        height: 30px; /* Reduce size of buttons */
+        width: 30px; /* Reduce width of buttons */
+        left: -40px; /* Adjust position of the left button */
+        top: 150px; /* Adjust vertical position */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    #test-aside2-caresel .slick-dots {
+        width: 90%;
+        height: 10px;
+        margin-top: -49px
+    }
+
+    #test-aside2-caresel .slick-dots li button {
+        height: 5px; /* Reduce height of each dot */
+        border-radius: 5px; /* Adjust border radius for a smaller look */
+    }
+
+    #test-aside2-caresel .slick-dots .slick-active button {
+        background-color: black; /* Keep the active dot visible */
+    }
+}
+
+/* section5(contact from) */
+.section5 {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* margin-bottom: -10%; */
+}
+
+.section6-contactus {
+    padding-top: 0px;
+    width: 100%;
+    margin: auto;
+    margin: 0;
+    margin-top: -15px;
+}
+
+.section-contact {
+    width: 87%;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* border-radius: 40px; */
+    background-image: url(/Assets/Images/form\ bgc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slider-contact {
+    width: 40% !important;
+    height: 500px;
+    object-fit: cover;
+}
+
+.footer-image-container {
+    width: 100%;
+}
+
+.footer-images {
+    width: 100%;
+    height: 69vh;
+    border-radius: 40px;
+    margin-top: 2%;
+}
+
+.form-container {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.form-heading {
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: 32px;
+    color: #E2DDD0;
+}
+
+.form-caption {
+    color: #E2DDD0;
+    font-family: var(--font2);
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.label1 {
+    color: #E2DDD0;
+    font-family: var(--font2);
+    font-size: 20px;
+}
+
+.fullName {
+    width: 570px;
+    /* height: 52px; */
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    background: transparent;
+    border: 1.2px solid #E2DDD0;
+    font-family: var(--font2);
+    font-size: 18px;
+}
+
+.form-block {
+    padding-top: 20px;
+}
+
+.fullName::placeholder {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.comment {
+    width: 570px;
+    height: 50px;
+    border-radius: 15px;
+    background: transparent;
+    border: 1.2px solid #E2DDD0;
+}
+
+.send {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #E2DDD0;
+    border-radius: 15px;
+    background: transparent;
+    color: white;
+    cursor: pointer !important;
+    margin-top: -13px;
+}
+
+#sendimage {
+    position: relative;
+    top: 7px;
+}
+
+#formpre {
+    position: relative;
+    top: -12px;
+    font-family: var(--font2);
+    font-size: 14px;
+    color: #E2DDD0;
+    margin-top: -3px;
+}
+
+
+/* -----------------------------------mail dialog box----- */
+.mail-success-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5px);
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+    object-fit: cover;
+    display: none;
+}
+
+.mail-notification-block {
+    border: 2px solid black;
+    background-image: url(./Images/form\ bgc.png);
+    background-position-y: -50px;
+    background-position-x: 0px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mail-message {
+    color: white;
+    font-family: var(--font1);
+    font-size: 40px;
+    font-weight: 200;
+}
+
+#mail-message-caption {
+    color: white;
+    font-family: var(--font2);
+}
+
+.close {
+    background-color: rgb(4, 19, 4);
+    color: white;
+    margin-top: 20px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* large screens */
+@media screen and (min-width: 1600px) {
+    .section5 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section6-contactus {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .section-contact {
+        width: 75%;
+        /* Adjusted for large screens while maintaining the layout */
+        height: auto;
+        margin: auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        background-image: url(/Assets/Images/form\ bgc.png);
+        background-size: cover;
+        /* Ensures the background image covers the section */
+        background-repeat: no-repeat;
+        background-position: center;
+        /* Center the background image */
+        border-radius: 40px;
+        /* Optional: Add border-radius if needed for design consistency */
+    }
+
+    .slider-contact {
+        width: 45%;
+        /* Adjusted width to fit larger screens */
+        height: 500px;
+        /* Fixed height for consistency */
+        object-fit: cover;
+        /* Ensures images cover their container */
+    }
+
+    .footer-image-container {
+        width: 100%;
+    }
+
+    .footer-images {
+        width: 100%;
+        height: 58vh;
+        /* Adjusted height to fit well within the container */
+        border-radius: 40px;
+        object-fit: cover;
+        /* Ensures images cover their container */
+    }
+
+    .form-container {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .form-heading {
+        font-family: var(--font2);
+        font-weight: 700;
+        font-size: 32px;
+        color: #E2DDD0;
+    }
+
+    .form-caption {
+        color: #E2DDD0;
+        font-family: var(--font2);
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 5px;
+    }
+
+    .label1 {
+        color: #E2DDD0;
+        font-family: var(--font2);
+        font-size: 20px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        max-width: 570px;
+        /* Ensures form fields don't exceed desired width */
+        border-radius: 15px;
+        padding: 15px;
+        background: transparent;
+        border: 1.2px solid #E2DDD0;
+        font-family: var(--font2);
+        font-size: 18px;
+    }
+
+    .fullName::placeholder {
+        font-size: 16px;
+    }
+
+    .comment {
+        height: 100px;
+        /* Increased height for better usability on larger screens */
+    }
+
+    .send {
+        width: auto;
+        max-width: 157px;
+        height: 40px;
+        border: 1.5px solid #E2DDD0;
+        border-radius: 15px;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sendimage {
+        width: 20px;
+    }
+
+    #formpre {
+        font-family: var(--font2);
+        font-size: 14px;
+        color: #E2DDD0;
+        padding-top: 25px;
+    }
+}
+/* small screens */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .section5 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section6-contactus {
+        width: 100%;
+    }
+
+    .section-contact {
+        width: 92%;
+        height: auto;
+        margin: auto;
+        padding: 30px;
+        flex-direction: row;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .slider-contact {
+        width: 40% !important;
+        height: auto;
+        /* Adjust height based on content */
+    }
+
+    .footer-images {
+        width: 100%;
+        height: 400px;
+    }
+
+    .form-container {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        height: 15px;
+    }
+
+    .send {
+        width: auto;
+    }
+
+    #sendimage {
+        position: relative;
+        /* top: 7px; */
+        width: 20px;
+    }
+
+    #formpre {
+        position: relative;
+        top: -15px;
+        font-family: var(--font2);
+        font-size: 14px;
+        color: #E2DDD0;
+    }
+}
+
+/* mobile view  */
+@media (max-width: 767px) {
+    .section5 {
+        padding: 5%;
+        margin-bottom: 0;
+    }
+
+    .section6-contactus {
+        padding-top: 0px;
+    }
+
+    .section-contact {
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 40px;
+    }
+
+    .slider-contact {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .footer-images {
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    .form-heading {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .form-caption {
+        font-size: 12px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+
+    .comment {
+        height: auto;
+        font-size: 12px;
+    }
+
+    .send {
+        width: 30%;
+        height: auto;
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+
+    #sendimage {
+        position: relative;
+        top: 3px;
+        width: 15px;
+    }
+
+    #formpre {
+        position: relative;
+        top: 0;
+        font-size: 12px;
+    }
+
+    /* Mobile view for mail dialog box */
+    .mail-notification-block {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #mail-message {
+        font-size: 24px;
+    }
+
+    #mail-message-caption {
+        font-size: 14px;
+    }
 }
