@@ -308,6 +308,20 @@
       <!-- toggler -->
      <script src="./Assets/about-page.js">
     </script>
+    <!-- header underline -->
+     <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const currentPage = window.location.pathname;
+
+            navLinks.forEach(link => {
+                // If the link href matches the current page pathname, add 'active' class
+                if (link.getAttribute('href') === currentPage || link.getAttribute('href') === `.${currentPage}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
