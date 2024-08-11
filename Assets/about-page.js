@@ -30,9 +30,8 @@ window.addEventListener('load', () => {
 // jQuery for slideToggle effect
 $(document).ready(function() {
     $(".toggler").click(function() {
-        $(".ul-align").slideToggle("slow");
-        // Toggle class to animate the hamburger icon
-        $(".toggler-icon").toggleClass("open");
+        $(".ul-align").slideToggle("slow"); // Toggle menu visibility
+        $(this).toggleClass("open"); // Add or remove 'open' class to toggler
     });
 });
 

@@ -211,7 +211,7 @@ body {
         justify-content: space-between;
     }
     .global-section {
-        width:100%;
+        width: 100%;
         background-color: #fff;
         position: relative;
     }
@@ -221,10 +221,10 @@ body {
     }
 
     .ul-align {
-        display: block;
+        display: none; /* Initially hidden */
         width: 30%;
         margin-top: 6px;
-        margin-left:67%;
+        margin-left: 67%;
         background-color: #000000;
         position: absolute;
         top: 60px;
@@ -235,7 +235,7 @@ body {
     }
 
     .ul-align.active {
-        display: flex;
+        display: flex; /* Display when active */
     }
 
     .nav-item {
@@ -251,6 +251,8 @@ body {
 
     .toggler {
         display: block; /* Show toggler only on mobile */
+        position: relative;
+        cursor: pointer;
     }
 
     .toggler-icon {
@@ -258,19 +260,38 @@ body {
         height: 3px;
         background: #ffffff;
         margin: 5px 0;
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    .toggler-icon.open:nth-child(1) {
+    /* When the toggler is clicked, and the menu is open */
+    .toggler.open .toggler-icon:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
 
-    .toggler-icon.open:nth-child(2) {
+    .toggler.open .toggler-icon:nth-child(2) {
         opacity: 0;
     }
 
-    .toggler-icon.open:nth-child(3) {
+    .toggler.open .toggler-icon:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .ul-align {
+        display: none; /* Initially hide the menu */
+        width: 30%;
+        margin-top: 6px;
+        margin-left: 67%;
+        background-color: #000000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-radius: 10px;
+        padding: 10px 0;
+        z-index: 999;
+    }
+
+    .ul-align.active {
+        display: block; /* Display menu when active */
     }
 }
 
