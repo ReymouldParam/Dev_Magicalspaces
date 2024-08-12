@@ -130,7 +130,7 @@
         padding-top: 10%;
         margin-left: 10%;
     }
-    
+
     .heading-font1-port {
         font-size: 60px;
         font-family: var(--font1);
@@ -138,7 +138,7 @@
         font-weight: 400;
         padding-left: 5%;
     }
-    
+
     .heading-font2-port {
         font-size: 60px;
         font-family: var(--font1);
@@ -146,7 +146,7 @@
         font-weight: 400;
         padding-left: 0%;
     }
-    
+
     .project-list-align {
         display: flex;
         justify-content: space-between;
@@ -155,7 +155,7 @@
         gap: 8%;
         position: relative;
     }
-    
+
     .overview {
         font-size: 20px;
         font-family: "Microsoft YaHei";
@@ -163,7 +163,7 @@
         color: var(--brown-color);
         padding-bottom: 5%;
     }
-    
+
     #project-list {
         list-style: none;
         width: 80%;
@@ -174,7 +174,7 @@
         height: auto;
         margin-top: 10%;
     }
-    
+
     .project-item {
         padding: 5px;
         font-size: 20px;
@@ -187,7 +187,7 @@
         width: 70%;
         text-align: left;
     }
-    
+
     .project-item.active {
         /* background-color: #E2DDD0; */
         font-size: 20px;
@@ -198,12 +198,12 @@
         transform: scale(1.05);
         /* Slightly scale up the active item */
     }
-    
+
     .project-item.visible {
         opacity: 1;
         position: relative;
     }
-    
+
     .images-in-colum {
         width: 100%;
         height: 50vh;
@@ -211,7 +211,7 @@
         position: relative;
         padding-bottom: 10%;
     }
-    
+
     .image-container {
         width: 100%;
         position: absolute;
@@ -225,20 +225,20 @@
         transition: transform 1.5s ease-out, opacity 1.5s ease-out;
         margin-top: -30%;
     }
-    
+
     .image-container.visible {
         transform: translateY(-50px);
         opacity: 1;
     }
-    
+
     .image-container img {
         max-width: auto;
         height: 100%;
         display: block;
         margin-top: 10%;
     }
-    
-    
+
+
     .numeric-para {
         font-family: "Microsoft YaHei";
         color: #000000;
@@ -326,14 +326,17 @@
         /* Adjust line-height for medium screens */
     }
 }
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .heading-con {
         margin-top: 8%;
+        text-align: center;
     }
 
     .numeric-para {
-        font-size: 12px;
+        font-size: 14px;
+        text-align: center;
     }
 
     .project-list-align {
@@ -343,22 +346,35 @@
         width: 90%;
         gap: 8%;
         margin: auto;
+        margin-top: -10px;
     }
 
     #project-list {
-        width: auto;
+        width: 80%;
+        margin: auto;
         position: relative;
         z-index: 1;
         cursor: pointer;
+        height: 100%;
         overflow: hidden;
-        height: 50vh;
-        margin-top: 10%;
+        text-align: center;
+    }
 
+    .project-item {
+        text-align: center;
+        width: 80%;
+        font-size: 14px;
+        margin: auto;
+    }
+
+    .project-item.active {
+        font-size: 14px;
     }
 
     .heading-font1-port,
     .heading-font2-port {
         font-size: 20px;
+        width: 80%;
     }
 
     .images-in-colum {
@@ -414,6 +430,7 @@
     justify-content: center;
     gap: 10px;
     width: 100%;
+    padding-bottom: 3%;
 }
 
 .div-col1 {
@@ -509,13 +526,14 @@
     color: #ffffff;
     font-size: 14px;
 }
+
 /* large screens */
 @media screen and (min-width:1600px) {
     .section2 {
         margin-top: 10%;
-        padding-bottom:2%;
+        padding-bottom: 2%;
     }
-    
+
     .head-para {
         display: flex;
         align-items: center;
@@ -523,9 +541,9 @@
         padding-left: 3%;
         margin-top: -100px;
         padding-bottom: 20px;
-    
+
     }
-    
+
     .project-images-alignment {
         display: flex;
         align-items: center;
@@ -533,7 +551,7 @@
         gap: 10px;
         width: 100%;
     }
-    
+
     .div-col1 {
         display: flex;
         flex-direction: column;
@@ -541,7 +559,7 @@
         justify-content: center;
         gap: 10px;
     }
-    
+
     .div-col-middle {
         display: flex;
         flex-direction: column;
@@ -549,21 +567,21 @@
         justify-content: center;
         gap: 10px;
     }
-    
+
     .middle-pic1 {
         width: 98% !important;
         height: 550px !important;
     }
-    
+
     .middle-pic2 {
         width: 98% !important;
         height: 550px !important;
     }
-    
+
     .portfolio {
         padding-left: 15%;
     }
-    
+
     .numeric-para2 {
         font-family: "Microsoft YaHei";
         color: #000000;
@@ -572,7 +590,7 @@
         width: 50%;
         text-align: left;
     }
-    
+
     .image-container2 {
         position: relative;
         display: inline-block;
@@ -580,13 +598,13 @@
         max-width: 400px;
         margin: 4px;
     }
-    
+
     .image-container2 img {
         display: block;
         width: auto;
         height: auto;
     }
-    
+
     .interiors-card {
         position: absolute;
         bottom: 0;
@@ -600,7 +618,7 @@
         width: 90%;
         transition: transform 1.6s ease, opacity 1.6s ease;
     }
-    
+
     .interiors-card.show {
         transform: translateY(0);
         opacity: 0.6;
@@ -615,19 +633,20 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         /* Optional: Add a border for more definition */
     }
-    
+
     .interior-head {
         font-family: "Microsoft YaHei";
         color: #ffffff;
         font-size: 20px;
     }
-    
+
     .interior-para {
         font-family: "Microsoft YaHei";
         color: #ffffff;
         font-size: 14px;
     }
 }
+
 /* smaller screens */
 @media screen and (min-width:1020px) and (max-width:1280px) {
     .head-para {
@@ -664,21 +683,27 @@
         width: auto;
     }
 }
+
 /* mobile view  */
 @media screen and (max-width:550px) {
     .numeric-para2 {
         font-size: 12px;
         width: 100%;
-        padding-top: 20%;
+        padding-top: 0%;
+        text-align: center;
+        width: 80%;
     }
 
     .head-para {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding-left: 2%;
+        padding-left: 1%;
         padding-bottom: 10px;
-        gap: 50px;
+        gap: 5px;
+        margin-top: 0%;
+        margin-top: -20px;
     }
 
     .project-images-alignment {
@@ -729,15 +754,18 @@
         /* For Safari */
         border: 1px solid rgba(255, 255, 255, 0.3);
         /* Optional: Add a border for more definition */
+        width: 82%;
     }
 
 
     .interior-head {
-        font-size: 18px;
+        font-size: 20px;
+        text-align: center;
     }
 
     .interior-para {
         font-size: 14px;
+        text-align: center;
     }
 
     .middle-pic1 {
@@ -827,7 +855,7 @@
 .form-heading {
     font-family: var(--font2);
     font-weight: 700;
-    font-size: 32px;
+    font-size: 36px;
     color: #E2DDD0;
 }
 
@@ -894,7 +922,7 @@
     position: relative;
     top: -12px;
     font-family: var(--font2);
-    font-size: 14px;
+    font-size: 20px;
     color: #E2DDD0;
     margin-top: -3px;
 }
@@ -1106,6 +1134,7 @@
         background-size: cover;
         background-position: center;
         border-radius: 40px;
+        margin-top: 20px;
     }
 
     .slider-contact {
@@ -1130,19 +1159,19 @@
     }
 
     .form-caption {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .fullName,
     .comment {
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
         box-sizing: border-box;
     }
 
     .comment {
         height: auto;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .send {
@@ -1150,7 +1179,7 @@
         height: auto;
         padding: 5px;
         padding-bottom: 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #sendimage {
@@ -1161,8 +1190,9 @@
 
     #formpre {
         position: relative;
-        top: 0;
-        font-size: 12px;
+        top: 3px;
+        width: 20px;
+        padding-top: 5px;
     }
 
     /* Mobile view for mail dialog box */

@@ -32,7 +32,7 @@
 }
 
 .form-heading {
-    font-size: 30px;
+    font-size: 36px;
     font-family: var(--font2);
     font-weight: 400;
 }
@@ -276,8 +276,8 @@ form {
 /* mobile view  */
 @media only screen and (max-width: 768px) {
     .section1 {
-        padding: 2% 5%;
-        padding-top: 20%;
+        margin-left: 6%;
+        margin-top: 24%;
     }
 
     .section1-parent-container {
@@ -292,16 +292,17 @@ form {
     }
 
     .form-heading {
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
         /* Reduced font size for mobile */
     }
 
     .para {
-        font-size: 20px;
+        font-size: 14px;
         font-family: var(--font2);
         font-weight: 400;
         text-align: center;
+        padding-bottom: 5px;
     }
 
     .fullName {
@@ -476,6 +477,7 @@ form {
 
     .socialmedia-section i {
         font-size: 20px;
+        padding: 1.5px;
         /* Reduced icon size for mobile */
     }
 

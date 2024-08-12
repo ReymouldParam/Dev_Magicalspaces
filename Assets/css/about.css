@@ -138,10 +138,10 @@
         margin: auto;
     }
 
-    .container1,
-    .container2 {
+    .container1{
         width: 100%;
         text-align: center;
+        margin-top: 17%;
     }
 
     .heading-font1,
@@ -151,7 +151,7 @@
     }
 
     .para {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 24px;
         padding: 0 10px;
         text-align: center;
@@ -179,7 +179,7 @@
     }
 
     .numeric-para {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 22px;
     }
 }
@@ -312,7 +312,7 @@
 
     .numeric-para2,
     .about-para {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 22px;
         padding: 10px;
     }
@@ -328,7 +328,7 @@
 .our-para {
     font-family: "Microsoft YaHei";
     color: #000000;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 24px;
     text-align: center;
     padding: 2%;
@@ -336,7 +336,7 @@
 }
 
 .our-team {
-    font-size: 45px;
+    font-size: 36px;
     font-family: "Microsoft YaHei";
     text-align: center;
     font-weight: 400;
@@ -373,7 +373,8 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .team-para {
@@ -430,13 +431,15 @@
     }
 
     .our-para {
-        font-size: 16px;
-        padding: 5px;
+        font-size: 20px;
+        /* padding: 5px; */
+        padding-bottom: 20px;
     }
 
     .our-team {
         font-size: 24px;
         padding: 5px;
+        padding-bottom: 10px;
     }
 
     .team-card-align {
@@ -455,7 +458,7 @@
 
     .team-head,
     .team-para {
-        font-size: 12px;
+        font-size: 20px;
         line-height: 20px;
     }
 }
@@ -602,7 +605,7 @@
 }
 
 .section-contact {
-    width: 87%;
+    width: 86%;
     height: auto;
     padding: 30px;
     margin: auto;
@@ -984,24 +987,24 @@
     }
 
     .form-heading {
-        font-size: 20px;
+        font-size: 24px;
         padding-top: 15px;
     }
 
     .form-caption {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .fullName,
     .comment {
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
         box-sizing: border-box;
     }
 
     .comment {
         height: auto;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .send {
@@ -1009,19 +1012,20 @@
         height: auto;
         padding: 5px;
         padding-bottom: 10px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #sendimage {
         position: relative;
         top: 3px;
-        width: 15px;
+        width: 20px;
     }
 
     #formpre {
         position: relative;
         top: 0;
-        font-size: 12px;
+        font-size: 20px;
+        padding-top: 5px;
     }
 
     /* Mobile view for mail dialog box */
