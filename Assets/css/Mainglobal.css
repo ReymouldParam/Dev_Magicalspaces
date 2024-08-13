@@ -59,12 +59,16 @@ body {
     color: var(--black-color);
     font-weight: 400;
 }
-@media screen and (max-width:720px){
-    .heading-font2,.heading-font1{
+
+@media screen and (max-width:720px) {
+
+    .heading-font2,
+    .heading-font1 {
         font-size: 20px;
         text-align: center;
     }
 }
+
 .para {
     font-size: 20px;
     font-family: var(--font2);
@@ -191,8 +195,9 @@ body {
     text-underline-offset: 5px;
     /* Optional: Adjusts the space between text and underline */
 }
-.padding-y{
-    padding-left:40px !important;
+
+.padding-y {
+    padding-left: 40px !important;
 }
 
 /* smaller laptop screens */
@@ -327,7 +332,7 @@ footer {
 }
 
 .footer-text {
-    font-size: 20px;
+    font-size: 16px;
     font-family: var(--font2);
     font-weight: 400;
 }
@@ -371,7 +376,7 @@ footer {
 }
 
 .footer-icon-block i {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .licience {
@@ -381,7 +386,7 @@ footer {
 
 .licience-text {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-family: var(--font2);
     font-weight: 400;
 }
@@ -410,44 +415,54 @@ footer {
     }
 
     .footer-blocks {
-        height: 120px;
-        /* Adjusted height for larger screens */
-        padding-left: 15px;
-        /* Added padding for better spacing */
+        height: 100px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-left: 2px solid var(--brown-color);
     }
 
-    .footer-blocks1,
+    .footer-blocks1 {
+        width: 22%;
+    }
+
     .footer-blocks2 {
-        width: auto;
-        /* Adjust width to better fit larger screens */
+        width: 34%;
     }
 
     .footer-logo-block {
-        width: 70%;
-        /* Adjust width for better layout on larger screens */
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .footer-logo {
+        width: 100%;
+        height: auto;
     }
 
     .footer-icon-block {
-        width: 50px;
-        /* Increased width for larger icons */
+        width: 40px;
     }
 
     .footer-icon-block i {
-        font-size: 24px;
-        /* Increased icon font size */
+        font-size: 35px;
+        padding-right: 15px;
     }
 
     .licience {
-        border-top: 2px solid black;
-        /* Adjusted border thickness */
-        padding: 10px;
-        /* Added padding for better spacing */
+        border-top: 1px solid black;
+        padding: 5px;
     }
 
     .licience-text {
-        font-size: 12px;
-        /* Increased font size for larger screens */
+        text-align: center;
+        font-size: 20px;
+        font-family: var(--font2);
+        font-weight: 400;
     }
+
 }
 
 
@@ -505,9 +520,9 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     .licience-text {
         text-align: center;
         font-size: 14px !important;
     }
 }
-

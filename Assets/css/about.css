@@ -74,30 +74,40 @@
 /* Extra-large screen adjustments */
 @media (min-width: 1600px) {
     .section1 {
-        width: 80%; /* Increase width for extra-large screens */
-        padding-top: 5%; /* Adjust padding-top if necessary */
+        width: 80%;
+        /* Increase width for extra-large screens */
+        padding-top: 5%;
+        /* Adjust padding-top if necessary */
     }
 
-    .about, .creative {
-        font-size: 80px; /* Increase font size for better visibility on large screens */
-        line-height: 110px; /* Adjust line-height accordingly */
+    .about,
+    .creative {
+        font-size: 80px;
+        /* Increase font size for better visibility on large screens */
+        line-height: 110px;
+        /* Adjust line-height accordingly */
     }
 
     .numeric-head {
-        font-size: 32px; /* Increase font size for numeric heads */
+        font-size: 32px;
+        /* Increase font size for numeric heads */
     }
 
     .numeric-para {
-        font-size: 24px; /* Increase font size for numeric paragraph */
+        font-size: 24px;
+        /* Increase font size for numeric paragraph */
     }
 
     .img-num-div {
-        gap: 15%; /* Increase gap between image and text for better layout on large screens */
+        gap: 15%;
+        /* Increase gap between image and text for better layout on large screens */
     }
-    .numeric-div{
+
+    .numeric-div {
         padding-top: 4%;
     }
 }
+
 /* smaller screen laptops */
 @media screen and (min-width:1024px) and (max-width: 1280px) {
     .section1 {
@@ -138,7 +148,7 @@
         margin: auto;
     }
 
-    .container1{
+    .container1 {
         width: 100%;
         text-align: center;
         margin-top: 17%;
@@ -228,7 +238,7 @@
 }
 
 /* large screens */
-@media screen and (min-width:1600px){
+@media screen and (min-width:1600px) {
     .section2 {
         flex-direction: column;
         align-items: center;
@@ -259,6 +269,7 @@
     }
 
 }
+
 /* smaller screens */
 @media screen and (min-width:1024px) and (max-width: 1280px) {
     .section2 {
@@ -328,7 +339,7 @@
 .our-para {
     font-family: "Microsoft YaHei";
     color: #000000;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 24px;
     text-align: center;
     padding: 2%;
@@ -476,13 +487,17 @@
     padding: 10px;
 }
 
+.para-width {
+    width: 60%;
+}
+
 .div4-con {
     padding-top: 2%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 88%;
-    gap: 50px;
+    width: 90%;
+    gap: 10px;
 }
 
 /* images align in section4 */
@@ -518,8 +533,10 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin: 100px; /* Adjust gap between images if necessary */
-        flex-wrap: nowrap; /* Allow images to wrap on very large screens */
+        margin: 100px;
+        /* Adjust gap between images if necessary */
+        flex-wrap: nowrap;
+        /* Allow images to wrap on very large screens */
     }
 
     .portpolio-img {
@@ -588,6 +605,7 @@
     }
 }
 
+
 /* section5(contact from) */
 .section5 {
     background-color: #fff;
@@ -605,10 +623,11 @@
 }
 
 .section-contact {
-    width: 86%;
-    height: auto;
+    width: auto;
+    height: 100%;
     padding: 30px;
     margin: auto;
+    margin-left: 4%;
     display: flex;
     flex-direction: row;
     /* border-radius: 40px; */
@@ -786,23 +805,30 @@
     }
 
     .section-contact {
-        width: 75%; /* Adjusted for large screens while maintaining the layout */
+        width: 75%;
+        /* Adjusted for large screens while maintaining the layout */
         height: auto;
         margin: auto;
         padding: 30px;
         display: flex;
         flex-direction: row;
         background-image: url(/Assets/Images/form\ bgc.png);
-        background-size: cover; /* Ensures the background image covers the section */
+        background-size: cover;
+        /* Ensures the background image covers the section */
         background-repeat: no-repeat;
-        background-position: center; /* Center the background image */
-        border-radius: 40px; /* Optional: Add border-radius if needed for design consistency */
+        background-position: center;
+        /* Center the background image */
+        border-radius: 40px;
+        /* Optional: Add border-radius if needed for design consistency */
     }
 
     .slider-contact {
-        width: 45%; /* Adjusted width to fit larger screens */
-        height: 500px; /* Fixed height for consistency */
-        object-fit: cover; /* Ensures images cover their container */
+        width: 45%;
+        /* Adjusted width to fit larger screens */
+        height: 500px;
+        /* Fixed height for consistency */
+        object-fit: cover;
+        /* Ensures images cover their container */
     }
 
     .footer-image-container {
@@ -811,9 +837,12 @@
 
     .footer-images {
         width: 100%;
-        height: 60vh; /* Adjusted height to fit well within the container */
+        height: 55vh;
+        /* Adjusted height to fit well within the container */
         border-radius: 40px;
-        object-fit: cover; /* Ensures images cover their container */
+        padding-left: 5px;
+        object-fit: cover;
+        /* Ensures images cover their container */
     }
 
     .form-container {
@@ -845,7 +874,8 @@
     .fullName,
     .comment {
         width: 100%;
-        max-width: 570px; /* Ensures form fields don't exceed desired width */
+        max-width: 570px;
+        /* Ensures form fields don't exceed desired width */
         border-radius: 15px;
         padding: 15px;
         background: transparent;
@@ -859,7 +889,8 @@
     }
 
     .comment {
-        height: 100px; /* Increased height for better usability on larger screens */
+        height: 100px;
+        /* Increased height for better usability on larger screens */
     }
 
     .send {

@@ -43,71 +43,97 @@
     padding-right: 1%;
     padding-bottom: 30px;
 }
-.img-serve{
-    height:auto;
-    width:100%;
+
+.img-serve {
+    height: auto;
+    width: 100%;
 }
+
 /* large screens */
 
 @media screen and (min-width: 1600px) {
     .heading-con {
-        padding: 2% 6%; /* Increase padding for extra-large screens */
-        padding-top: 8%; /* Slightly adjust top padding for balance */
+        padding: 2% 6%;
+        /* Increase padding for extra-large screens */
+        padding-top: 8%;
+        /* Slightly adjust top padding for balance */
     }
 
     .heading-font1-port {
-        font-size: 80px; /* Increase font size for better visibility on larger screens */
-        padding-left: 4%; /* Adjust padding for alignment */
+        font-size: 80px;
+        /* Increase font size for better visibility on larger screens */
+        padding-left: 4%;
+        /* Adjust padding for alignment */
     }
 
     .heading-font2-port {
-        font-size: 80px; /* Increase font size for consistency */
-        padding-left: 2%; /* Adjust padding for alignment */
+        font-size: 80px;
+        /* Increase font size for consistency */
+        padding-left: 2%;
+        /* Adjust padding for alignment */
     }
 
     .numeric-para {
-        width: 60%; /* Reduce width to use more screen space */
-        font-size: 24px; /* Increase font size for readability */
-        line-height: 28px; /* Increase line height for better readability */
+        width: 60%;
+        /* Reduce width to use more screen space */
+        font-size: 24px;
+        /* Increase font size for readability */
+        line-height: 28px;
+        /* Increase line height for better readability */
     }
-    .img-serve{
+
+    .img-serve {
         height: auto;
         width: 100%;
     }
+
     .serve-img-align {
         padding-bottom: 40px;
-        justify-content: space-evenly; /* Increase padding-bottom for better spacing on larger screens */
+        justify-content: space-evenly;
+        /* Increase padding-bottom for better spacing on larger screens */
     }
 }
 
 /* smaller screens */
 @media screen and (min-width: 1020px) and (max-width: 1280px) {
     .heading-con {
-        padding: 2% 4%; /* Adjust padding for the screen size */
-        padding-top: 12%; /* Maintain the top padding adjustment */
+        padding: 2% 4%;
+        /* Adjust padding for the screen size */
+        padding-top: 12%;
+        /* Maintain the top padding adjustment */
     }
 
     .heading-font1-port {
-        font-size: 60px; /* Maintain the original font size */
-        padding-left: 4%; /* Adjust padding for alignment */
+        font-size: 60px;
+        /* Maintain the original font size */
+        padding-left: 4%;
+        /* Adjust padding for alignment */
     }
 
     .heading-font2-port {
-        font-size: 60px; /* Maintain the original font size */
-        padding-left: 2%; /* Adjust padding for alignment */
+        font-size: 60px;
+        /* Maintain the original font size */
+        padding-left: 2%;
+        /* Adjust padding for alignment */
     }
-    .img-serve{
+
+    .img-serve {
         height: auto;
         width: 90%;
     }
+
     .numeric-para {
-        width: 65%; /* Adjust width for better text fit */
-        font-size: 20px; /* Maintain the original font size */
-        line-height: 24px; /* Maintain the original line height */
+        width: 65%;
+        /* Adjust width for better text fit */
+        font-size: 20px;
+        /* Maintain the original font size */
+        line-height: 24px;
+        /* Maintain the original line height */
     }
 
     .serve-img-align {
-        padding-bottom: 30px; /* Maintain the original padding */
+        padding-bottom: 30px;
+        /* Maintain the original padding */
         gap: 15px;
         margin-left: 25px;
     }
@@ -123,7 +149,8 @@
         width: 85%;
     }
 
-    .heading-font1-port, .heading-font2-port {
+    .heading-font1-port,
+    .heading-font2-port {
         font-size: 20px;
         padding-left: 0;
         text-align: center;
@@ -156,7 +183,7 @@
 /* section2 */
 .services-con {
     background-color: #000000;
-   
+
     width: 100%;
     height: 70vh;
     border-radius: 20px;
@@ -218,27 +245,33 @@
 .sub-serv-heading {
     font-size: 36px;
     font-weight: 400;
+    padding-left: 10%;
     font-family: "Microsoft YaHei";
 }
 
 .sub-serv-para {
     font-size: 20px;
+    width: 80%;
     font-weight: 400;
     font-family: "Microsoft YaHei";
     color: var(--brown-color);
+    margin: auto;
 }
 
-.list-con-bottom{
+.list-con-bottom {
     margin-top: -2%;
     padding: 2%;
+    margin-right: 50px;;
 }
+
 #project-list {
     list-style: none;
-    width: 80%;
+    width: 90%;
+    margin: auto;
     position: relative;
     z-index: 1;
-    margin-top: 10%;
-    padding: 0;
+    margin-top: 2%;
+    padding: 5px;
     /* Remove default padding */
     cursor: pointer;
     overflow: hidden;
@@ -257,10 +290,11 @@
     /* Optional: Set a white background */
     width: auto;
     /* Ensure full width of the parent container */
-    text-align: left;
+    text-align: center;
     opacity: 1;
     /* Ensure the item is visible */
     position: relative;
+    margin-bottom: 10px;
     /* Relative positioning to ensure natural flow */
     transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
@@ -274,115 +308,154 @@
 }
 
 .service-each {
+    width: 100%;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around !important;
 }
 
 /* large screen */
 
 @media screen and (min-width: 1600px) {
     .services-con {
-        height: 75vh; /* Increase height for better fit */
-        margin-top: 4%; /* Adjust top margin for spacing */
-        border-radius: 25px; /* Increase border-radius for a more balanced look */
+        height: 75vh;
+        /* Increase height for better fit */
+        margin-top: 4%;
+        /* Adjust top margin for spacing */
+        border-radius: 25px;
+        /* Increase border-radius for a more balanced look */
     }
 
     .services-head {
-        font-size: 48px; /* Increase font size for visibility on large screens */
-        padding-top: 20px; /* Adjust padding for spacing */
+        font-size: 48px;
+        /* Increase font size for visibility on large screens */
+        padding-top: 20px;
+        /* Adjust padding for spacing */
     }
 
     .serv-card {
-        height: 350px; /* Increase height for better content fit */
-        padding: 3%; /* Increase padding for improved spacing */
+        height: 350px;
+        /* Increase height for better content fit */
+        padding: 3%;
+        /* Increase padding for improved spacing */
     }
 
     .cards-align {
-        width: 90%; /* Adjust width to fit larger screens */
-        margin-top: 3%; /* Adjust top margin for spacing */
-        gap: 3%; /* Increase gap between cards */
+        width: 90%;
+        /* Adjust width to fit larger screens */
+        margin-top: 3%;
+        /* Adjust top margin for spacing */
+        gap: 3%;
+        /* Increase gap between cards */
     }
 
     .serv-h1 {
-        font-size: 24px; /* Increase font size for readability */
+        font-size: 24px;
+        /* Increase font size for readability */
     }
 
     .serv-p {
-        font-size: 20px; /* Increase font size for readability */
+        font-size: 20px;
+        /* Increase font size for readability */
     }
 
     .sub-serv-heading {
-        font-size: 48px; /* Increase font size for headings */
+        font-size: 48px;
+        /* Increase font size for headings */
     }
 
     .sub-serv-para {
-        font-size: 20px; /* Increase font size for readability */
+        font-size: 20px;
+        /* Increase font size for readability */
     }
 
     #project-list {
-        width: 85%; /* Adjust width for a better fit */
-        margin-top: 8%; /* Adjust top margin for spacing */
+        width: 85%;
+        /* Adjust width for a better fit */
+        margin-top: 8%;
+        /* Adjust top margin for spacing */
     }
 
     .project-item {
-        font-size: 22px; /* Increase font size for readability */
-        padding: 12px; /* Increase padding for better spacing */
+        font-size: 22px;
+        /* Increase font size for readability */
+        padding: 12px;
+        /* Increase padding for better spacing */
     }
 }
 
 /* smaller screens */
 @media screen and (min-width: 1020px) and (max-width: 1280px) {
     .services-con {
-        height: 60vh; /* Adjust height for better fit */
-        margin-top: 4%; /* Adjust top margin for spacing */
-        border-radius: 15px; /* Adjust border-radius for a balanced look */
+        height: 60vh;
+        /* Adjust height for better fit */
+        margin-top: 4%;
+        /* Adjust top margin for spacing */
+        border-radius: 15px;
+        /* Adjust border-radius for a balanced look */
     }
 
     .services-head {
-        font-size: 40px; /* Slightly increase font size for better visibility */
-        padding-top: 20px; /* Adjust padding for spacing */
+        font-size: 40px;
+        /* Slightly increase font size for better visibility */
+        padding-top: 20px;
+        /* Adjust padding for spacing */
     }
 
     .serv-card {
-        height: 350px; /* Increase height for a better fit */
-        width:100%;
-        padding: 3%; /* Increase padding for better content spacing */
+        height: 350px;
+        /* Increase height for a better fit */
+        width: 100%;
+        padding: 3%;
+        /* Increase padding for better content spacing */
     }
 
     .cards-align {
-        width: 80%; /* Adjust width to fit the container */
+        width: 80%;
+        /* Adjust width to fit the container */
         margin-top: 3%;
-        margin: 5%; /* Adjust top margin for spacing */
-        gap: 3%; /* Increase gap between cards */
+        margin: 5%;
+        /* Adjust top margin for spacing */
+        gap: 3%;
+        /* Increase gap between cards */
     }
 
     .serv-h1 {
-        font-size: 22px; /* Increase font size for better readability */
+        font-size: 22px;
+        /* Increase font size for better readability */
     }
 
     .serv-p {
-        font-size: 20px; /* Increase font size for better readability */
+        font-size: 20px;
+        /* Increase font size for better readability */
     }
 
     .sub-serv-heading {
-        font-size: 40px; /* Slightly increase font size for headings */
+        font-size: 40px;
+        /* Slightly increase font size for headings */
     }
 
     .sub-serv-para {
-        font-size: 20px; /* Increase font size for better readability */
+        font-size: 20px;
+        /* Increase font size for better readability */
     }
 
     #project-list {
-        width: 85%; /* Adjust width for better fit */
-        margin-top: 8%; /* Adjust top margin for spacing */
+        width: 85%;
+        /* Adjust width for better fit */
+        margin-top: 8%;
+        /* Adjust top margin for spacing */
     }
 
     .project-item {
-        font-size: 22px; /* Increase font size for better readability */
-        padding: 12px; /* Increase padding for better spacing */
+        font-size: 22px;
+        /* Increase font size for better readability */
+        padding: 12px;
+        /* Increase padding for better spacing */
     }
 }
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
     .services-con {
@@ -394,8 +467,10 @@
     }
 
     .services-head {
-        font-size: 24px; /* Slightly smaller font size for better fit */
-        padding-top: 15px; /* Adjust padding for spacing */
+        font-size: 24px;
+        /* Slightly smaller font size for better fit */
+        padding-top: 15px;
+        /* Adjust padding for spacing */
         padding-bottom: 15px;
     }
 
@@ -406,6 +481,7 @@
         width: 100%;
         margin: auto;
     }
+
     .serv-card {
         width: 90%;
         height: auto;
@@ -415,52 +491,70 @@
     }
 
     .serv-h1 {
-        font-size: 14px; /* Slightly smaller heading size */
+        font-size: 14px;
+        /* Slightly smaller heading size */
     }
 
     .serv-p {
-        font-size: 14px; /* Reduce paragraph size for better readability */
+        font-size: 14px;
+        /* Reduce paragraph size for better readability */
         text-align: center;
     }
+
     .service-each {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Align content to the left */
-        justify-content: center; /* Adjust justification */
-        padding: 20px; /* Add padding for better spacing */
+        flex-direction: column;
+        /* Stack content vertically */
+        align-items: center;
+        /* Align content to the left */
+        justify-content: center;
+        /* Adjust justification */
+        padding: 20px;
+        /* Add padding for better spacing */
     }
 
     .sub-serv-heading {
-        font-size: 24px; /* Reduce sub-heading size */
-        margin-bottom: 10px; /* Add margin for spacing */
+        font-size: 24px;
+        /* Reduce sub-heading size */
+        margin-bottom: 10px;
+        /* Add margin for spacing */
         text-align: center;
     }
 
     .sub-serv-para {
-        font-size: 14px; /* Reduce paragraph size */
-        color: var(--brown-color); /* Maintain color */
+        font-size: 14px;
+        /* Reduce paragraph size */
+        color: var(--brown-color);
+        /* Maintain color */
         text-align: center;
     }
 
     #project-list {
-        width: auto; /* Ensure list takes full width */
-        margin-top: 5%; /* Adjust top margin */
+        width: auto;
+        /* Ensure list takes full width */
+        margin-top: 5%;
+        /* Adjust top margin */
     }
 
     .project-item {
         text-align: center;
-        font-size: 14px; /* Reduce list item size */
-        padding: 8px; /* Reduce padding */
-        border-bottom: 1px solid #ccc; /* Adjust border color for visibility */
+        font-size: 14px;
+        /* Reduce list item size */
+        padding: 8px;
+        /* Reduce padding */
+        border-bottom: 1px solid #ccc;
+        /* Adjust border color for visibility */
     }
 
     .project-item:hover {
-        background-color: #e0e0e0; /* Slightly darker background on hover */
-        transform: translateX(0); /* Remove shift on hover for better UX */
+        background-color: #e0e0e0;
+        /* Slightly darker background on hover */
+        transform: translateX(0);
+        /* Remove shift on hover for better UX */
     }
 }
 
 /* section3 */
-.our-clint-say{
+.our-clint-say {
     padding-top: 25px;
     font-size: 36px;
     color: #000000;
@@ -468,6 +562,7 @@
     text-align: center;
     font-weight: 400;
 }
+
 .section3 {
     background-color: #ffffff;
     padding-bottom: 20px;
@@ -520,6 +615,7 @@
 }
 
 #test-aside2-caresel .slick_btn {
+    display: none !important;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -603,61 +699,87 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
-    .our-clint-say{
+    .our-clint-say {
         font-size: 24px;
     }
-    .content-holder{
+
+    .content-holder {
         padding-top: 0;
         margin-top: -20px;
     }
-    .test-text{
+
+    .test-text {
         font-size: 14px;
     }
+
     .test-aside2 {
-        width: 90%; /* Reduce width for better fit on mobile */
-        margin: 0 auto; /* Center the container */
+        width: 90%;
+        /* Reduce width for better fit on mobile */
+        margin: 0 auto;
+        /* Center the container */
     }
 
     .test-content {
-        width: 90%; /* Ensure the testimonial card takes full width */
-        margin: 50px auto; /* Add margin for spacing */
-        border-radius: 20px; /* Reduce border-radius for better appearance on mobile */
-        background-size: 15%; /* Reduce background size for better fit */
+        width: 90%;
+        /* Ensure the testimonial card takes full width */
+        margin: 50px auto;
+        /* Add margin for spacing */
+        border-radius: 20px;
+        /* Reduce border-radius for better appearance on mobile */
+        background-size: 15%;
+        /* Reduce background size for better fit */
     }
 
     .test-content-parent {
-        padding: 15px 20px; /* Reduce padding for better fit */
-        font-size: 16px; /* Slightly reduce font size */
-        text-align: center; /* Keep text centered */
+        padding: 15px 20px;
+        /* Reduce padding for better fit */
+        font-size: 16px;
+        /* Slightly reduce font size */
+        text-align: center;
+        /* Keep text centered */
     }
 
     .test-content-parent2 {
-        flex-direction: column; /* Stack the image and text vertically */
-        gap: 20px; /* Reduce gap between image and text */
-        padding: 20px 20px; /* Reduce padding */
-        text-align: center; /* Center-align the text and image */
+        flex-direction: column;
+        /* Stack the image and text vertically */
+        gap: 20px;
+        /* Reduce gap between image and text */
+        padding: 20px 20px;
+        /* Reduce padding */
+        text-align: center;
+        /* Center-align the text and image */
     }
 
     .test-content-parent2 img {
-        width: 80px; /* Resize image for mobile view */
-        height: 80px; /* Maintain aspect ratio */
+        width: 80px;
+        /* Resize image for mobile view */
+        height: 80px;
+        /* Maintain aspect ratio */
     }
 
     .name-of-person {
-        font-size: 14px; /* Reduce font size slightly */
-        font-weight: 500; /* Adjust font weight */
+        font-size: 14px;
+        /* Reduce font size slightly */
+        font-weight: 500;
+        /* Adjust font weight */
     }
 
     .name-of-person-caption {
-        font-size: 14px ; /* Reduce font size slightly */
+        font-size: 14px;
+        /* Reduce font size slightly */
     }
 
     #test-aside2-caresel .slick_btn {
-        height: 30px; /* Reduce size of buttons */
-        width: 30px; /* Reduce width of buttons */
-        left: -40px; /* Adjust position of the left button */
-        top: 150px; /* Adjust vertical position */
-        font-size: 14px; /* Adjust font size */
+        height: 30px;
+        /* Reduce size of buttons */
+        width: 30px;
+        /* Reduce width of buttons */
+        left: -40px;
+        /* Adjust position of the left button */
+        top: 150px;
+        /* Adjust vertical position */
+        font-size: 14px;
+        /* Adjust font size */
     }
 
     #test-aside2-caresel .slick-dots {
@@ -667,12 +789,15 @@
     }
 
     #test-aside2-caresel .slick-dots li button {
-        height: 5px; /* Reduce height of each dot */
-        border-radius: 5px; /* Adjust border radius for a smaller look */
+        height: 5px;
+        /* Reduce height of each dot */
+        border-radius: 5px;
+        /* Adjust border radius for a smaller look */
     }
 
     #test-aside2-caresel .slick-dots .slick-active button {
-        background-color: black; /* Keep the active dot visible */
+        background-color: black;
+        /* Keep the active dot visible */
     }
 }
 
@@ -693,10 +818,11 @@
 }
 
 .section-contact {
-    width: 86%;
-    height: auto;
+    width:auto;
+    height: 100%;
     padding: 30px;
     margin: auto;
+    margin-left: 4%;
     display: flex;
     flex-direction: row;
     /* border-radius: 40px; */
@@ -717,9 +843,9 @@
 
 .footer-images {
     width: 100%;
-    height: 69vh;
+    height: 72vh;
     border-radius: 40px;
-    margin-top: 2%;
+    margin-top: 0%;
 }
 
 .form-container {
@@ -986,6 +1112,7 @@
         padding-top: 25px;
     }
 }
+
 /* small screens */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .section5 {

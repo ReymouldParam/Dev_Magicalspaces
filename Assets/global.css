@@ -74,11 +74,16 @@ body {
 }
 
 .header2 {
-    width: 100%;
-    padding: 5px 0% 0 3%;
-    background-color: rgba(0, 0, 0, 0.662);
+    width: 88%;
+    background-color: #000000;
     backdrop-filter: blur(5px);
     top: 0;
+    padding: 1%; /* Adjust padding as needed */
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 6%;
 }
 
 .header-logo {
@@ -212,6 +217,9 @@ body {
     height: 25px;
     border-radius: 8px;
 }
+/*mobile view  */
+
+
 
 /* ************* footer ********** */
 /* ---------------------------------------------footer-------------- */
@@ -297,27 +305,76 @@ body {
 
 
 
-@media screen and (min-width:1850px) {
+@media screen and (min-width:1600px) {
     .header-section {
-        width: 100%;
+        width: 95%;
         margin: auto;
+        margin-left: 2%;
         padding: 10px 15%;
     }
 
     .header2 {
-        width: 100%;
-        /* padding-left: 5%; */
+        width: 88%;
+    background-color: #000000;
+    backdrop-filter: blur(5px);
+    top: 0;
+    padding: 1%; /* Adjust padding as needed */
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 6%;
     }
 
     .footer {
-        width: 80%;
-        margin: 0 10%;
+        width: 100%;
+       
     }
 
     #licience {
         width: 80%;
         margin: auto;
     }
+    
+.info-address-block {
+    width: 40%;
+    padding-left: 2%;
+    /* margin: auto; */
+}
+
+.info-mail-block i {
+    width:15%;
+    font-size: 35px;
+    padding-right: 15px;
+}
+
+.info-phone-block {
+    margin-left: 2%;
+}
+
+.footercon {
+    color: var(--brown-color);
+    font-size: 20px;
+    font-family: var(--font2);
+    font-weight: 400;
+}
+
+#licience {
+    /* width: 94%; */
+    background-color: #fff;
+    margin: auto;
+    padding: 10px 5% 10px 10%;
+    background-color: #fff;
+}
+
+#licience h6 {
+    color: var(--brown-color);
+    font-family: "poppins";
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+}
+
 }
 
 @media screen and (min-width:1301px) and (max-width:1430px) {
@@ -339,8 +396,9 @@ body {
     }
 
     .header2 {
-        width: 97%;
+        width: 88%;
         padding: 10px 4%;
+        margin-left: 6%;
     }
 
     .logo-section {

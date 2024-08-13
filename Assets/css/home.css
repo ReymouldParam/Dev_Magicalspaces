@@ -1,4 +1,3 @@
-
 .section1 {
     background-color: #fff;
     border-bottom: 0.5px solid black;
@@ -174,7 +173,7 @@
     /* padding-bottom: 0px; */
     background-color: white;
     border-bottom: 1px solid black;
-    
+
     /* overflow: hidden !important; */
 }
 
@@ -348,9 +347,11 @@
     justify-content: space-between;
     align-items: center;
 }
-.company-text{
+
+.company-text {
     padding-left: 7%;
 }
+
 #aboutCompanyline {
     padding-left: 160px;
     margin-bottom: 10px !important;
@@ -733,9 +734,11 @@
 .test-aside2 {
     width: 57%;
 }
-.testmonial{
+
+.testmonial {
     margin-left: 0;
 }
+
 .client-says {
     margin-left: 9%;
 }
@@ -873,25 +876,35 @@
 }
 
 /* ------------------------------------------contact page----------------------- */
-.section6 {
+
+/* section5(contact from) */
+.section5 {
     background-color: #fff;
-    padding: 1%;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* margin-bottom: -10%; */
 }
 
 .section6-contactus {
-    padding-top: 30px;
+    padding-top: 0px;
+    width: 100%;
+    margin: auto;
+    margin: 0;
+    margin-top: -15px;
 }
 
 .section-contact {
-    width: 80%;
+    width: auto;
+    height: 100%;
     padding: 30px;
-    margin: 0 10%;
+    margin: auto;
+    margin-left: 4%;
     display: flex;
     flex-direction: row;
-    border-radius: 40px;
+    /* border-radius: 40px; */
     background-image: url(/Assets/Images/form\ bgc.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .slider-contact {
@@ -908,6 +921,7 @@
     width: 100%;
     height: 69vh;
     border-radius: 40px;
+    margin-top: 2%;
 }
 
 .form-container {
@@ -925,7 +939,7 @@
 .form-caption {
     color: #E2DDD0;
     font-family: var(--font2);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     padding-top: 5px;
 }
@@ -933,19 +947,19 @@
 .label1 {
     color: #E2DDD0;
     font-family: var(--font2);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .fullName {
     width: 570px;
-    height: 52px;
+    /* height: 52px; */
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
     color: white;
     background: transparent;
     border: 1.2px solid #E2DDD0;
     font-family: var(--font2);
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .form-block {
@@ -959,20 +973,21 @@
 
 .comment {
     width: 570px;
-    height: 100px;
+    height: 50px;
     border-radius: 15px;
     background: transparent;
     border: 1.2px solid #E2DDD0;
 }
 
 .send {
-    width: 157px;
-    height: 50px;
-    border: 1.5px solid #E2DDD0;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #E2DDD0;
     border-radius: 15px;
     background: transparent;
     color: white;
     cursor: pointer !important;
+    margin-top: -13px;
 }
 
 #sendimage {
@@ -982,11 +997,13 @@
 
 #formpre {
     position: relative;
-    top: -15px;
+    top: -12px;
     font-family: var(--font2);
-    font-size: 16px;
+    font-size: 14px;
     color: #E2DDD0;
+    margin-top: -3px;
 }
+
 
 /* -----------------------------------mail dialog box----- */
 .mail-success-box {
