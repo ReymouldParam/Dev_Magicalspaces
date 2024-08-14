@@ -261,7 +261,8 @@
 .list-con-bottom {
     margin-top: -2%;
     padding: 2%;
-    margin-right: 50px;;
+    margin-right: 50px;
+    ;
 }
 
 #project-list {
@@ -319,12 +320,10 @@
 
 @media screen and (min-width: 1600px) {
     .services-con {
-        height: 75vh;
-        /* Increase height for better fit */
-        margin-top: 4%;
-        /* Adjust top margin for spacing */
+        height: fit-content;
+        /* margin-top: 2%; */
+        padding-bottom: 4%;
         border-radius: 25px;
-        /* Increase border-radius for a more balanced look */
     }
 
     .services-head {
@@ -388,9 +387,10 @@
 /* smaller screens */
 @media screen and (min-width: 1020px) and (max-width: 1280px) {
     .services-con {
-        height: 60vh;
+        height: 100%;
         /* Adjust height for better fit */
         margin-top: 4%;
+        padding-bottom: 4%;
         /* Adjust top margin for spacing */
         border-radius: 15px;
         /* Adjust border-radius for a balanced look */
@@ -400,6 +400,7 @@
         font-size: 40px;
         /* Slightly increase font size for better visibility */
         padding-top: 20px;
+        padding-bottom: 20px;
         /* Adjust padding for spacing */
     }
 
@@ -407,7 +408,7 @@
         height: 350px;
         /* Increase height for a better fit */
         width: 100%;
-        padding: 3%;
+        padding: 2%;
         /* Increase padding for better content spacing */
     }
 
@@ -415,7 +416,7 @@
         width: 80%;
         /* Adjust width to fit the container */
         margin-top: 3%;
-        margin: 5%;
+        margin: auto;
         /* Adjust top margin for spacing */
         gap: 3%;
         /* Increase gap between cards */
@@ -500,7 +501,11 @@
         /* Reduce paragraph size for better readability */
         text-align: center;
     }
-
+    .list-con-bottom {
+        margin-top:0;
+        padding: 2%;
+        margin-right: 0;
+    }
     .service-each {
         flex-direction: column;
         /* Stack content vertically */
@@ -508,16 +513,16 @@
         /* Align content to the left */
         justify-content: center;
         /* Adjust justification */
-        padding: 20px;
+        padding: 0;
         /* Add padding for better spacing */
     }
 
     .sub-serv-heading {
         font-size: 24px;
-        /* Reduce sub-heading size */
         margin-bottom: 10px;
-        /* Add margin for spacing */
         text-align: center;
+        width: 80%;
+        margin: auto;
     }
 
     .sub-serv-para {
@@ -818,7 +823,7 @@
 }
 
 .section-contact {
-    width:auto;
+    width: auto;
     height: 100%;
     padding: 30px;
     margin: auto;

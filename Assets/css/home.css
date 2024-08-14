@@ -168,6 +168,7 @@
 }
 
 /* --------------------------------------Our Services----------- */
+
 .section2 {
     padding: 30px 1%;
     /* padding-bottom: 0px; */
@@ -195,6 +196,7 @@
 .our {
     font-family: var(--font2);
     font-weight: 500;
+    padding-top: 30px;
 }
 
 .ourserviceOur {
@@ -315,6 +317,7 @@
     font-size: 5px;
 }
 
+
 /*   section part 2*/
 .ourservices-images {
     /* overflow: hidden !important; */
@@ -331,7 +334,9 @@
     border-radius: 30px;
 }
 
+
 /* ------------------------------------section3 about company------- */
+
 .section3 {
     background-color: #fff;
     border-bottom: 1px solid black;
@@ -652,6 +657,7 @@
 /* **************************** */
 
 /* -------------------------------------------------Our portfolio-------------------- */
+
 .section4 {
     background-color: #fff;
     border-bottom: 1px solid black;
