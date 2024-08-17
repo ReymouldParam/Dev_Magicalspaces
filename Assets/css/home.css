@@ -1067,3 +1067,286 @@
     border-radius: 10px;
     border: 1px solid black;
 }
+
+/* large screens */
+@media screen and (min-width: 1600px) {
+    .section5 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section6-contactus {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .section-contact {
+        width: 75%;
+        /* Adjusted for large screens while maintaining the layout */
+        height: auto;
+        margin: auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        background-image: url(/Assets/Images/form\ bgc.png);
+        background-size: cover;
+        /* Ensures the background image covers the section */
+        background-repeat: no-repeat;
+        background-position: center;
+        /* Center the background image */
+        border-radius: 40px;
+        /* Optional: Add border-radius if needed for design consistency */
+    }
+
+    .slider-contact {
+        width: 45%;
+        /* Adjusted width to fit larger screens */
+        height: 500px;
+        /* Fixed height for consistency */
+        object-fit: cover;
+        /* Ensures images cover their container */
+    }
+
+    .footer-image-container {
+        width: 100%;
+    }
+
+    .footer-images {
+        width: 100%;
+        height: 55vh;
+        /* Adjusted height to fit well within the container */
+        border-radius: 40px;
+        padding-left: 5px;
+        object-fit: cover;
+        /* Ensures images cover their container */
+    }
+
+    .form-container {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .form-heading {
+        font-family: var(--font2);
+        font-weight: 700;
+        font-size: 32px;
+        color: #E2DDD0;
+    }
+
+    .form-caption {
+        color: #E2DDD0;
+        font-family: var(--font2);
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 5px;
+    }
+
+    .label1 {
+        color: #E2DDD0;
+        font-family: var(--font2);
+        font-size: 20px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        max-width: 570px;
+        /* Ensures form fields don't exceed desired width */
+        border-radius: 15px;
+        padding: 15px;
+        background: transparent;
+        border: 1.2px solid #E2DDD0;
+        font-family: var(--font2);
+        font-size: 18px;
+    }
+
+    .fullName::placeholder {
+        font-size: 16px;
+    }
+
+    .comment {
+        height: 100px;
+        /* Increased height for better usability on larger screens */
+    }
+
+    .send {
+        width: auto;
+        max-width: 157px;
+        height: 40px;
+        border: 1.5px solid #E2DDD0;
+        border-radius: 15px;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sendimage {
+        width: 20px;
+    }
+
+    #formpre {
+        font-family: var(--font2);
+        font-size: 14px;
+        color: #E2DDD0;
+        padding-top: 25px;
+    }
+}
+
+/* small screens */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .section5 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section6-contactus {
+        width: 100%;
+    }
+
+    .section-contact {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 30px;
+        flex-direction: row;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .slider-contact {
+        width: 40% !important;
+        height: auto;
+        /* Adjust height based on content */
+    }
+
+    .footer-images {
+        width: 100%;
+        height: 400px;
+    }
+
+    .form-container {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        height: 15px;
+    }
+
+    .send {
+        width: auto;
+    }
+
+    #sendimage {
+        position: relative;
+        /* top: 7px; */
+        width: 20px;
+    }
+
+    #formpre {
+        position: relative;
+        top: -15px;
+        font-family: var(--font2);
+        font-size: 14px;
+        color: #E2DDD0;
+    }
+}
+
+/* mobile view  */
+@media (max-width: 767px) {
+    .section5 {
+        padding: 5%;
+        margin-bottom: 0;
+    }
+
+    .section6-contactus {
+        padding-top: 0px;
+    }
+
+    .section-contact {
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 40px;
+    }
+
+    .slider-contact {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .footer-images {
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    .form-heading {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .form-caption {
+        font-size: 14px;
+    }
+
+    .fullName,
+    .comment {
+        width: 100%;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .comment {
+        height: auto;
+        font-size: 14px;
+    }
+
+    .send {
+        width: 35%;
+        height: auto;
+        padding: 5px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    #sendimage {
+        position: relative;
+        top: 3px;
+        width: 20px;
+    }
+
+    #formpre {
+        position: relative;
+        top: 0;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    /* Mobile view for mail dialog box */
+    .mail-notification-block {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #mail-message {
+        font-size: 24px;
+    }
+
+    #mail-message-caption {
+        font-size: 14px;
+    }
+}

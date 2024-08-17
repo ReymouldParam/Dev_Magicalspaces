@@ -162,7 +162,7 @@
 
     .para {
         font-size: 14px;
-        line-height: 24px;
+        line-height: 20px;
         padding: 0 10px;
         text-align: center;
     }
@@ -181,6 +181,7 @@
     .num-para {
         text-align: center;
         align-items: center;
+        padding-top: 10px;
     }
 
     .numeric-head {
@@ -488,7 +489,8 @@
 }
 
 .para-width {
-    width: 98%;
+    width: 85%;
+    margin: auto;
 }
 
 .div4-con {
@@ -1019,7 +1021,7 @@
     }
 
     .form-heading {
-        font-size: 24px;
+        font-size: 20px;
         padding-top: 15px;
     }
 
@@ -1040,7 +1042,7 @@
     }
 
     .send {
-        width: 30%;
+        width: 35%;
         height: auto;
         padding: 5px;
         padding-bottom: 10px;

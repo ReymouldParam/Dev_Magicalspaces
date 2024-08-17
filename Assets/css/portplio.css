@@ -332,8 +332,9 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
     .heading-con {
-        margin-top: 8%;
+        margin-top: 12%;
         text-align: center;
+        padding-bottom: 10px;
     }
 
     .numeric-para {
@@ -357,7 +358,7 @@
         position: relative;
         z-index: 1;
         cursor: pointer;
-        height: 60vh;
+        height: 65vh;
         overflow: hidden;
         text-align: center;
     }
@@ -372,8 +373,12 @@
     .project-item.active {
         font-size: 14px;
     }
-
-    .heading-font1-port,
+    .heading-font1-port {
+        font-size: 20px;
+        width: 80%;
+        padding-left: 43px;
+    }
+    
     .heading-font2-port {
         font-size: 20px;
         width: 80%;
@@ -689,7 +694,7 @@
 /* mobile view  */
 @media screen and (max-width:550px) {
     .numeric-para2 {
-        font-size: 12px;
+        font-size: 14px;
         width: 100%;
         padding-top: 0%;
         text-align: center;
@@ -723,6 +728,7 @@
         flex-direction: column;
         align-items: center;
         margin: 0;
+        padding-bottom: 15px;
     }
 
     .image-container2 {
@@ -1178,7 +1184,7 @@
     }
 
     .send {
-        width: 30%;
+        width: 35%;
         height: auto;
         padding: 5px;
         padding-bottom: 10px;
@@ -1188,7 +1194,7 @@
     #sendimage {
         position: relative;
         top: 3px;
-        width: 15px;
+        width: 20px;
     }
 
     #formpre {

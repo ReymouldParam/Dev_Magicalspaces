@@ -278,6 +278,7 @@ form {
     .section1 {
         margin-left: 6%;
         margin-top: 15%;
+        padding-bottom: 20px;
     }
 
     .section1-parent-container {
@@ -294,6 +295,7 @@ form {
     .form-heading {
         font-size: 20px;
         text-align: center;
+        padding-top: 10px;
         /* Reduced font size for mobile */
     }
 
@@ -302,7 +304,7 @@ form {
         font-family: var(--font2);
         font-weight: 400;
         text-align: center;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
     }
 
     .fullName {
@@ -319,14 +321,12 @@ form {
     }
 
     .send {
-        width: 100%;
-        /* Full width for mobile view */
-        font-size: 16px;
-        /* Slightly smaller font size for mobile */
+        width: 35%;
+        font-size: 20px;
     }
 
     .send i {
-        font-size: 16px;
+        font-size: 20px;
         /* Adjust icon size */
     }
 
@@ -338,7 +338,7 @@ form {
     }
 
     .label1 {
-        font-size: 16px;
+        font-size: 20px;
         /* Adjust font size for mobile view */
     }
 }

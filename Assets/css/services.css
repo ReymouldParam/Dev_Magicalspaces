@@ -145,7 +145,7 @@
         flex-direction: column;
         align-items: center;
         padding: 5%;
-        margin-top: 12%;
+        margin-top: 18%;
         width: 85%;
     }
 
@@ -518,7 +518,7 @@
     }
 
     .sub-serv-heading {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 10px;
         text-align: center;
         width: 80%;
@@ -705,7 +705,7 @@
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
     .our-clint-say {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .content-holder {
@@ -1217,7 +1217,7 @@
     }
 
     .form-heading {
-        font-size: 24px;
+        font-size: 20px;
         padding-top: 15px;
     }
 
