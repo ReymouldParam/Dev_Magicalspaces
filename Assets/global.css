@@ -58,6 +58,8 @@ body {
     font-weight: 400;
 }
 
+
+
 .header-section {
     display: flex;
     align-items: center;
@@ -218,8 +220,14 @@ body {
     border-radius: 8px;
 }
 /*mobile view  */
-
-
+@media screen and (max-width:550px){
+    .header-section{
+        width: 100%;
+    }
+    .header2{
+        width: 100%;
+    }
+}
 
 /* ************* footer ********** */
 /* ---------------------------------------------footer-------------- */
@@ -484,16 +492,19 @@ body {
     }
 
     .header-section {
-        width: 98%;
+        width: 100%;
         margin: auto;
         padding: 10px 5%;
         justify-content: space-between;
-        top: 10px;
+        top:0;
+        background-color: #000000;
+
     }
 
     .header2 {
         width: 100%;
         top: 0;
+        border-radius: 0;
     }
 
     .global-section {
