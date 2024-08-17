@@ -1,717 +1,920 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magical Space</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Magical Space</title>
 
-    <!-- fevicon -->
-    <link rel="icon" type="image/png" href="Assets/Images/icon/fevicon-icon.png">
+        <!-- fevicon -->
+        <link rel="icon" type="image/png"
+            href="Assets/Images/icon/fevicon-icon.png">
 
-    <!-- slick carousel cdn -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <!-- slick carousel cdn -->
+        <link rel="stylesheet" type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- font awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="./Assets/global.css">
-    <link rel="stylesheet" href="./Assets/css/Mainglobal.css" />
-    <link rel="stylesheet" href="./Assets/css/home.css">
-    <link rel="stylesheet" href="./Assets/Animations.css">
-    <link rel="stylesheet" href="./Assets/MediaQueries.css">
-</head>
+        <!-- styles -->
+        <link rel="stylesheet" href="./Assets/global.css">
+        <link rel="stylesheet" href="./Assets/css/Mainglobal.css" />
+        <link rel="stylesheet" href="./Assets/css/home.css">
+        <link rel="stylesheet" href="./Assets/Animations.css">
+        <link rel="stylesheet" href="./Assets/MediaQueries.css">
+    </head>
 
-
-<body>
-    <!-- -------------------------------------------------------Header part------------------------------------------------------- -->
-    <header class="header-section">
-        <div class="logo-container">
-            <img src="./Assets/Images/icon/logo magical WHITE with crop.png" alt="logo" class="logo-icon" />
-        </div>
-        <div class="nav-section">
-            <ul class="nav-list-options">
-                <li><a href="." id="home">HOME</a></li>
-                <li><a href="">SERVICE</a></li>
-                <li><a href="./about.html">ABOUT US</a></li>
-                <li><a href="./portopolio.html">PORTFOLIO</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-        <i class="fa-solid fa-bars" id="bar"></i>
-        <div id="bar_options">
-            <i class="fa-regular fa-circle-xmark" id="cross"></i>
-            <a href="" class="navlinks" id="home">HOME</a>
-            <a href="" class="navlinks">SERVICES </a>
-            <a href="about.html" class="navlinks">ABOUT US</a>
-            <a href="" class="navlinks">PORTAFOLIO</a>
-            <a href="" class="navlinks">CONTACT</a>
-        
-        </div>
-        <div class="icons-align">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook icon-size"
-                width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram icon-size"
-                width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M16.5 7.5l0 .01" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x icon-size" width="30"
-                height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin icon-size"
-                width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                <path d="M8 11l0 5" />
-                <path d="M8 8l0 .01" />
-                <path d="M12 16l0 -5" />
-                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-            </svg>
-        </div>
-    </header>
-
-    <div class="global-section">
-        <div class="section1">
-            <div class="section-background">
-
-
-                <div class="section1-heading-content">
-                    <div class="section1-heading">
-                        <div class="section1-heading-repating">
-                            <h2 class="section1-heading-text">Wher1 your <span id="dream">dreams</span> meet equisite
-                                <span id="dream">design</span>.
-                            </h2>
-                            <h3 class="section1-heading-caption">Evaluate your living spaces with designs that inspire
-                                and
-                                enchant.</h3>
-                        </div>
-                        <div class="section1-heading-repating">
-                            <h2 class="section1-heading-text">Wher2 your <span id="dream">dreams</span> meet equisite
-                                <span id="dream">design</span>.
-                            </h2>
-                            <h3 class="section1-heading-caption">Evaluate your living spaces with designs that inspire
-                                and
-                                enchant.</h3>
-                        </div>
-                        <div class="section1-heading-repating">
-                            <h2 class="section1-heading-text">Wher3 your <span id="dream">dreams</span> meet equisite
-                                <span id="dream">design</span>.
-                            </h2>
-                            <h3 class="section1-heading-caption">Evaluate your living spaces with designs that inspire
-                                and
-                                enchant.</h3>
-                        </div>
-                        <div class="section1-heading-repating">
-                            <h2 class="section1-heading-text">Wher4 your <span id="dream">dreams</span> meet equisite
-                                <span id="dream">design</span>.
-                            </h2>
-                            <h3 class="section1-heading-caption">Evaluate your living spaces with designs that inspire
-                                and
-                                enchant.</h3>
-                        </div>
-                    </div>
-                    <div class="getcontainer">
-                        <button class="getbtn getbtn1"><a href="" id="getInTouch">Get In Touch <img
-                                    src="./Assets/Images/getin arrow.png" alt="arrow" id="getArrow"></a></button>
-                    </div>
-                </div>
+    <body>
+        <!-- -------------------------------------------------------Header part------------------------------------------------------- -->
+        <header class="header-section">
+            <div class="logo-container">
+                <img src="./Assets/Images/icon/logo magical WHITE with crop.png"
+                    alt="logo" class="logo-icon" />
             </div>
-        </div>
-        <!-- -------------------------------------------------------Our services-------------------------------------------------- -->
-        <div class="section2">
-            <div class="ourservice-section">
-                <div class="section2-ourservices-aside1">
-                    <div class="section2-ourservices-ourservices">
-                        <h2 class="heading-font center">OUR</h2>
-                        <h2 class="heading-font brown ourserviceService center">SERVICES</h2>
-                        <p class="our ourservicesCaption oursercaption">Our service provides you with expert advice and
-                            creative solutions to help you visualize and plan your dream space. From
-                            the initial concept to the final execution, we support you every step of the way.</p>
-                    </div>
-                    <div class="slider1-parent">
-                        <div class="ourService-aside-slider1">
-                            <div class="our-service-slider">
-                                <div class="text-arrow-block">
-                                    <h2 class="our miniheading">RESIDENTAL</h2>
-                                    <a href="" class="our aboutArrow">
-                                        <img src="./Assets/Images/arrow.png" alt="arrow" class="our_ser_Arrow">
-                                    </a>
-                                </div>
-                                <h3 class="our miniheading-caption">Transform your home into a sanctuary that reflects
-                                    your
-                                    personality and lifestyle. We design interiors that are both
-                                    beautiful and functional, whether it's for a modern apartment or a traditional
-                                    bungalow.
-                                </h3>
+            <div class="nav-section">
+                <ul class="nav-list-options">
+                    <li><a href="." id="home">HOME</a></li>
+                    <li><a href>SERVICE</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    <li><a href="./portopolio.html">PORTFOLIO</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="bar"></i>
+            <div id="bar_options">
+                <i class="fa-regular fa-circle-xmark" id="cross"></i>
+                <a href class="navlinks" id="home">HOME</a>
+                <a href class="navlinks">SERVICES </a>
+                <a href="about.html" class="navlinks">ABOUT US</a>
+                <a href class="navlinks">PORTAFOLIO</a>
+                <a href class="navlinks">CONTACT</a>
 
+            </div>
+            <div class="icons-align">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-facebook icon-size"
+                    width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-instagram icon-size"
+                    width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-x icon-size"
+                    width="30"
+                    height="30" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-linkedin icon-size"
+                    width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                    <path d="M8 11l0 5" />
+                    <path d="M8 8l0 .01" />
+                    <path d="M12 16l0 -5" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg>
+            </div>
+        </header>
+
+        <div class="global-section">
+            <div class="section1">
+                <div class="section-background">
+
+                    <div class="section1-heading-content">
+                        <div class="section1-heading">
+                            <div class="section1-heading-repating">
+                                <h2 class="section1-heading-text">Wher1 your
+                                    <span id="dream">dreams</span> meet equisite
+                                    <span id="dream">design</span>.
+                                </h2>
+                                <h3 class="section1-heading-caption">Evaluate
+                                    your living spaces with designs that inspire
+                                    and
+                                    enchant.</h3>
                             </div>
-                            <div class="our-service-slider">
-                                <div class="text-arrow-block">
-                                    <h2 class="our miniheading selection-of-materials">SELECTION OF MATERIALS</h2>
-                                    <a href="" class="our aboutArrow">
-                                        <img src="./Assets/Images/arrow.png" alt="arrow" class="our_ser_Arrow">
-                                    </a>
-                                </div>
-                                <h3 class="our miniheading-caption">Choosing the right materials is crucial for the
-                                    success
-                                    of any design project. We assist you in selecting the finest
-                                    materials that match your aesthetic preferences and functional requirements.
-                                </h3>
+                            <div class="section1-heading-repating">
+                                <h2 class="section1-heading-text">Wher2 your
+                                    <span id="dream">dreams</span> meet equisite
+                                    <span id="dream">design</span>.
+                                </h2>
+                                <h3 class="section1-heading-caption">Evaluate
+                                    your living spaces with designs that inspire
+                                    and
+                                    enchant.</h3>
                             </div>
-                            <div class="our-service-slider">
-                                <div class="text-arrow-block">
-                                    <h2 class="our miniheading">CORPORATE OFFICES</h2>
-                                    <a href="" class="our aboutArrow">
-                                        <img src="./Assets/Images/arrow.png" alt="arrow" class="our_ser_Arrow">
-                                    </a>
-                                </div>
-                                <h3 class="our miniheading-caption">Create a workspace that fosters productivity and
-                                    creativity.</h3>
+                            <div class="section1-heading-repating">
+                                <h2 class="section1-heading-text">Wher3 your
+                                    <span id="dream">dreams</span> meet equisite
+                                    <span id="dream">design</span>.
+                                </h2>
+                                <h3 class="section1-heading-caption">Evaluate
+                                    your living spaces with designs that inspire
+                                    and
+                                    enchant.</h3>
                             </div>
-                            <div class="our-service-slider">
-                                <div class="text-arrow-block">
-                                    <h2 class="our miniheading">COMMERCIAL</h2>
-                                    <a href="" class="our aboutArrow">
-                                        <img src="./Assets/Images/arrow.png" alt="arrow" class="our_ser_Arrow">
-                                    </a>
-                                </div>
-                                <h3 class="our miniheading-caption">Elevate your business with a commercial space that
-                                    attracts customers and enhances their experience. We design interiors
-                                    that are not only visually appealing but also aligned with your brand identity.</h3>
+                            <div class="section1-heading-repating">
+                                <h2 class="section1-heading-text">Wher4 your
+                                    <span id="dream">dreams</span> meet equisite
+                                    <span id="dream">design</span>.
+                                </h2>
+                                <h3 class="section1-heading-caption">Evaluate
+                                    your living spaces with designs that inspire
+                                    and
+                                    enchant.</h3>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="section2-ourserives-aside2">
-                    <div class="section2-ourserives-aside2-dammi">
-                        <div class="ourService-aside-slider2">
-                            <div>
-                                <div class="ourservices-images">
-                                    <img src="./Assets/Images/our-service-images/ourservive-img1.webp"
-                                        alt="ourservices-images" class="ourser-images1">
-                                    <img src="./Assets/Images/our-service-images/ourservice-img2.webp"
-                                        alt="ourservices-images" class="ourser-images2">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ourservices-images">
-                                    <img src="./Assets/Images/our-service-images/ourservice-img3.webp"
-                                        alt="ourservices-images" class="ourser-images1">
-                                    <img src="./Assets/Images/our-service-images/ourservice-img4.webp"
-                                        alt="ourservices-images" class="ourser-images2">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ourservices-images">
-                                    <img src="./Assets/Images/our-service-images/ourservice-img5.webp"
-                                        alt="ourservices-images" class="ourser-images1">
-                                    <img src="./Assets/Images/our-service-images/ourservice-img6.webp"
-                                        alt="ourservices-images" class="ourser-images2">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="ourservices-images">
-                                    <img src="./Assets/Images/our-service-images/ourservice-img7.webp"
-                                        alt="ourservices-images" class="ourser-images1">
-                                    <img src="./Assets/Images/our-service-images/ourservice-img8.webp"
-                                        alt="ourservices-images" class="ourser-images2">
-                                </div>
-                            </div>
+                        <div class="getcontainer">
+                            <button class="getbtn getbtn1"><a href
+                                    id="getInTouch">Get In Touch <img
+                                        src="./Assets/Images/getin arrow.png"
+                                        alt="arrow" id="getArrow"></a></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- -------------------------------------------------------Our services-------------------------------------------------- -->
+            <div class="section2">
+                <div class="ourservice-section">
+                    <div class="section2-ourservices-aside1">
+                        <div class="section2-ourservices-ourservices">
+                            <h2 class="heading-font center">OUR</h2>
+                            <h2
+                                class="heading-font brown ourserviceService center">SERVICES</h2>
+                            <p class="our ourservicesCaption oursercaption">Our
+                                service provides you with expert advice and
+                                creative solutions to help you visualize and
+                                plan your dream space. From
+                                the initial concept to the final execution, we
+                                support you every step of the way.</p>
+                        </div>
+                        <div class="slider1-parent">
+                            <div class="ourService-aside-slider1">
+                                <div class="our-service-slider">
+                                    <div class="text-arrow-block">
+                                        <h2
+                                            class="our miniheading">RESIDENTAL</h2>
+                                        <a href class="our aboutArrow">
+                                            <img src="./Assets/Images/arrow.png"
+                                                alt="arrow"
+                                                class="our_ser_Arrow">
+                                        </a>
+                                    </div>
+                                    <h3
+                                        class="our miniheading-caption">Transform
+                                        your home into a sanctuary that reflects
+                                        your
+                                        personality and lifestyle. We design
+                                        interiors that are both
+                                        beautiful and functional, whether it's
+                                        for a modern apartment or a traditional
+                                        bungalow.
+                                    </h3>
 
-        <!-- -----------------------------------------------section3 About Company -->
-        <div class="section3">
-            <div class="about-company-section">
-                <div>
-                    <h2 class="heading-font center">ABOUT</h2>
-                    <h2 class="heading-font brown ourserviceService company-text center">COMPANY
-                    </h2>
-                </div>
-                <div>
-                    <h3 class="our para aboutcompany-caption">Crafting Inspired Spaces for You.</h3>
-                </div>
-                <div>
-                    <a href="" class="our aboutArrow">
-                        <img src="./Assets/Images/arrow.png" alt="arrow" class="our_com_Arrow">
-                    </a>
+                                </div>
+                                <div class="our-service-slider">
+                                    <div class="text-arrow-block">
+                                        <h2
+                                            class="our miniheading selection-of-materials">SELECTION
+                                            OF MATERIALS</h2>
+                                        <a href class="our aboutArrow">
+                                            <img src="./Assets/Images/arrow.png"
+                                                alt="arrow"
+                                                class="our_ser_Arrow">
+                                        </a>
+                                    </div>
+                                    <h3 class="our miniheading-caption">Choosing
+                                        the right materials is crucial for the
+                                        success
+                                        of any design project. We assist you in
+                                        selecting the finest
+                                        materials that match your aesthetic
+                                        preferences and functional requirements.
+                                    </h3>
+                                </div>
+                                <div class="our-service-slider">
+                                    <div class="text-arrow-block">
+                                        <h2 class="our miniheading">CORPORATE
+                                            OFFICES</h2>
+                                        <a href class="our aboutArrow">
+                                            <img src="./Assets/Images/arrow.png"
+                                                alt="arrow"
+                                                class="our_ser_Arrow">
+                                        </a>
+                                    </div>
+                                    <h3 class="our miniheading-caption">Create a
+                                        workspace that fosters productivity and
+                                        creativity.</h3>
+                                </div>
+                                <div class="our-service-slider">
+                                    <div class="text-arrow-block">
+                                        <h2
+                                            class="our miniheading">COMMERCIAL</h2>
+                                        <a href class="our aboutArrow">
+                                            <img src="./Assets/Images/arrow.png"
+                                                alt="arrow"
+                                                class="our_ser_Arrow">
+                                        </a>
+                                    </div>
+                                    <h3 class="our miniheading-caption">Elevate
+                                        your business with a commercial space
+                                        that
+                                        attracts customers and enhances their
+                                        experience. We design interiors
+                                        that are not only visually appealing but
+                                        also aligned with your brand
+                                        identity.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2-ourserives-aside2">
+                        <div class="section2-ourserives-aside2-dammi">
+                            <div class="ourService-aside-slider2">
+                                <div>
+                                    <div class="ourservices-images">
+                                        <img
+                                            src="./Assets/Images/our-service-images/ourservive-img1.webp"
+                                            alt="ourservices-images"
+                                            class="ourser-images1">
+                                        <img
+                                            src="./Assets/Images/our-service-images/ourservice-img2.webp"
+                                            alt="ourservices-images"
+                                            class="ourser-images2">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="ourservices-images">
+                                        <img
+                                            src="./Assets/Images/our-service-images/ourservice-img3.webp"
+                                            alt="ourservices-images"
+                                            class="ourser-images1">
+                                        <img
+                                            src="./Assets/Images/our-service-images/ourservice-img4.webp"
+                                            alt="ourservices-images"
+                                            class="ourser-images2">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="ourservices-images">
+                                        <img
+                                            src="./Assets/Images/our-service-images/ourservice-img5.webp"
+                                            alt="ourservices-images"
+                                            class="ourser-images1">
+                                        <img
+                                            src="./Assets/Images/our-service-images/ourservice-img6.webp"
+                                            alt="ourservices-images"
+                                            class="ourser-images2">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="ourservices-images">
+                                        <img
+                                            src="./Assets/Images/our-service-images/ourservice-img7.webp"
+                                            alt="ourservices-images"
+                                            class="ourser-images1">
+                                        <img
+                                            src="./Assets/Images/our-service-images/ourservice-img8.webp"
+                                            alt="ourservices-images"
+                                            class="ourser-images2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="aboutcompany-block">
-                <div class="aboutcompanyaside1-card1">
-                    <div class="aboutcompanyaside1-card1-content scrollAnimationFixed startLeft">
-                        <h2 class="aboutcompany-text increase-numbers" data-target="50" data-val="50">0</h2>
-                        <h2 class="aboutcompany-text">DESIGN PROJECTS</h2>
-                        <p class="about-text-caption">Experience the perfect blend of functionality.</p>
-                    </div>
-                    <div class="about-company-aside2-card1 scrollAnimationFixed startRight">
-                        <img src="./Assets/Images/aboutcompany1.png" alt="about-company-images" class="design-project">
-                    </div>
-                </div>
-                <div class="aboutcompany-content-line">
-                    <img src="./Assets/Images/about company line.png" alt="line" id="aboutcomapanyline">
-                </div>
-                <div class="aboutcompanyaside1-card2">
 
-                    <div
-                        class="aboutcompanyaside1-card1-content aboutcompanyaside1-card2-content scrollAnimationFixed startLeft">
-                        <h2 class="aboutcompany-text increase-numbers" data-target="20" data-val="20">0</h2>
-                        <h2 class="aboutcompany-text">EXPERIENCE</h2>
-                        <p class="about-text-caption">Experience the perfect blend of functionality.</p>
-                    </div>
-                    <div class="about-company-aside2-card2 scrollAnimationFixed startRight">
-                        <img src="./Assets/Images/aboutcompany2.png" alt="about-company-images" class="design-project">
-                    </div>
-
-                </div>
-                <div class="aboutcompany-content-line">
-                    <img src="./Assets/Images/about company line.png" alt="line" id="aboutcomapanyline">
-                </div>
-                <div class="aboutcompanyaside1-card3">
-
-                    <div
-                        class="aboutcompanyaside1-card1-content aboutcompanyaside1-card3-content scrollAnimationFixed startLeft">
-                        <h2 class="aboutcompany-text">MULTIPLE</h2>
-                        <h2 class="aboutcompany-text">CONTRACTORS</h2>
-                        <p class="about-text-caption">Experience the perfect blend of functionality.</p>
-                    </div>
-                    <div class="about-company-aside2-card3 scrollAnimationFixed startRight">
-                        <img src="./Assets/Images/aboutcompany3.png" alt="about-company-images" class="design-project">
-                    </div>
-                </div>
-                <div class="about-bg-border"></div>
-            </div>
-        </div>
-        <!-- --------------------------------------------------------Our projects-------------------------------------------------- -->
-        <div id="ourprojectblock">
-            <div class="about-company-section">
-                <div>
-                    <h2 class="heading-font center">OUR</h2>
-                    <h2 class="heading-font brown ourserviceService our-project-pro center">PROJECTS</h2>
-                </div>
-                <div>
-                    <h3 class="our para aboutcompany-caption">Experience the perfect blend of
-                        functionality.
-                    </h3>
-                </div>
-                <div>
-                    <a href="" class="our aboutArrow">
-                        <img src="./Assets/Images/arrow.png" alt="arrow" class="our_com_Arrow">
-                    </a>
-                </div>
-            </div>
-            <div id="slider_contentblock">
-                <div id="slider_content">
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider1.png" alt="photo1" class="sliderimages">
-
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider2.png" alt="photo2" class="sliderimages">
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider3.png" alt="photo3" class="sliderimages">
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider4.png" alt="photo4" class="sliderimages">
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider5.png" alt="photo5" class="sliderimages">
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider1.png" alt="photo1" class="sliderimages">
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider2.png" alt="photo2" class="sliderimages">
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider3.png" alt="photo3" class="sliderimages">
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider4.png" alt="photo4" class="sliderimages">
-                    </div>
-                    <div class="Mini_slider">
-                        <img src="./Assets/Images/ourprojectslider5.png" alt="photo5" class="sliderimages">
-                    </div>
-
-                </div>
-            </div>
-            <div id="our_project_caption">
-                <div id="our_project_slider_content_caption">
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Manki bungalow</h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Mr. Kishore, SMR Vinay iconia </h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Mr. Raghav</h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Office 601 ( Netelixir solutions)</h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Office 306b (GAC digital)</h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Mr. Ashok's apartment</h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Mr. Sumanth's apartment</h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Pune residence (Marvel sangria)</h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Sark villa</h4>
-                    </div>
-                    <div class="our_project_caption">
-                        <h4 class="our_project_caption_text">Orient opticals</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- -------------------Our Portfolio------------------------------------------------------- -->
-        <div class="section4">
-            <div class="our-port-section">
-                <div class="our-port-section1">
+            <!-- -----------------------------------------------section3 About Company -->
+            <div class="section3">
+                <div class="about-company-section">
                     <div>
-                        <h2 class="heading-font center">OUR</h2>
-                        <h2 class="heading-font brown ourserviceService portfolio center">PORTFOLIO</h2>
-                        <p class="our miniheading-caption ourport-caption">Experience the perfect blend of functionality
-                            and
-                            elegance with our residential interior design services.</p>
+                        <h2 class="heading-font center">ABOUT</h2>
+                        <h2
+                            class="heading-font brown ourserviceService company-text center">COMPANY
+                        </h2>
                     </div>
                     <div>
-                        <a href="" class="our aboutArrow">
-                            <img src="./Assets/Images/arrow.png" alt="arrow" class="our_port_Arrow">
+                        <h3 class="our para aboutcompany-caption">Crafting
+                            Inspired Spaces for You.</h3>
+                    </div>
+                    <div>
+                        <a href class="our aboutArrow">
+                            <img src="./Assets/Images/arrow.png" alt="arrow"
+                                class="our_com_Arrow">
                         </a>
                     </div>
                 </div>
+                <div class="aboutcompany-block">
+                    <div class="aboutcompanyaside1-card1">
+                        <div
+                            class="aboutcompanyaside1-card1-content scrollAnimationFixed startLeft">
+                            <h2 class="aboutcompany-text increase-numbers"
+                                data-target="50" data-val="50">0</h2>
+                            <h2 class="aboutcompany-text">DESIGN PROJECTS</h2>
+                            <p class="about-text-caption">Experience the perfect
+                                blend of functionality.</p>
+                        </div>
+                        <div
+                            class="about-company-aside2-card1 scrollAnimationFixed startRight">
+                            <img src="./Assets/Images/aboutcompany1.png"
+                                alt="about-company-images"
+                                class="design-project">
+                        </div>
+                    </div>
+                    <div class="aboutcompany-content-line">
+                        <img src="./Assets/Images/about company line.png"
+                            alt="line" id="aboutcomapanyline">
+                    </div>
+                    <div class="aboutcompanyaside1-card2">
 
-                <div class="our-port-section2">
-                    <div class="ourport-section2-block1">
-                        <img src="./Assets/Images/OurPortfolio-img/ourport-img1.webp" alt="our-port-images"
-                            class="ourportimage1">
-                        <img src="./Assets/Images/OurPortfolio-img/ourport-img2.webp" alt="our-port-images"
-                            class="ourportimage2">
+                        <div
+                            class="aboutcompanyaside1-card1-content aboutcompanyaside1-card2-content scrollAnimationFixed startLeft">
+                            <h2 class="aboutcompany-text increase-numbers"
+                                data-target="20" data-val="20">0</h2>
+                            <h2 class="aboutcompany-text">EXPERIENCE</h2>
+                            <p class="about-text-caption">Experience the perfect
+                                blend of functionality.</p>
+                        </div>
+                        <div
+                            class="about-company-aside2-card2 scrollAnimationFixed startRight">
+                            <img src="./Assets/Images/aboutcompany2.png"
+                                alt="about-company-images"
+                                class="design-project">
+                        </div>
+
                     </div>
-                    <div class="ourport-section2-block2">
-                        <img src="./Assets/Images/OurPortfolio-img/ourport-img3.webp" alt="our-port-images"
-                            class="ourportimage2">
-                        <img src="./Assets/Images/OurPortfolio-img/ourport-img4.webp" alt="our-port-images"
-                            class="ourportimage1">
+                    <div class="aboutcompany-content-line">
+                        <img src="./Assets/Images/about company line.png"
+                            alt="line" id="aboutcomapanyline">
                     </div>
+                    <div class="aboutcompanyaside1-card3">
+
+                        <div
+                            class="aboutcompanyaside1-card1-content aboutcompanyaside1-card3-content scrollAnimationFixed startLeft">
+                            <h2 class="aboutcompany-text">MULTIPLE</h2>
+                            <h2 class="aboutcompany-text">CONTRACTORS</h2>
+                            <p class="about-text-caption">Experience the perfect
+                                blend of functionality.</p>
+                        </div>
+                        <div
+                            class="about-company-aside2-card3 scrollAnimationFixed startRight">
+                            <img src="./Assets/Images/aboutcompany3.png"
+                                alt="about-company-images"
+                                class="design-project">
+                        </div>
+                    </div>
+                    <div class="about-bg-border"></div>
                 </div>
             </div>
-        </div>
-
-        <!-- -------------------------------------------------------------------Section4 Testimonial----------------------------------------------- -->
-        <div class="section5">
-            <div class="section5-block">
-                <div class="test-aside1">
-                    <div class="testmonial-client">
-                        <h2 class="heading-font brown ourserviceService testmonial center">TESTIMONIAL</h2>
-                    </div>
-                    <div class="client-says">
-                        <h3 class="para center">What Our Client <br> Says.</h3>
+            <!-- --------------------------------------------------------Our projects-------------------------------------------------- -->
+            <div id="ourprojectblock">
+                <div class="about-company-section">
+                    <div>
+                        <h2 class="heading-font center">OUR</h2>
+                        <h2
+                            class="heading-font brown ourserviceService our-project-pro center">PROJECTS</h2>
                     </div>
                     <div>
-                        <a href="" class="our aboutArrow">
-                            <img src="./Assets/Images/arrow.png" alt="arrow" class="our_test_Arrow">
+                        <h3 class="our para aboutcompany-caption">Experience the
+                            perfect blend of
+                            functionality.
+                        </h3>
+                    </div>
+                    <div>
+                        <a href class="our aboutArrow">
+                            <img src="./Assets/Images/arrow.png" alt="arrow"
+                                class="our_com_Arrow">
                         </a>
                     </div>
                 </div>
-                <div class="test-aside2">
-                    <div class="test-aside-block">
-                        <div id="test-aside2-caresel">
-                            <div class="content-holder">
-                                <div class="test-content">
-                                    <div class="test-content-parent">
-                                        <p class="our test-text">"At Magical Spaces, every project is a testament to our
-                                            commitment to excellence and attention to detail. Explore our
-                                            portfolio and discover how we can transform your space into something truly
-                                            magical."</p>
-                                    </div>
-                                    <div class="test-content-parent2">
-                                        <div>
-                                            <img src="./Assets/Images/laughing girl.png"
-                                                alt="testimonial-profile-image">
-                                        </div>
-                                        <div>
-                                            <h3 class="our name-of-person">Anjali Raut</h3>
-                                            <p class="our name-of-person-caption">CEO, Zipo.com</p>
-                                        </div>
-                                    </div>
+                <div id="slider_contentblock">
+                    <div id="slider_content">
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider1.png"
+                                alt="photo1" class="sliderimages">
 
-                                </div>
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider2.png"
+                                alt="photo2" class="sliderimages">
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider3.png"
+                                alt="photo3" class="sliderimages">
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider4.png"
+                                alt="photo4" class="sliderimages">
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider5.png"
+                                alt="photo5" class="sliderimages">
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider1.png"
+                                alt="photo1" class="sliderimages">
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider2.png"
+                                alt="photo2" class="sliderimages">
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider3.png"
+                                alt="photo3" class="sliderimages">
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider4.png"
+                                alt="photo4" class="sliderimages">
+                        </div>
+                        <div class="Mini_slider">
+                            <img src="./Assets/Images/ourprojectslider5.png"
+                                alt="photo5" class="sliderimages">
+                        </div>
 
-                            </div>
-                            <div class="content-holder">
-                                <div class="test-content">
-                                    <div class="test-content-parent">
-                                        <p class="our test-text">"Transforming spaces into timeless reflections of your
-                                            unique style. <b>Your expert team blends creativity with
-                                                functionality to craft interiors that inspire and delight.</b> The art
-                                            of living beautifully with spoke design solutions."</p>
-                                    </div>
-                                    <div class="test-content-parent2">
-                                        <div>
-                                            <img src="./Assets/Images/laughing girl.png"
-                                                alt="testimonial-profile-image">
-                                        </div>
-                                        <div>
-                                            <h3 class="our name-of-person">Anjali Raut</h3>
-                                            <p class="our name-of-person-caption">CEO, Zipo.com</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="content-holder">
-                                <div class="test-content">
-                                    <div class="test-content-parent">
-                                        <p class="our test-text">"Transforming spaces into timeless reflections of your
-                                            unique style. <b>Your expert team blends creativity with
-                                                functionality to craft interiors that inspire and delight.</b> The art
-                                            of living beautifully with spoke design solutions."</p>
-                                    </div>
-                                    <div class="test-content-parent2">
-                                        <div>
-                                            <img src="./Assets/Images/laughing girl.png"
-                                                alt="testimonial-profile-image">
-                                        </div>
-                                        <div>
-                                            <h3 class="our name-of-person">Anjali Raut</h3>
-                                            <p class="our name-of-person-caption">CEO, Zipo.com</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="content-holder">
-                                <div class="test-content">
-                                    <div class="test-content-parent">
-                                        <p class="our test-text">"Transforming spaces into timeless reflections of your
-                                            unique style. <b>Your expert team blends creativity with
-                                                functionality to craft interiors that inspire and delight.</b> The art
-                                            of living beautifully with spoke design solutions."</p>
-                                    </div>
-                                    <div class="test-content-parent2">
-                                        <div>
-                                            <img src="./Assets/Images/laughing girl.png"
-                                                alt="testimonial-profile-image">
-                                        </div>
-                                        <div>
-                                            <h3 class="our name-of-person">Anjali Raut</h3>
-                                            <p class="our name-of-person-caption">CEO, Zipo.com</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="content-holder">
-                                <div class="test-content">
-                                    <div class="test-content-parent">
-                                        <p class="our test-text">"Transforming spaces into timeless reflections of your
-                                            unique style. <b>Your expert team blends creativity with
-                                                functionality to craft interiors that inspire and delight.</b> The art
-                                            of living beautifully with spoke design solutions."</p>
-                                    </div>
-                                    <div class="test-content-parent2">
-                                        <div>
-                                            <img src="./Assets/Images/laughing girl.png"
-                                                alt="testimonial-profile-image">
-                                        </div>
-                                        <div>
-                                            <h3 class="our name-of-person">Anjali Raut</h3>
-                                            <p class="our">CEO, Zipo.com</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
+                    </div>
+                </div>
+                <div id="our_project_caption">
+                    <div id="our_project_slider_content_caption">
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Manki
+                                bungalow</h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Mr. Kishore,
+                                SMR Vinay iconia </h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Mr. Raghav</h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Office 601 (
+                                Netelixir solutions)</h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Office 306b
+                                (GAC digital)</h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Mr. Ashok's
+                                apartment</h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Mr. Sumanth's
+                                apartment</h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Pune residence
+                                (Marvel sangria)</h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Sark villa</h4>
+                        </div>
+                        <div class="our_project_caption">
+                            <h4 class="our_project_caption_text">Orient
+                                opticals</h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- -------------------------------------------------------------------Contact page------------------------------- -->
-        <section class="section5">
-            <div class="section6-contactus">
-                <div class="section-contact">
-                    <div class="slider-contact">
-                        <div class="mini-slider">
-                            <div class="footer-image-container">
-                                <img src="./Assets/Images/footer-images/footer-img1.webp" alt="carousel-images"
-                                    class="footer-images">
-                            </div>
-                        </div>
-                        <div class="mini-slider">
-                            <div class="footer-image-container">
-                                <img src="./Assets/Images/footer-images/footer-img2.webp" alt="carousel-images"
-                                    class="footer-images">
-                            </div>
-                        </div>
-                        <div class="mini-slider">
-                            <div class="footer-image-container">
-                                <img src="./Assets/Images/footer-images/footer-img3.webp" alt="carousel-images"
-                                    class="footer-images">
-                            </div>
-                        </div>
-                        <div class="mini-slider">
-                            <div class="footer-image-container">
-                                <img src="./Assets/Images/footer-images/footer-img5.webp" alt="carousel-images"
-                                    class="footer-images">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-container">
+
+            <!-- -------------------Our Portfolio------------------------------------------------------- -->
+            <div class="section4">
+                <div class="our-port-section">
+                    <div class="our-port-section1">
                         <div>
-                            <h2 class="form-heading">Get in Touch</h2>
-                            <h3 class="form-caption">We’re here to help you design the perfect space.</h3>
+                            <h2 class="heading-font center">OUR</h2>
+                            <h2
+                                class="heading-font brown ourserviceService portfolio center">PORTFOLIO</h2>
+                            <p
+                                class="our miniheading-caption ourport-caption">Experience
+                                the perfect blend of functionality
+                                and
+                                elegance with our residential interior design
+                                services.</p>
                         </div>
-                        <div class="form-block">
-                            <form action="home-page-mail.php" method="post" autocomplete="off">
-                                <label class="label1">Full Name</label><br>
-                                <input type="text" class="fullName" placeholder="Enter your full name" name="fullName"
-                                    required><br><br>
-                                <label class="label1">Mobile Number</label><br>
-                                <input type="tel" placeholder="Enter your Mobile Number" class="fullName" name="mobile"
-                                    required id="home-phone" pattern="[6-9]{1}[0-9]{9}"><br><br>
-                                <label class="label1">Comment</label><br>
-                                <input type="textarea" class="comment fullName" name="message"
-                                    placeholder="Leave a few words"><br><br><br>
-                                <button type="submit" class="send fullName">
-                                    <pre
-                                        id="formpre"> Send <img src="./Assets/Images/form Arrow.png" alt="arrow" id="sendimage"></pre>
-                                </button>
+                        <div>
+                            <a href class="our aboutArrow">
+                                <img src="./Assets/Images/arrow.png" alt="arrow"
+                                    class="our_port_Arrow">
+                            </a>
+                        </div>
+                    </div>
 
-                            </form>
+                    <div class="our-port-section2">
+                        <div class="ourport-section2-block1">
+                            <img
+                                src="./Assets/Images/OurPortfolio-img/ourport-img1.webp"
+                                alt="our-port-images"
+                                class="ourportimage1">
+                            <img
+                                src="./Assets/Images/OurPortfolio-img/ourport-img2.webp"
+                                alt="our-port-images"
+                                class="ourportimage2">
+                        </div>
+                        <div class="ourport-section2-block2">
+                            <img
+                                src="./Assets/Images/OurPortfolio-img/ourport-img3.webp"
+                                alt="our-port-images"
+                                class="ourportimage2">
+                            <img
+                                src="./Assets/Images/OurPortfolio-img/ourport-img4.webp"
+                                alt="our-port-images"
+                                class="ourportimage1">
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <!-- -------------------------------------------------------------------Section4 Testimonial----------------------------------------------- -->
+            <div class="section5">
+                <div class="section5-block">
+                    <div class="test-aside1">
+                        <div class="testmonial-client">
+                            <h2
+                                class="heading-font brown ourserviceService testmonial center">TESTIMONIAL</h2>
+                        </div>
+                        <div class="client-says">
+                            <h3 class="para center">What Our Client <br>
+                                Says.</h3>
+                        </div>
+                        <div>
+                            <a href class="our aboutArrow">
+                                <img src="./Assets/Images/arrow.png" alt="arrow"
+                                    class="our_test_Arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="test-aside2">
+                        <div class="test-aside-block">
+                            <div id="test-aside2-caresel">
+                                <div class="content-holder">
+                                    <div class="test-content">
+                                        <div class="test-content-parent">
+                                            <p class="our test-text">At Magical
+                                                Spaces, every project is a
+                                                testament to our
+                                                commitment to excellence and
+                                                attention to detail. Explore our
+                                                portfolio and discover how we
+                                                can transform your space into
+                                                something truly
+                                                magical.</p>
+                                        </div>
+                                        <div class="test-content-parent2">
+                                            <div>
+                                                <img
+                                                    src="./Assets/Images/laughing girl.png"
+                                                    alt="testimonial-profile-image">
+                                            </div>
+                                            <div>
+                                                <h3
+                                                    class="our name-of-person">Anjali
+                                                    Raut</h3>
+                                                <p
+                                                    class="our name-of-person-caption">CEO,
+                                                    Zipo.com</p>
+                                            </div>
+                                        </div>
 
-        <!-- ------ footer ------ -->
-        <div class="footer">
-            <div class="logo-block footer-logo-tab footer-logo-phone">
-                <img src="./Assets/Images/magical space temp.jpg" alt="footer-logo"
-                    class="logo footerlogo footer-logo-laptop footer-logo-tab">
-            </div>
+                                    </div>
 
-            <div class="info-mail-block">
-                <i class="fa-regular fa-envelope"></i>
-                <h3 class="footercon footermailid">XYZ23@gmail.com</h3>
-            </div>
+                                </div>
+                                <div class="content-holder">
+                                    <div class="test-content">
+                                        <div class="test-content-parent">
+                                            <p
+                                                class="our test-text">Transforming
+                                                spaces into timeless reflections
+                                                of your
+                                                unique style. <b>Your expert
+                                                    team blends creativity with
+                                                    functionality to craft
+                                                    interiors that inspire and
+                                                    delight.</b> The art
+                                                of living beautifully with spoke
+                                                design solutions.</p>
+                                        </div>
+                                        <div class="test-content-parent2">
+                                            <div>
+                                                <img
+                                                    src="./Assets/Images/laughing girl.png"
+                                                    alt="testimonial-profile-image">
+                                            </div>
+                                            <div>
+                                                <h3
+                                                    class="our name-of-person">Anjali
+                                                    Raut</h3>
+                                                <p
+                                                    class="our name-of-person-caption">CEO,
+                                                    Zipo.com</p>
+                                            </div>
+                                        </div>
 
-            <div class="info-mail-block address-tab info-address-block">
-                <i class="fa-solid fa-location-dot"></i>
-                <h3 class="footercon footerAddressName">Block 15 , Flat no 704
-                    Hill Ridge Spring
-                    ISB Road
-                    Gachibowli
-                    Hyderabad
-                </h3>
-            </div>
+                                    </div>
 
+                                </div>
+                                <div class="content-holder">
+                                    <div class="test-content">
+                                        <div class="test-content-parent">
+                                            <p
+                                                class="our test-text">Transforming
+                                                spaces into timeless reflections
+                                                of your
+                                                unique style. <b>Your expert
+                                                    team blends creativity with
+                                                    functionality to craft
+                                                    interiors that inspire and
+                                                    delight.</b> The art
+                                                of living beautifully with spoke
+                                                design solutions.</p>
+                                        </div>
+                                        <div class="test-content-parent2">
+                                            <div>
+                                                <img
+                                                    src="./Assets/Images/laughing girl.png"
+                                                    alt="testimonial-profile-image">
+                                            </div>
+                                            <div>
+                                                <h3
+                                                    class="our name-of-person">Anjali
+                                                    Raut</h3>
+                                                <p
+                                                    class="our name-of-person-caption">CEO,
+                                                    Zipo.com</p>
+                                            </div>
+                                        </div>
 
-            <div class="info-mail-block info-phone-block">
-                <i class="fa-solid fa-phone"></i>
-                <div>
-                    <h3 class="footercon footerNumber">+91 95032 37693</h3>
-                    <!-- <h3 class="footercon footerNumber">+91-9542 29 5424</h3> -->
+                                    </div>
+
+                                </div>
+                                <div class="content-holder">
+                                    <div class="test-content">
+                                        <div class="test-content-parent">
+                                            <p
+                                                class="our test-text">Transforming
+                                                spaces into timeless reflections
+                                                of your
+                                                unique style. <b>Your expert
+                                                    team blends creativity with
+                                                    functionality to craft
+                                                    interiors that inspire and
+                                                    delight.</b> The art
+                                                of living beautifully with spoke
+                                                design solutions.</p>
+                                        </div>
+                                        <div class="test-content-parent2">
+                                            <div>
+                                                <img
+                                                    src="./Assets/Images/laughing girl.png"
+                                                    alt="testimonial-profile-image">
+                                            </div>
+                                            <div>
+                                                <h3
+                                                    class="our name-of-person">Anjali
+                                                    Raut</h3>
+                                                <p
+                                                    class="our name-of-person-caption">CEO,
+                                                    Zipo.com</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="content-holder">
+                                    <div class="test-content">
+                                        <div class="test-content-parent">
+                                            <p
+                                                class="our test-text">Transforming
+                                                spaces into timeless reflections
+                                                of your
+                                                unique style. <b>Your expert
+                                                    team blends creativity with
+                                                    functionality to craft
+                                                    interiors that inspire and
+                                                    delight.</b> The art
+                                                of living beautifully with spoke
+                                                design solutions.</p>
+                                        </div>
+
+                                        <div class="test-content-parent2">
+                                            <div>
+                                                <img
+                                                    src="./Assets/Images/laughing girl.png"
+                                                    alt="testimonial-profile-image">
+                                            </div>
+                                            <div>
+                                                <h3
+                                                    class="our name-of-person">Anjali
+                                                    Raut</h3>
+                                                <p class="our">CEO, Zipo.com</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- -------------------------------------------------------------------Contact page------------------------------- -->
+            <section class="section5">
+                <div class="section6-contactus">
+                    <div class="section-contact">
+                        <div class="slider-contact">
+                            <div class="mini-slider">
+                                <div class="footer-image-container">
+                                    <img
+                                        src="./Assets/Images/footer-images/footer-img1.webp"
+                                        alt="carousel-images"
+                                        class="footer-images">
+                                </div>
+                            </div>
+                            <div class="mini-slider">
+                                <div class="footer-image-container">
+                                    <img
+                                        src="./Assets/Images/footer-images/footer-img2.webp"
+                                        alt="carousel-images"
+                                        class="footer-images">
+                                </div>
+                            </div>
+                            <div class="mini-slider">
+                                <div class="footer-image-container">
+                                    <img
+                                        src="./Assets/Images/footer-images/footer-img3.webp"
+                                        alt="carousel-images"
+                                        class="footer-images">
+                                </div>
+                            </div>
+                            <div class="mini-slider">
+                                <div class="footer-image-container">
+                                    <img
+                                        src="./Assets/Images/footer-images/footer-img5.webp"
+                                        alt="carousel-images"
+                                        class="footer-images">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-container">
+                            <div>
+                                <h2 class="form-heading">Get in Touch</h2>
+                                <h3 class="form-caption">We’re here to help you
+                                    design the perfect space.</h3>
+                            </div>
+                            <div class="form-block">
+                                <form action="home-page-mail.php" method="post"
+                                    autocomplete="off">
+                                    <label class="label1">Full Name</label><br>
+                                    <input type="text" class="fullName"
+                                        placeholder="Enter your full name"
+                                        name="fullName"
+                                        required><br><br>
+                                    <label class="label1">Mobile
+                                        Number</label><br>
+                                    <input type="tel"
+                                        placeholder="Enter your Mobile Number"
+                                        class="fullName" name="mobile"
+                                        required id="home-phone"
+                                        pattern="[6-9]{1}[0-9]{9}"><br><br>
+                                    <label class="label1">Comment</label><br>
+                                    <input type="textarea"
+                                        class="comment fullName" name="message"
+                                        placeholder="Leave a few words"><br><br><br>
+                                    <button type="submit" class="send fullName">
+                                        <pre
+                                            id="formpre"> Send <img src="./Assets/Images/form Arrow.png" alt="arrow" id="sendimage"></pre>
+                                    </button>
 
-        </div>
-        <div class="footer-for-tab">
-            <div class="tab-div1">
-                <div class="mail-phone-adderss">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------ footer ------ -->
+            <div class="footer">
+                <div class="logo-block footer-logo-tab footer-logo-phone">
+                    <img src="./Assets/Images/magical space temp.jpg"
+                        alt="footer-logo"
+                        class="logo footerlogo footer-logo-laptop footer-logo-tab">
+                </div>
+
+                <div class="info-mail-block">
                     <i class="fa-regular fa-envelope"></i>
-                    <h3 class="footercon">XYZ23@gmail.com</h3>
+                    <h3 class="footercon footermailid">XYZ23@gmail.com</h3>
                 </div>
-                <div>
-                    <div class="mail-phone-adderss">
-                        <i class="fa-solid fa-phone"></i>
-                        <h3 class="footercon">+91-9503237693</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-div2">
 
-                <div class="mail-phone-adderss">
+                <div class="info-mail-block address-tab info-address-block">
                     <i class="fa-solid fa-location-dot"></i>
-                    <h3 class="footercon">Block 15 , Flat no 704
+                    <h3 class="footercon footerAddressName">Block 15 , Flat no
+                        704
                         Hill Ridge Spring
                         ISB Road
                         Gachibowli
-                        Hyderabad</h3>
+                        Hyderabad
+                    </h3>
                 </div>
 
-                <div class="footer-logo-tab-block">
-                    <img src="./Assets/Images/magical space temp.jpg" alt="footer-logo" class="logo footer-logo-tab2">
+                <div class="info-mail-block info-phone-block">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3 class="footercon footerNumber">+91 95032 37693</h3>
+                        <!-- <h3 class="footercon footerNumber">+91-9542 29 5424</h3> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-for-tab">
+                <div class="tab-div1">
+                    <div class="mail-phone-adderss">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h3 class="footercon">XYZ23@gmail.com</h3>
+                    </div>
+                    <div>
+                        <div class="mail-phone-adderss">
+                            <i class="fa-solid fa-phone"></i>
+                            <h3 class="footercon">+91-9503237693</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-div2">
+
+                    <div class="mail-phone-adderss">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3 class="footercon">Block 15 , Flat no 704
+                            Hill Ridge Spring
+                            ISB Road
+                            Gachibowli
+                            Hyderabad</h3>
+                    </div>
+
+                    <div class="footer-logo-tab-block">
+                        <img src="./Assets/Images/magical space temp.jpg"
+                            alt="footer-logo" class="logo footer-logo-tab2">
+                    </div>
                 </div>
             </div>
+            <div id="licience">
+                <h6>MagicalSpace | © Copyright @ 2024. All Rights Reserved</h6>
+            </div>
         </div>
-        <div id="licience">
-            <h6>MagicalSpace | © Copyright @ 2024. All Rights Reserved</h6>
+        <div class="mail-success-box">
+            <div class="mail-notification-block">
+                <h2 id="mail-message">Mail Send Successfully</h2>
+                <p id="mail-message-caption">Thank you for subscribe the
+                    MagicalSpaces</p>
+                <button class="close">OK</button>
+            </div>
         </div>
-    </div>
-    <div class="mail-success-box">
-        <div class="mail-notification-block">
-            <h2 id="mail-message">Mail Send Successfully</h2>
-            <p id="mail-message-caption">Thank you for subscribe the MagicalSpaces</p>
-            <button class="close">OK</button>
-        </div>
-    </div>
 
-
-    <!-- JavaScript -->
-    <!-- slick carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- JavaScript -->
+        <!-- slick carousel -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <!-- Java Script -->
-    <script src="Assets/globaljs.js"></script>
-    <script src="Assets/js/home.js"></script>
-    <script src="Assets/Animations.js"></script>
-    <script src="home-page-mail.js"></script>
-    <!-- toggler -->
+        <!-- Java Script -->
+        <script src="Assets/globaljs.js"></script>
+        <script src="Assets/js/home.js"></script>
+        <script src="Assets/Animations.js"></script>
+        <script src="home-page-mail.js"></script>
+        <!-- toggler -->
         <!-- toggler -->
         <script src="./Assets/about-page.js">
-        </script>
+    </script>
 
-</body>
+    </body>
 
 </html>

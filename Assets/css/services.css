@@ -135,7 +135,7 @@
         padding-bottom: 30px;
         /* Maintain the original padding */
         gap: 15px;
-        margin-left: 25px;
+        margin-left: 8%;
     }
 }
 
@@ -309,7 +309,7 @@
 }
 
 .service-each {
-    width: 100%;
+    width: 92%;
     margin: auto;
     display: flex;
     align-items: center;

@@ -2,7 +2,7 @@ window.addEventListener('scroll', function () {
     var navbar = document.querySelector('header');
     var navlist = document.querySelector('.nav-list-options');
     var sociallist = document.querySelector('.socialmedia-section');
-    
+
     // Ensure elements are found before attempting to modify classes
     if (navbar && navlist && sociallist) {
         if (window.scrollY > 3) {
