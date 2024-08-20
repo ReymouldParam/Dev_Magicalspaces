@@ -1,20 +1,26 @@
-let getIn = document.getElementById("getInTouch");
-let getArrow = document.getElementById("getArrow");
-getIn.addEventListener("mouseenter", () => {
-    getArrow.style.visibility = "visible";
-})
-getIn.addEventListener("mouseleave", () => {
-    getArrow.style.visibility = "hidden";
-})
-let bar = document.getElementById("bar");
-let cross = document.getElementById("cross");
-let bar_options = document.getElementById("bar_options");
-bar.addEventListener("click", () => {
-    bar_options.style.visibility = "visible";
-})
-cross.addEventListener("click", () => {
-    bar_options.style.visibility = "hidden";
+document.addEventListener("DOMContentLoaded", function () {
+    // Select elements
+    const bar = document.querySelector("#bar");
+    const barOptions = document.querySelector("#bar_options");
+    const cross = document.querySelector("#cross");
+
+    // Toggle menu visibility on bar click (mobile view)
+    bar.addEventListener("click", function () {
+        barOptions.classList.toggle("active");
+        bar.classList.toggle("open");
+        cross.classList.toggle("show");
+    });
+
+    // Optionally handle the cross icon click to close the menu
+    cross.addEventListener("click", function () {
+        barOptions.classList.remove("active");
+        bar.classList.remove("open");
+        cross.classList.remove("show");
+    });
 });
+
+
+// *********************************************
 
 $(document).ready(function () {
 $('.section1-heading').slick({
