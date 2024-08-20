@@ -693,6 +693,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
+    display: none;
   }
 
   .footer-for-tab {
@@ -703,12 +704,14 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 2% 4% 0;
+    
   }
 
   .footerlogo {
     margin-left: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
+   
   }
 
   .info-mail-block {

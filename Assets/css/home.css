@@ -1,3 +1,4 @@
+
 .section1 {
     background-color: #fff;
     border-bottom: 0.5px solid black;
@@ -6,28 +7,83 @@
 }
 
 .section-background {
+    width: 100%;
+    height: auto;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 50px;
-    height: fit-content;
-    padding-bottom: 50px;
-    transition: all 1s linear;
+    animation: bgcimageAnimation 40s linear infinite; /* Slower animation for better visibility */
+    position: relative;
 }
 
-.section-background.bgcimage1 {
-    background-image: url(/Assets/Images/banner-img/banner-img1.webp);
-}
+@keyframes bgcimageAnimation {
+    0% {
+        background-image: url('/Assets/Images/banner-img/banner-img1.webp');
+        opacity: 0.8; /* Partially visible */
+    }
+    10% {
+        opacity: 1; /* Fully visible */
+    }
+    18% {
+        opacity: 1; /* Stay fully visible */
+    }
+    20% {
+        opacity: 0.8; /* Fade to partially visible */
+    }
 
-.section-background.bgcimage2 {
-    background-image: url(/Assets/Images/banner-img/banner-img3.webp);
-}
+    22% {
+        background-image: url('/Assets/Images/banner-img/banner-img2.webp');
+        opacity: 0.8; /* Start at partially visible */
+    }
+    32% {
+        opacity: 1; /* Fully visible */
+    }
+    40% {
+        opacity: 1; /* Stay fully visible */
+    }
+    42% {
+        opacity: 0.8; /* Fade to partially visible */
+    }
 
-.section-background.bgcimage3 {
-    background-image: url(/Assets/Images/banner-img/banner-img4.webp);
-}
+    44% {
+        background-image: url('/Assets/Images/banner-img/banner-img3.webp');
+        opacity: 0.8; /* Start at partially visible */
+    }
+    54% {
+        opacity: 1; /* Fully visible */
+    }
+    62% {
+        opacity: 1; /* Stay fully visible */
+    }
+    64% {
+        opacity: 0.8; /* Fade to partially visible */
+    }
 
+    66% {
+        background-image: url('/Assets/Images/banner-img/banner-img4.webp');
+        opacity: 0.8; /* Start at partially visible */
+    }
+    76% {
+        opacity: 1; /* Fully visible */
+    }
+    84% {
+        opacity: 1; /* Stay fully visible */
+    }
+    86% {
+        opacity: 0.8; /* Fade to partially visible */
+    }
 
-.section-background.bgcimage4 {
-    background-image: url(/Assets/Images/banner-img/banner-img2.webp);
+    88% {
+        background-image: url('/Assets/Images/banner-img/banner-img5.webp');
+        opacity: 0.8; /* Start at partially visible */
+    }
+    98% {
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        opacity: 1; /* Stay fully visible */
+    }
 }
 
 .section1-heading {
