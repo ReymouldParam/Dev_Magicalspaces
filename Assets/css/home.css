@@ -253,6 +253,7 @@
     font-family: var(--font2);
     font-weight: 500;
     padding-top: 30px;
+    color: lightslategrey;
 }
 
 .ourserviceOur {
@@ -290,6 +291,7 @@
     font-size: 20px;
     margin-top: 10px;
     margin-left: 10%;
+    color: lightslategrey;
 }
 
 .our-service-slider {
@@ -427,6 +429,7 @@
     /* padding-top: 40px; */
     /* padding-left: 5%; */
     /* margin-left: 0; */
+    color: lightslategrey;
 }
 
 .aboutcompany-block {
@@ -486,6 +489,7 @@
 
 .about-text-caption {
     font-size: 20px;
+    color:lightslategrey;
 }
 
 
@@ -844,6 +848,7 @@
     font-size: 16px;
     letter-spacing: 3%;
     line-height: 23px;
+    color: lightslategrey;
 }
 
 .test-name {
@@ -854,6 +859,7 @@
     padding-top: 20px;
     font-size: 20px;
     font-weight: 600;
+    color: lightslategrey;
 }
 
 .test-image {

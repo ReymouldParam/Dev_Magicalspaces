@@ -62,6 +62,7 @@
     position: absolute;
     width: 82%;
     text-align: center;
+    color: lightslategrey;
 }
 
 .project-item.active {
@@ -118,7 +119,7 @@
 
 .numeric-para {
     font-family: "Microsoft YaHei";
-    color: #000000;
+    color:lightslategrey;
     font-size: 20px;
     line-height: 24px;
     width: 100%;
@@ -472,7 +473,7 @@
 
 .numeric-para2 {
     font-family: "Microsoft YaHei";
-    color: #000000;
+    color:lightslategrey;
     font-size: 20px;
     line-height: 24px;
     width: 50%;

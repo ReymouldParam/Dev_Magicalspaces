@@ -134,7 +134,7 @@ body {
 }
 
 .nav-list-options li a {
-  color: black;
+  color:#ffffff;
   text-decoration: none;
   font-size: 17px;
   font-family: var(--font2);
@@ -368,7 +368,7 @@ body {
 }
 
 .footercon {
-  color: var(--brown-color);
+  color:lightslategrey;
   font-size: 16px;
   font-family: var(--font2);
   font-weight: 400;
@@ -383,7 +383,7 @@ body {
 }
 
 #licience h6 {
-  color: var(--brown-color);
+  color:lightslategrey;
   font-family: "Microsoft Yahei";
   font-weight: 600;
   text-align: center;

@@ -65,7 +65,7 @@
 
 .numeric-para {
     font-family: "Microsoft YaHei";
-    color: #000000;
+    color:lightslategrey;
     font-size: 20px;
     line-height: 24px;
 }
@@ -224,7 +224,7 @@
 .numeric-para2 {
     width: 60%;
     font-family: "Microsoft YaHei";
-    color: #000000;
+    color:lightslategrey;
     font-size: 20px;
     line-height: 24px;
     padding: 15px;
@@ -232,7 +232,7 @@
 
 .about-para {
     font-family: "Microsoft YaHei";
-    color: #000000;
+    color:lightslategrey;
     font-size: 20px;
     line-height: 24px;
     padding: 15px;
@@ -381,7 +381,7 @@
 
 .team-head {
     font-family: "Microsoft YaHei";
-    color: #000000;
+    color:lightslategrey;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -391,7 +391,7 @@
 
 .team-para {
     font-family: "Microsoft YaHei";
-    color: #000000;
+    color:lightslategrey;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
