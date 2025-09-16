@@ -1,41 +1,50 @@
-/* ----------------------mobile phones ---------------  */
-@media screen and (max-width: 550px) {
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .section-background img {
+    height: 50vh;
+    border-radius: 20px;
+  }
+}
 
-  /* Section 1 */
+/* Mobile */
+@media (max-width: 768px) {
   .section1 {
-    margin: 0;
-    width: 100%;
-    height: auto !important;
-    padding-bottom: 5px;
-    padding: 5px;
-    margin-top: 15%;
+    margin-top: 20px;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 
   .section-background {
-    margin: 0;
+    width: 95%;
+  }
+
+  .section-background img {
+    height: 40vh;
+    border-radius: 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .section1 {
     height: auto;
-    background-size: cover;
-    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
-  .section1-heading-text {
-    font-size: 30px;
-  }
-
-  .section1-heading-content {
+  .section-background {
     width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0 20px 10px 20px;
   }
 
-  .section1-heading-caption {
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    margin: 20px 0 0 0;
+  .section-background img {
+    height: 35vh;
+    border-radius: 12px;
   }
+}
 
+/* ----------------------mobile phones ---------------  */
+@media screen and (max-width: 550px) {
   .getcontainer {
     margin-top: 400px;
     height: 50px;
@@ -172,7 +181,7 @@
 
   .form-caption,
   .label1 {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .mail-notification-block {
@@ -271,7 +280,7 @@
   .ourser-images1,
   .ourser-images2 {
     width: 48%;
-    height: 40vh;
+    height: 20vh;
     /* Reduced height to fit smaller screens */
     border-radius: 20px;
   }
@@ -314,9 +323,9 @@
   }
 
   .about-company-section {
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .company-text {
@@ -599,8 +608,10 @@
   }
 
   .our_test_Arrow {
-    padding-left: 40%;
-    padding-top: 15px;
+    /* padding-left: 40%;
+    padding-top: 15px; */
+    padding-top: -5px;
+    padding-right: 5px;
     /* Remove left padding */
   }
 
@@ -925,11 +936,11 @@
   }
 
   .send {
-    width: 35%;
+    /* width: 40%; */
     height: auto;
-    padding: 5px;
-    padding-bottom: 10px;
     font-size: 14px;
+    padding: 5px;
+    padding-top: 5px;
   }
 
   #sendimage {
@@ -941,8 +952,8 @@
   #formpre {
     position: relative;
     top: 0;
-    font-size: 20px;
-    padding-top: 5px;
+    font-size: 14px;
+    padding-top: 0px;
   }
 
   /* Mobile view for mail dialog box */
