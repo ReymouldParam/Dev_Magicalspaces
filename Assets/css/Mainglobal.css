@@ -32,7 +32,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #fff;
 }
 
 .brown {
@@ -40,7 +40,7 @@ body {
 }
 
 .global-section {
-    width:100%;
+    width: 100%;
     background-color: #fff;
     position: relative;
 }
@@ -100,21 +100,22 @@ body {
 
 /* General Styles for Navbar */
 .navbar {
-    background-color: #b5704e;
+    background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     /* Adjust for toggler alignment */
-    padding: 1%;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    padding: 5px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     position: fixed;
     top: 0;
     width: 100%;
     /* Full width for the navbar */
     z-index: 1000;
     opacity: 0.8;
+    background: blur(8px);
 }
 
 .logo {
@@ -136,7 +137,7 @@ body {
 
 .nav-item {
     font-family: "Microsoft YaHei";
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     color: #ffffff;
     list-style-type: none;
@@ -160,7 +161,7 @@ body {
 
 .icon-size {
     padding-top: 2%;
-    height: 40px;
+    height: 25px;
 }
 
 /* Toggler Button Styles */
@@ -203,8 +204,8 @@ body {
 /* smaller laptop screens */
 @media screen and (min-width:1020px) and (max-width:1280px) {
     .navbar {
-        width: 84%;
-        background-color: #000000;
+        width: 100%;
+        /* background-color:; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -223,7 +224,7 @@ body {
 @media (max-width: 768px) {
     .navbar {
         border-radius: 0;
-        width: 92%;
+        width: 100%;
         padding: 10px 20px;
         justify-content: space-between;
     }

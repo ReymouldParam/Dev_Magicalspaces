@@ -48,8 +48,8 @@ $('.ourService-aside-slider2').slick({
     slidesToShow: 1,
     Infinity: true,
     autoplay: true,
-    arrows: true,
-    dots: true,
+    arrows: false,
+    dots: false,
     fade: true,
     asNavFor: '.ourService-aside-slider1',
     nextArrow: "<button class='slick_btn next_btn'><i class='fa-solid fa-chevron-right'></i></button>",
@@ -165,7 +165,7 @@ $('#our_project_slider_content_caption').slick({
             breakpoint: 880,
             settings: {
                 arrows: false,
-                dots: false                
+                dots: false
             }
         },
         {

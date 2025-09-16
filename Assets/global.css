@@ -46,7 +46,7 @@ body {
 }
 
 .heading-font {
-  font-size: 60px;
+  font-size: 48px;
   font-family: var(--font1);
   font-weight: 400;
 }
@@ -77,7 +77,8 @@ body {
   background-color: #000000;
   backdrop-filter: blur(5px);
   top: 0;
-  padding: 1%; /* Adjust padding as needed */
+  padding: 1%;
+  /* Adjust padding as needed */
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   position: fixed;
@@ -134,7 +135,7 @@ body {
 }
 
 .nav-list-options li a {
-  color:#ffffff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 17px;
   font-family: var(--font2);
@@ -222,35 +223,43 @@ body {
 
 /* Mobile View Styles */
 @media (max-width: 768px) {
-    /* Base styles for header and navigation */
-.header-section {
-    padding: 10px 5%; /* Adjusted padding */
-    justify-content: space-between; /* Ensure space between elements */
-}
 
-#bar {
-    display: block; /* Show the toggler icon */
+  /* Base styles for header and navigation */
+  .header-section {
+    padding: 10px 5%;
+    /* Adjusted padding */
+    justify-content: space-between;
+    /* Ensure space between elements */
+  }
+
+  #bar {
+    display: block;
+    /* Show the toggler icon */
     cursor: pointer;
-}
+  }
 
-#cross {
-    display: none !important; /* Show the close icon */
+  #cross {
+    display: none !important;
+    /* Show the close icon */
     cursor: pointer;
-}
+  }
 
-.nav-section {
-    display: none; /* Hide the regular nav menu */
-}
+  .nav-section {
+    display: none;
+    /* Hide the regular nav menu */
+  }
 
-#bar_options {
-    display: flex; /* Flex display to allow column layout */
+  #bar_options {
+    display: flex;
+    /* Flex display to allow column layout */
     flex-direction: column;
     align-items: center;
     background-color: #000;
     width: 35%;
     margin-left: auto;
     position: absolute;
-    top: 65px; /* Adjust based on your header height */
+    top: 65px;
+    /* Adjust based on your header height */
     left: 0;
     z-index: 999;
     padding: 10px 0;
@@ -259,14 +268,15 @@ body {
     overflow: hidden;
     border-radius: 15px;
     transition: max-height 0.5s ease-out, visibility 0.5s ease-out;
-}
+  }
 
-#bar_options.active {
+  #bar_options.active {
     visibility: visible;
-    max-height: 300px; /* Adjust based on your content */
-}
+    max-height: 300px;
+    /* Adjust based on your content */
+  }
 
-.navlinks {
+  .navlinks {
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -274,38 +284,38 @@ body {
     text-decoration: none;
     text-align: left;
     padding-left: 20px;
-}
+  }
 
-.navlinks:hover {
+  .navlinks:hover {
     background-color: #444;
-}
+  }
 
-.toggler {
+  .toggler {
     cursor: pointer;
     position: relative;
     z-index: 1000;
-}
+  }
 
-.toggler-icon {
+  .toggler-icon {
     width: 25px;
     height: 3px;
     display: none !important;
     background: #ffffff;
     margin: 5px 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
-}
+  }
 
-.toggler.open .toggler-icon:nth-child(1) {
+  .toggler.open .toggler-icon:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
-}
+  }
 
-.toggler.open .toggler-icon:nth-child(2) {
+  .toggler.open .toggler-icon:nth-child(2) {
     opacity: 0;
-}
+  }
 
-.toggler.open .toggler-icon:nth-child(3) {
+  .toggler.open .toggler-icon:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-}
+  }
 
 
 
@@ -368,7 +378,7 @@ body {
 }
 
 .footercon {
-  color:lightslategrey;
+  color: lightslategrey;
   font-size: 16px;
   font-family: var(--font2);
   font-weight: 400;
@@ -383,7 +393,7 @@ body {
 }
 
 #licience h6 {
-  color:lightslategrey;
+  color: lightslategrey;
   font-family: "Microsoft Yahei";
   font-weight: 600;
   text-align: center;
@@ -407,7 +417,8 @@ body {
     background-color: #000000;
     backdrop-filter: blur(5px);
     top: 0;
-    padding: 1%; /* Adjust padding as needed */
+    padding: 1%;
+    /* Adjust padding as needed */
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     position: fixed;
@@ -704,14 +715,14 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 2% 4% 0;
-    
+
   }
 
   .footerlogo {
     margin-left: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
-   
+
   }
 
   .info-mail-block {
