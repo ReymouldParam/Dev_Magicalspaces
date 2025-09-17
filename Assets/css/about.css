@@ -1,11 +1,17 @@
 /* section1 */
 .section1 {
+    border-bottom: 1px solid black;
+    height: 95vh;
+}
+
+.about-us-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 8%;
-    width: 87%;
+    padding-top: 2%;
+    width: 90%;
     margin: auto;
+
 }
 
 .about {
@@ -58,15 +64,15 @@
 
 .numeric-head {
     font-family: "Microsoft YaHei";
-    font-size: 24px;
+    font-size: 20px;
     color: #000000;
     font-weight: 400;
 }
 
 .numeric-para {
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
-    font-size: 20px;
+    color: lightslategrey;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -214,7 +220,7 @@
 
 .section2-div-con2 {
     display: flex;
-    width: 87.5%;
+    width: 89%;
     justify-content: space-around;
     background-color: rgba(81, 55, 42, 0.09);
     animation: slideFromLeftAndGrow 1s ease-out forwards;
@@ -224,15 +230,16 @@
 .numeric-para2 {
     width: 60%;
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
-    font-size: 20px;
+    color: lightslategrey;
+    font-size: 18px;
     line-height: 24px;
     padding: 15px;
+    font-weight: 400;
 }
 
 .about-para {
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
+    color: lightslategrey;
     font-size: 20px;
     line-height: 24px;
     padding: 15px;
@@ -381,7 +388,7 @@
 
 .team-head {
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
+    color: lightslategrey;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -391,8 +398,8 @@
 
 .team-para {
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
-    font-size: 20px;
+    color: lightslategrey;
+    font-size: 18px;
     line-height: 24px;
     text-align: center;
 
@@ -491,6 +498,8 @@
 .para-width {
     width: 85%;
     margin: auto;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .div4-con {
@@ -607,135 +616,6 @@
         height: auto;
     }
 }
-
-
-/* section5(contact from) */
-.section5 {
-    background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    /* margin-bottom: -10%; */
-}
-
-.section6-contactus {
-    padding-top: 0px;
-    width: 100%;
-    margin: auto;
-    margin: 0;
-    margin-top: -15px;
-}
-
-.section-contact {
-    width: auto;
-    height: 100%;
-    padding: 30px;
-    margin: auto;
-    margin-left: 4%;
-    display: flex;
-    flex-direction: row;
-    /* border-radius: 40px; */
-    background-image: url(/Assets/Images/form\ bgc.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.slider-contact {
-    width: 40% !important;
-    height: 500px;
-    object-fit: cover;
-}
-
-.footer-image-container {
-    width: 100%;
-}
-
-.footer-images {
-    width: 100%;
-    height: 69vh;
-    border-radius: 40px;
-    margin-top: 2%;
-}
-
-.form-container {
-    width: 50%;
-    padding-left: 30px;
-}
-
-.form-heading {
-    font-family: var(--font2);
-    font-weight: 700;
-    font-size: 32px;
-    color: #E2DDD0;
-}
-
-.form-caption {
-    color: #E2DDD0;
-    font-family: var(--font2);
-    font-size: 20px;
-    font-weight: 400;
-    padding-top: 5px;
-}
-
-.label1 {
-    color: #E2DDD0;
-    font-family: var(--font2);
-    font-size: 20px;
-}
-
-.fullName {
-    width: 570px;
-    /* height: 52px; */
-    border-radius: 15px;
-    padding: 15px;
-    color: white;
-    background: transparent;
-    border: 1.2px solid #E2DDD0;
-    font-family: var(--font2);
-    font-size: 18px;
-}
-
-.form-block {
-    padding-top: 20px;
-}
-
-.fullName::placeholder {
-    padding: 10px;
-    font-size: 16px;
-}
-
-.comment {
-    width: 570px;
-    height: 50px;
-    border-radius: 15px;
-    background: transparent;
-    border: 1.2px solid #E2DDD0;
-}
-
-.send {
-    width: 120px;
-    height: 40px;
-    border: 1px solid #E2DDD0;
-    border-radius: 15px;
-    background: transparent;
-    color: white;
-    cursor: pointer !important;
-    margin-top: -13px;
-}
-
-#sendimage {
-    position: relative;
-    top: 7px;
-}
-
-#formpre {
-    position: relative;
-    top: -12px;
-    font-family: var(--font2);
-    font-size: 14px;
-    color: #E2DDD0;
-    margin-top: -3px;
-}
-
 
 /* -----------------------------------mail dialog box----- */
 .mail-success-box {

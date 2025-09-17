@@ -8,7 +8,7 @@
 }
 
 .heading-font1-port {
-    font-size: 60px;
+    font-size: 48px;
     font-family: var(--font1);
     color: var(--brown-color);
     font-weight: 400;
@@ -16,7 +16,7 @@
 }
 
 .heading-font2-port {
-    font-size: 60px;
+    font-size: 48px;
     font-family: var(--font1);
     color: var(--black-color);
     font-weight: 400;
@@ -119,7 +119,7 @@
 
 .numeric-para {
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
+    color: lightslategrey;
     font-size: 20px;
     line-height: 24px;
     width: 100%;
@@ -374,12 +374,13 @@
     .project-item.active {
         font-size: 14px;
     }
+
     .heading-font1-port {
         font-size: 20px;
         width: 80%;
         padding-left: 43px;
     }
-    
+
     .heading-font2-port {
         font-size: 20px;
         width: 80%;
@@ -419,15 +420,16 @@
 
 /* section2 */
 .section2 {
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .head-para {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 3%;
-    margin-top: -100px;
+    width: 95%;
+    margin: auto;
     padding-bottom: 20px;
 
 }
@@ -436,7 +438,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     padding-bottom: 3%;
 }
@@ -457,15 +459,6 @@
     gap: 10px;
 }
 
-.middle-pic1 {
-    width: 98% !important;
-    height: 550px !important;
-}
-
-.middle-pic2 {
-    width: 98% !important;
-    height: 550px !important;
-}
 
 .portfolio {
     padding-left: 15%;
@@ -473,8 +466,8 @@
 
 .numeric-para2 {
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
-    font-size: 20px;
+    color: lightslategrey;
+    font-size: 18px;
     line-height: 24px;
     width: 50%;
     text-align: left;
@@ -486,12 +479,13 @@
     width: 100%;
     max-width: 400px;
     margin: 4px;
+    /* overflow: hidden; */
 }
 
 .image-container2 img {
     display: block;
-    width: auto;
-    height: auto;
+    width: 400px;
+    height: 450px;
 }
 
 .interiors-card {
@@ -504,13 +498,14 @@
     padding: 16px;
     transform: translateY(100px);
     opacity: 0;
-    width: 90%;
+    width: 100%;
     transition: transform 1.6s ease, opacity 1.6s ease;
+    overflow: hidden;
 }
 
 .interiors-card.show {
     transform: translateY(0);
-    opacity: 0.6;
+    opacity: 1;
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
     background: rgba(48, 21, 3, 0.9);
@@ -806,416 +801,4 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-
-/* section5 */
-/* section5(contact from) */
-.section5 {
-    background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    /* margin-bottom: -10%; */
-}
-
-.section6-contactus {
-    padding-top: 0px;
-    width: 100%;
-    margin: auto;
-    margin: 0;
-    margin-top: -15px;
-}
-
-.section-contact {
-    width: auto;
-    height: 100%;
-    padding: 30px;
-    margin: auto;
-    margin-left: 4%;
-    display: flex;
-    flex-direction: row;
-    /* border-radius: 40px; */
-    background-image: url(/Assets/Images/form\ bgc.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.slider-contact {
-    width: 40% !important;
-    height: 500px;
-    object-fit: cover;
-}
-
-.footer-image-container {
-    width: 100%;
-}
-
-.footer-images {
-    width: 100%;
-    height: 69vh;
-    border-radius: 40px;
-    margin-top: 2%;
-}
-
-.form-container {
-    width: 50%;
-    padding-left: 30px;
-}
-
-.form-heading {
-    font-family: var(--font2);
-    font-weight: 700;
-    font-size: 36px;
-    color: #E2DDD0;
-}
-
-.form-caption {
-    color: #E2DDD0;
-    font-family: var(--font2);
-    font-size: 20px;
-    font-weight: 400;
-    padding-top: 5px;
-}
-
-.label1 {
-    color: #E2DDD0;
-    font-family: var(--font2);
-    font-size: 20px;
-}
-
-.fullName {
-    width: 570px;
-    /* height: 52px; */
-    border-radius: 15px;
-    padding: 15px;
-    color: white;
-    background: transparent;
-    border: 1.2px solid #E2DDD0;
-    font-family: var(--font2);
-    font-size: 18px;
-}
-
-.form-block {
-    padding-top: 20px;
-}
-
-.fullName::placeholder {
-    padding: 10px;
-    font-size: 16px;
-}
-
-.comment {
-    width: 570px;
-    height: 50px;
-    border-radius: 15px;
-    background: transparent;
-    border: 1.2px solid #E2DDD0;
-}
-
-.send {
-    width: 120px;
-    height: 40px;
-    border: 1px solid #E2DDD0;
-    border-radius: 15px;
-    background: transparent;
-    color: white;
-    cursor: pointer !important;
-    margin-top: -13px;
-}
-
-#sendimage {
-    position: relative;
-    top: 7px;
-}
-
-#formpre {
-    position: relative;
-    top: -12px;
-    font-family: var(--font2);
-    font-size: 20px;
-    color: #E2DDD0;
-    margin-top: -3px;
-}
-
-/* large screens */
-@media screen and (min-width: 1600px) {
-    .section5 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .section6-contactus {
-        width: 100%;
-        margin: 0;
-        padding-top: 0;
-    }
-
-    .section-contact {
-        width: 75%;
-        /* Adjusted for large screens while maintaining the layout */
-        height: auto;
-        margin: auto;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        background-image: url(/Assets/Images/form\ bgc.png);
-        background-size: cover;
-        /* Ensures the background image covers the section */
-        background-repeat: no-repeat;
-        background-position: center;
-        /* Center the background image */
-        border-radius: 40px;
-        /* Optional: Add border-radius if needed for design consistency */
-    }
-
-    .slider-contact {
-        width: 45%;
-        /* Adjusted width to fit larger screens */
-        height: 500px;
-        /* Fixed height for consistency */
-        object-fit: cover;
-        /* Ensures images cover their container */
-    }
-
-    .footer-image-container {
-        width: 100%;
-    }
-
-    .footer-images {
-        width: 100%;
-        height: 55vh;
-        /* Adjusted height to fit well within the container */
-        border-radius: 40px;
-        object-fit: cover;
-        /* Ensures images cover their container */
-    }
-
-    .form-container {
-        width: 50%;
-        padding-left: 30px;
-    }
-
-    .form-heading {
-        font-family: var(--font2);
-        font-weight: 700;
-        font-size: 32px;
-        color: #E2DDD0;
-    }
-
-    .form-caption {
-        color: #E2DDD0;
-        font-family: var(--font2);
-        font-size: 20px;
-        font-weight: 400;
-        padding-top: 5px;
-    }
-
-    .label1 {
-        color: #E2DDD0;
-        font-family: var(--font2);
-        font-size: 20px;
-    }
-
-    .fullName,
-    .comment {
-        width: 100%;
-        max-width: 570px;
-        /* Ensures form fields don't exceed desired width */
-        border-radius: 15px;
-        padding: 15px;
-        background: transparent;
-        border: 1.2px solid #E2DDD0;
-        font-family: var(--font2);
-        font-size: 18px;
-    }
-
-    .fullName::placeholder {
-        font-size: 16px;
-    }
-
-    .comment {
-        height: 100px;
-        /* Increased height for better usability on larger screens */
-    }
-
-    .send {
-        width: auto;
-        max-width: 157px;
-        height: 40px;
-        border: 1.5px solid #E2DDD0;
-        border-radius: 15px;
-        background: transparent;
-        color: white;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #sendimage {
-        width: 20px;
-    }
-
-    #formpre {
-        font-family: var(--font2);
-        font-size: 14px;
-        color: #E2DDD0;
-        padding-top: 25px;
-    }
-}
-
-/* small screens */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-    .section5 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .section6-contactus {
-        width: 100%;
-    }
-
-    .section-contact {
-        width: 90%;
-        height: auto;
-        margin: auto;
-        padding: 30px;
-        flex-direction: row;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .slider-contact {
-        width: 40% !important;
-        height: auto;
-        /* Adjust height based on content */
-    }
-
-    .footer-images {
-        width: 100%;
-        height: 400px;
-    }
-
-    .form-container {
-        width: 50%;
-        padding-left: 30px;
-    }
-
-    .fullName,
-    .comment {
-        width: 100%;
-        height: 15px;
-    }
-
-    .send {
-        width: auto;
-    }
-
-    #sendimage {
-        position: relative;
-        /* top: 7px; */
-        width: 20px;
-    }
-
-    #formpre {
-        position: relative;
-        top: -15px;
-        font-family: var(--font2);
-        font-size: 14px;
-        color: #E2DDD0;
-    }
-}
-
-/* mobile view  */
-@media (max-width: 767px) {
-    .section5 {
-        padding: 5%;
-        margin-bottom: 0;
-    }
-
-    .section6-contactus {
-        padding-top: 0px;
-    }
-
-    .section-contact {
-        flex-direction: column;
-        height: auto;
-        padding: 25px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 40px;
-        margin-top: 20px;
-    }
-
-    .slider-contact {
-        width: 100% !important;
-        height: auto;
-    }
-
-    .footer-images {
-        height: 200px;
-        border-radius: 20px;
-    }
-
-    .form-container {
-        width: 100%;
-        padding-left: 0;
-        padding-top: 5px;
-    }
-
-    .form-heading {
-        font-size: 20px;
-        padding-top: 15px;
-    }
-
-    .form-caption {
-        font-size: 14px;
-    }
-
-    .fullName,
-    .comment {
-        width: 100%;
-        font-size: 14px;
-        box-sizing: border-box;
-    }
-
-    .comment {
-        height: auto;
-        font-size: 14px;
-    }
-
-    .send {
-        width: 35%;
-        height: auto;
-        padding: 5px;
-        padding-bottom: 10px;
-        font-size: 14px;
-    }
-
-    #sendimage {
-        position: relative;
-        top: 3px;
-        width: 20px;
-    }
-
-    #formpre {
-        position: relative;
-        top: 3px;
-        width: 20px;
-        padding-top: 5px;
-    }
-
-    /* Mobile view for mail dialog box */
-    .mail-notification-block {
-        width: 90%;
-        padding: 15px;
-    }
-
-    #mail-message {
-        font-size: 24px;
-    }
-
-    #mail-message-caption {
-        font-size: 14px;
-    }
 }

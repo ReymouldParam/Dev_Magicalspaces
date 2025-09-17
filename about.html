@@ -12,9 +12,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- slick carousel cdn -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./Assets/css/Mainglobal.css">
+    <link rel="stylesheet" href="./Assets/global.css">
+    <link rel="stylesheet" href="./Assets/css/Mainglobal.css" />
+    <link rel="stylesheet" href="./Assets/css/home.css">
     <link rel="stylesheet" href="./Assets/css/about.css" />
     <link rel="stylesheet" href="./Assets/about-page-anime.css" />
+    <link rel="stylesheet" href="./Assets/Animations.css">
+    <link rel="stylesheet" href="./Assets/MediaQueries.css">
+</head>
 
 
 </head>
@@ -24,7 +29,7 @@
         <header class="navbar">
             <div class="logo-container">
                 <a href=".">
-                <img src="./Assets/Images/icon/logo magical WHITE with crop.png" alt="logo" class="logo-icon" />
+                    <img src="./Assets/Images/icon/logo magical WHITE with crop.png" alt="logo" class="logo-icon" />
                 </a>
             </div>
             <button class="toggler" aria-label="Toggle navigation">
@@ -43,7 +48,7 @@
                     <a href="./about.html" class="nav-link">ABOUT US</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./portopolio.html" class="nav-link">PORTFOLIO</a>
+                    <a href="./portfolio.html" class="nav-link">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
                     <a href="./contact.html" class="nav-link">CONTACT</a>
@@ -64,93 +69,77 @@
                     <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                     <path d="M16.5 7.5l0 .01" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x icon-size"
-                    width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin icon-size"
-                    width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                    <path d="M8 11l0 5" />
-                    <path d="M8 8l0 .01" />
-                    <path d="M12 16l0 -5" />
-                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                </svg>
             </div>
         </header>
         <section class="section1">
-            <div class="container1">
-                <h1 class="heading-font2">
-                    YOUR IDEAS,
-                </h1>
-                <h1 class="heading-font1 padding-y">
-                    OUR CREATIVE
-                </h1>
-                <p class="para">
-                    We bring your ideas to life, blending creativity with precision to create spaces that inspire and
-                    delight
+            <div class="about-us-container">
+                <div class="container1">
+                    <h1 class="heading-font2">
+                        YOUR IDEAS,
+                    </h1>
+                    <h1 class="heading-font1 padding-y">
+                        OUR CREATIVE
+                    </h1>
+                    <p class="para">
+                        We bring your ideas to life, blending creativity with precision to create spaces that inspire
+                        and
+                        delight
 
-                </p>
-            </div>
-
-            <div class="container2">
-                <div class="numeric-div">
-                    <div class="img-num-div">
-                        <img src="./Assets/Images/about-page-img1.png" alt="about-img1" />
-                        <div>
-                            <div class="num-para">
-                                <h3 id="projects-count" class="numeric-head">
-                                    0
-                                </h3>
-                                <h4 class="numeric-head">
-                                    DESIGN PROJECTS
-                                </h4>
-                                <p class="numeric-para">
-                                    Experience the perfect blend of functionality.
-                                </p>
+                    </p>
+                </div>
+                <div class="container2">
+                    <div class="numeric-div">
+                        <div class="img-num-div">
+                            <img src="./Assets/Images/about-page-img1.png" alt="about-img1" />
+                            <div>
+                                <div class="num-para">
+                                    <h3 id="projects-count" class="numeric-head">
+                                        0
+                                    </h3>
+                                    <h4 class="numeric-head">
+                                        DESIGN PROJECTS
+                                    </h4>
+                                    <p class="numeric-para">
+                                        Experience the perfect blend of functionality.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="img-num-div">
-                        <img src="./Assets/Images/about-page-img2.png" alt="about-img1" />
-                        <div>
-                            <div class="num-para">
-                                <h3 id="employees-count" class="numeric-head">
-                                    0
-                                </h3>
-                                <h4 class="numeric-head">
-                                    EMPLOYEES
-                                </h4>
-                                <p class="numeric-para">
-                                    Experience the perfect blend of functionality.
-                                </p>
+                        <div class="img-num-div">
+                            <img src="./Assets/Images/about-page-img2.png" alt="about-img1" />
+                            <div>
+                                <div class="num-para">
+                                    <h3 id="employees-count" class="numeric-head">
+                                        0
+                                    </h3>
+                                    <h4 class="numeric-head">
+                                        EMPLOYEES
+                                    </h4>
+                                    <p class="numeric-para">
+                                        Experience the perfect blend of functionality.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="img-num-div">
-                        <img src="./Assets/Images/about-page-img3.png" alt="about-img1" />
-                        <div>
-                            <div class="num-para">
-                                <h3 id="contractors-count" class="numeric-head">
-                                    0
-                                </h3>
-                                <h4 class="numeric-head">
-                                    CONTRACTORS
-                                </h4>
-                                <p class="numeric-para">
-                                    Experience the perfect blend of functionality.
-                                </p>
+                        <div class="img-num-div">
+                            <img src="./Assets/Images/about-page-img3.png" alt="about-img1" />
+                            <div>
+                                <div class="num-para">
+                                    <h3 id="contractors-count" class="numeric-head">
+                                        0
+                                    </h3>
+                                    <h4 class="numeric-head">
+                                        CONTRACTORS
+                                    </h4>
+                                    <p class="numeric-para">
+                                        Experience the perfect blend of functionality.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="section2">
             <div class="section2-div-con1">
@@ -231,7 +220,7 @@
                 </div>
                 <div>
                     <button class="button">
-                        <a href="portopolio.html">
+                        <a href="portfolio.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right"
                                 width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#51372A"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -305,37 +294,70 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="footer-blocks footer-blocks1">
-                <div class="footer-logo-block">
-                    <img src="./Assets/Images/icon/logo with crop.png" alt="logo" class="footer-logo">
+        <!-- ------ footer ------ -->
+        <div class="footer">
+            <div class="logo-block footer-logo-tab footer-logo-phone">
+                <img src="./Assets/Images/magical space temp.jpg" alt="footer-logo"
+                    class="logo footerlogo footer-logo-laptop footer-logo-tab">
+            </div>
+
+            <div class="info-mail-block">
+                <i class="fa-regular fa-envelope"></i>
+                <h3 class="footercon footermailid">XYZ23@gmail.com</h3>
+            </div>
+
+            <div class="info-mail-block address-tab info-address-block">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 class="footercon footerAddressName">Block 15 , Flat no
+                    704
+                    Hill Ridge Spring
+                    ISB Road
+                    Gachibowli
+                    Hyderabad
+                </h3>
+            </div>
+
+            <div class="info-mail-block info-phone-block">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h3 class="footercon footerNumber">+91 95032 37693</h3>
+                    <!-- <h3 class="footercon footerNumber">+91-9542 29 5424</h3> -->
                 </div>
             </div>
-            <div class="footer-blocks footer-blocks1">
-                <div class="footer-icon-block">
+
+        </div>
+        <div class="footer-for-tab">
+            <div class="tab-div1">
+                <div class="mail-phone-adderss">
                     <i class="fa-regular fa-envelope"></i>
+                    <h3 class="footercon">XYZ23@gmail.com</h3>
                 </div>
-                <p class="footer-text">XYZ@gmail.com</p>
+                <div>
+                    <div class="mail-phone-adderss">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3 class="footercon">+91-9503237693</h3>
+                    </div>
+                </div>
             </div>
-            <div class="footer-blocks footer-blocks2">
-                <div class="footer-icon-block">
+            <div class="tab-div2">
 
+                <div class="mail-phone-adderss">
                     <i class="fa-solid fa-location-dot"></i>
+                    <h3 class="footercon">Block 15 , Flat no 704
+                        Hill Ridge Spring
+                        ISB Road
+                        Gachibowli
+                        Hyderabad</h3>
                 </div>
-                <p class="footer-text">Block 15 , Flat no 704 Hill Ridge Spring ISB Road Gachibowli Hyderabad</p>
-            </div>
-            <div class="footer-blocks footer-blocks1">
-                <div class="footer-icon-block">
 
-                    <i class="fa-solid fa-phone"></i>
+                <div class="footer-logo-tab-block">
+                    <img src="./Assets/Images/magical space temp.jpg" alt="footer-logo" class="logo footer-logo-tab2">
                 </div>
-                <p class="footer-text">+91 95032 37693</p>
             </div>
-
-        </footer>
-        <section class="licience">
-            <p class="licience-text">MagicalSpace | © Copyright @ 2024. All Rights Reserved</p>
-        </section>
+        </div>
+        <div id="licience">
+            <h6>MagicalSpace | © Copyright @ 2024. All Rights Reserved</h6>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

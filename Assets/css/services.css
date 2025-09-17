@@ -4,11 +4,11 @@
     align-items: center;
     justify-content: space-around;
     padding: 2%;
-    padding-top: 10%;
+    padding-top: 2%;
 }
 
 .heading-font1-port {
-    font-size: 60px;
+    font-size: 48px;
     font-family: var(--font1);
     color: var(--brown-color);
     font-weight: 400;
@@ -16,7 +16,7 @@
 }
 
 .heading-font2-port {
-    font-size: 60px;
+    font-size: 48px;
     font-family: var(--font1);
     color: var(--black-color);
     font-weight: 400;
@@ -25,11 +25,12 @@
 
 .numeric-para {
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
-    font-size: 20px;
+    color: lightslategrey;
+    font-size: 18px;
     line-height: 24px;
     width: 55%;
     text-align: left;
+    font-weight: 400;
 }
 
 .serve-img-align {
@@ -237,7 +238,7 @@
 }
 
 .serv-p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     font-family: "Microsoft YaHei";
     color: lightslategrey;
@@ -255,7 +256,7 @@
     width: 80%;
     font-weight: 400;
     font-family: "Microsoft YaHei";
-    color:lightslategrey;
+    color: lightslategrey;
     margin: auto;
 }
 
@@ -286,7 +287,7 @@
     font-family: "Microsoft YaHei";
     font-weight: 400;
     border-bottom: 1px solid black;
-    color:lightslategrey;
+    color: lightslategrey;
     /* Set text color to black */
     background-color: #ffffff;
     /* Optional: Set a white background */
@@ -502,11 +503,13 @@
         /* Reduce paragraph size for better readability */
         text-align: center;
     }
+
     .list-con-bottom {
-        margin-top:0;
+        margin-top: 0;
         padding: 2%;
         margin-right: 0;
     }
+
     .service-each {
         flex-direction: column;
         /* Stack content vertically */
@@ -810,134 +813,6 @@
     }
 }
 
-/* section5(contact from) */
-.section5 {
-    background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    /* margin-bottom: -10%; */
-}
-
-.section6-contactus {
-    padding-top: 0px;
-    width: 100%;
-    margin: auto;
-    margin: 0;
-    margin-top: -15px;
-}
-
-.section-contact {
-    width: auto;
-    height: 100%;
-    padding: 30px;
-    margin: auto;
-    margin-left: 4%;
-    display: flex;
-    flex-direction: row;
-    /* border-radius: 40px; */
-    background-image: url(/Assets/Images/form\ bgc.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.slider-contact {
-    width: 40% !important;
-    height: 500px;
-    object-fit: cover;
-}
-
-.footer-image-container {
-    width: 100%;
-}
-
-.footer-images {
-    width: 100%;
-    height: 72vh;
-    border-radius: 40px;
-    margin-top: 0%;
-}
-
-.form-container {
-    width: 50%;
-    padding-left: 30px;
-}
-
-.form-heading {
-    font-family: var(--font2);
-    font-weight: 700;
-    font-size: 36px;
-    color: #E2DDD0;
-}
-
-.form-caption {
-    color: #E2DDD0;
-    font-family: var(--font2);
-    font-size: 20px;
-    font-weight: 400;
-    padding-top: 5px;
-}
-
-.label1 {
-    color: #E2DDD0;
-    font-family: var(--font2);
-    font-size: 20px;
-}
-
-.fullName {
-    width: 570px;
-    /* height: 52px; */
-    border-radius: 15px;
-    padding: 15px;
-    color: white;
-    background: transparent;
-    border: 1.2px solid #E2DDD0;
-    font-family: var(--font2);
-    font-size: 18px;
-}
-
-.form-block {
-    padding-top: 20px;
-}
-
-.fullName::placeholder {
-    padding: 10px;
-    font-size: 16px;
-}
-
-.comment {
-    width: 570px;
-    height: 50px;
-    border-radius: 15px;
-    background: transparent;
-    border: 1.2px solid #E2DDD0;
-}
-
-.send {
-    width: 120px;
-    height: 40px;
-    border: 1px solid #E2DDD0;
-    border-radius: 15px;
-    background: transparent;
-    color: white;
-    cursor: pointer !important;
-    margin-top: -20px;
-}
-
-#sendimage {
-    position: relative;
-    top: 7px;
-}
-
-#formpre {
-    position: relative;
-    top: -12px;
-    font-family: var(--font2);
-    font-size: 20px;
-    color: #E2DDD0;
-    margin-top: -3px;
-}
-
-
 /* -----------------------------------mail dialog box----- */
 .mail-success-box {
     height: 100%;
@@ -993,286 +868,4 @@
     padding: 7px 10px;
     border-radius: 10px;
     border: 1px solid black;
-}
-
-/* large screens */
-@media screen and (min-width: 1600px) {
-    .section5 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .section6-contactus {
-        width: 100%;
-        margin: 0;
-        padding-top: 0;
-    }
-
-    .section-contact {
-        width: 75%;
-        /* Adjusted for large screens while maintaining the layout */
-        height: auto;
-        margin: auto;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        background-image: url(/Assets/Images/form\ bgc.png);
-        background-size: cover;
-        /* Ensures the background image covers the section */
-        background-repeat: no-repeat;
-        background-position: center;
-        /* Center the background image */
-        border-radius: 40px;
-        /* Optional: Add border-radius if needed for design consistency */
-    }
-
-    .slider-contact {
-        width: 45%;
-        /* Adjusted width to fit larger screens */
-        height: 500px;
-        /* Fixed height for consistency */
-        object-fit: cover;
-        /* Ensures images cover their container */
-    }
-
-    .footer-image-container {
-        width: 100%;
-    }
-
-    .footer-images {
-        width: 100%;
-        height: 58vh;
-        /* Adjusted height to fit well within the container */
-        border-radius: 40px;
-        object-fit: cover;
-        /* Ensures images cover their container */
-    }
-
-    .form-container {
-        width: 50%;
-        padding-left: 30px;
-    }
-
-    .form-heading {
-        font-family: var(--font2);
-        font-weight: 700;
-        font-size: 32px;
-        color: #E2DDD0;
-    }
-
-    .form-caption {
-        color: #E2DDD0;
-        font-family: var(--font2);
-        font-size: 20px;
-        font-weight: 400;
-        padding-top: 5px;
-    }
-
-    .label1 {
-        color: #E2DDD0;
-        font-family: var(--font2);
-        font-size: 20px;
-    }
-
-    .fullName,
-    .comment {
-        width: 100%;
-        max-width: 570px;
-        /* Ensures form fields don't exceed desired width */
-        border-radius: 15px;
-        padding: 15px;
-        background: transparent;
-        border: 1.2px solid #E2DDD0;
-        font-family: var(--font2);
-        font-size: 18px;
-    }
-
-    .fullName::placeholder {
-        font-size: 16px;
-    }
-
-    .comment {
-        height: 100px;
-        /* Increased height for better usability on larger screens */
-    }
-
-    .send {
-        width: auto;
-        max-width: 157px;
-        height: 40px;
-        border: 1.5px solid #E2DDD0;
-        border-radius: 15px;
-        background: transparent;
-        color: white;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #sendimage {
-        width: 20px;
-    }
-
-    #formpre {
-        font-family: var(--font2);
-        font-size: 14px;
-        color: #E2DDD0;
-        padding-top: 25px;
-    }
-}
-
-/* small screens */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-    .section5 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .section6-contactus {
-        width: 100%;
-    }
-
-    .section-contact {
-        width: 92%;
-        height: auto;
-        margin: auto;
-        padding: 30px;
-        flex-direction: row;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .slider-contact {
-        width: 40% !important;
-        height: auto;
-        /* Adjust height based on content */
-    }
-
-    .footer-images {
-        width: 100%;
-        height: 400px;
-    }
-
-    .form-container {
-        width: 50%;
-        padding-left: 30px;
-    }
-
-    .fullName,
-    .comment {
-        width: 100%;
-        height: 15px;
-    }
-
-    .send {
-        width: auto;
-    }
-
-    #sendimage {
-        position: relative;
-        /* top: 7px; */
-        width: 20px;
-    }
-
-    #formpre {
-        position: relative;
-        top: -15px;
-        font-family: var(--font2);
-        font-size: 14px;
-        color: #E2DDD0;
-    }
-}
-
-/* mobile view  */
-@media (max-width: 767px) {
-    .section5 {
-        padding: 5%;
-        margin-bottom: 0;
-    }
-
-    .section6-contactus {
-        padding-top: 0px;
-    }
-
-    .section-contact {
-        flex-direction: column;
-        height: auto;
-        padding: 25px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 40px;
-    }
-
-    .slider-contact {
-        width: 100% !important;
-        height: auto;
-    }
-
-    .footer-images {
-        height: 200px;
-        border-radius: 20px;
-    }
-
-    .form-container {
-        width: 100%;
-        padding-left: 0;
-        padding-top: 5px;
-    }
-
-    .form-heading {
-        font-size: 20px;
-        padding-top: 15px;
-    }
-
-    .form-caption {
-        font-size: 14px;
-    }
-
-    .fullName,
-    .comment {
-        width: 100%;
-        font-size: 14px;
-        box-sizing: border-box;
-    }
-
-    .comment {
-        height: auto;
-        font-size: 14px;
-    }
-
-    .send {
-        width: 30%;
-        height: auto;
-        padding: 5px;
-        padding-bottom: 10px;
-        font-size: 14px;
-    }
-
-    #sendimage {
-        position: relative;
-        top: 3px;
-        width: 20px;
-    }
-
-    #formpre {
-        position: relative;
-        top: 0;
-        font-size: 20px;
-        padding-top: 5px;
-    }
-
-    /* Mobile view for mail dialog box */
-    .mail-notification-block {
-        width: 90%;
-        padding: 15px;
-    }
-
-    #mail-message {
-        font-size: 24px;
-    }
-
-    #mail-message-caption {
-        font-size: 14px;
-    }
 }
