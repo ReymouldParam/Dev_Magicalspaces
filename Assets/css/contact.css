@@ -376,8 +376,8 @@ form {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    padding-top: 15px;
-    padding-left: 15px;
+    /* padding-top: 15px;
+    padding-left: 15px; */
     background-color: var(--brown-color);
     overflow: hidden;
 }
@@ -385,7 +385,7 @@ form {
 .location {
     height: 40px;
     width: 40px;
-    padding-left: 18px;
+    /* padding-left: 18px; */
 }
 
 .adderss-text-block {
@@ -417,84 +417,105 @@ form {
     height: auto;
 }
 
-@media screen and (min-width:1600px) {
+/* Responsive Styles */
+
+/* Extra-large screens */
+@media screen and (min-width: 1600px) {
     .section2 {
-        padding-left: 8%;
+        padding: 5% 10%;
+        gap: 8%;
+        margin-top: 40px;
+    }
+
+    .icon-block {
+        height: 55px;
+        width: 55px;
+    }
+
+    .socialmedia-section i {
+        font-size: 24px;
     }
 }
 
-/* mobile view  */
-@media only screen and (max-width: 768px) {
+/* Laptops & Medium Screens */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
     .section2 {
-        padding: 5% 5%;
-        /* Adjust padding for mobile */
-        flex-direction: column;
-        /* Stack elements vertically */
-        align-items: center;
-        /* Center-align items */
+        padding: 4% 6%;
+        gap: 4%;
     }
 
-    .section2-mini-block2,
-    .section2-mini-block1 {
+    .section2-mini-block1,
+    .section2-mini-block2 {
+        flex: 1 1 48%;
+    }
+}
+
+/* Tablets & Mobiles */
+@media only screen and (max-width: 768px) {
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 8% 5%;
+        gap: 30px;
+    }
+
+    .section2-mini-block1,
+    .section2-mini-block2 {
         width: 100%;
-        /* Full width for mobile view */
+        max-width: 100%;
     }
 
     .socialmedia-section {
         flex-direction: column;
-        /* Stack social media icons vertically */
         align-items: center;
-        /* Center-align icons */
-        gap: 10px;
-        /* Reduced gap for mobile */
-    }
-
-    .icon-block {
-        height: 30px;
-        /* Adjust height for mobile */
-        width: 30px;
-        /* Adjust width for mobile */
-        padding-top: 10px;
-        /* Adjust padding for mobile */
-        padding-left: 10px;
-        /* Adjust padding for mobile */
-    }
-
-    .location {
-        height: 30px;
-        /* Adjust height for mobile */
-        width: 30px;
-        /* Adjust width for mobile */
-        padding-left: 10px;
-        /* Adjust padding for mobile */
-    }
-
-    .adderss-text-block {
-        width: 100%;
-        /* Full width for mobile view */
         text-align: center;
-        /* Center-align address text */
-    }
-
-    .socialmedia-section i {
-        font-size: 20px;
-        padding: 1.5px;
-        /* Reduced icon size for mobile */
-    }
-
-    .section2-image-block {
+        gap: 0px;
+        padding-top: 2px;
         width: 100%;
-        /* Full width for mobile view */
-        border-radius: 20px;
-        /* Adjust border-radius for mobile */
-        animation: slideFromTop 2.5s linear forwards;
-    }
-
-    .section2-image {
-        height: auto;
-        /* Maintain aspect ratio */
     }
 }
+
+.icon-block {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    /* flexbox for centering */
+    align-items: center;
+    /* vertical centering */
+    justify-content: center;
+    /* horizontal centering */
+    background-color: var(--brown-color);
+}
+
+.location {
+    height: 40px;
+    width: 40px;
+}
+
+.socialmedia-section i {
+    font-size: 18px;
+    color: #fff;
+    /* ensure white icons on dark background */
+}
+
+.adderss-text-block {
+    max-width: 100%;
+    text-align: center;
+}
+
+.section2-image-block {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.section2-image {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+
 
 /********************** section3 */
 .section3 {
@@ -799,9 +820,9 @@ form {
         display: none;
     }
 
-    .socialmedia-section {
+    /* .socialmedia-section {
         display: none;
-    }
+    } */
 
     .socialmedialogos {
         font-size: 16px;

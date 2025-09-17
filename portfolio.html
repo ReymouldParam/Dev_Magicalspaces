@@ -24,35 +24,31 @@
 </head>
 
 <body>
-    <div class="global-section">
+    <div>
         <header class="navbar">
             <div class="logo-container">
                 <a href=".">
                     <img src="./Assets/Images/icon/logo magical WHITE with crop.png" alt="logo" class="logo-icon" />
                 </a>
             </div>
-            <button class="toggler" aria-label="Toggle navigation">
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-            </button>
-            <ul class="ul-align">
-                <li class="nav-item">
-                    <a href="." class="nav-link ">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./services.html" class="nav-link">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./portfolio.html" class="nav-link">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">CONTACT</a>
-                </li>
-            </ul>
+            <div class="nav-section">
+                <ul class="nav-list-options">
+                    <li><a href="." id="home">HOME</a></li>
+                    <li><a href="./services.html">SERVICE</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars toggler" id="bar"></i>
+            <div id="bar_options">
+                <i class="fa-regular fa-circle-xmark" id="cross"></i>
+                <a href="." class="navlinks" id="home">HOME</a>
+                <a href="./services.html" class="navlinks">SERVICES</a>
+                <a href="about.html" class="navlinks">ABOUT US</a>
+                <a href="./portfolio.html" class="navlinks">PORTFOLIO</a>
+                <a href="./contact.html" class="navlinks">CONTACT</a>
+            </div>
             <div class="icons-align">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook icon-size"
                     width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
@@ -513,9 +509,17 @@
         });
 
     </script>
+    <!-- Java Script -->
+    <script src="Assets/globaljs.js"></script>
+    <script src="Assets/js/home.js"></script>
+    <script src="Assets/Animations.js"></script>
+    <script src="home-page-mail.js"></script>
+
+    <!-- toggler -->
     <!-- toggler -->
     <script src="./Assets/about-page.js">
     </script>
+
     <!-- header underliner -->
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {

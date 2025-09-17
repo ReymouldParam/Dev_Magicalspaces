@@ -129,6 +129,12 @@
     /* overflow: hidden !important; */
 }
 
+@media screen and (max-width:768px) {
+    .section2 {
+        padding-top: 10px !important;
+    }
+}
+
 .ourservice-section {
     display: flex !important;
     flex-direction: row;
@@ -180,7 +186,7 @@
 
 .slick-initialized .slick-slide {
     display: block;
-    margin-top: 0 !important;
+    /* margin-top: 0 !important; */
     padding-top: 0 !important;
 }
 
@@ -884,6 +890,104 @@
     background-color: black;
     font-size: 5px;
 }
+
+/* ----------------- Testimonial Mobile View ----------------- */
+@media (max-width: 767px) {
+    .section5 {
+        padding: 20px 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .section5-block {
+        flex-direction: column;
+        /* gap: 24px; */
+    }
+
+    .test-aside1 {
+        width: 100%;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .testmonial {
+        font-size: 28px;
+        margin: 0 auto;
+    }
+
+    .client-says {
+        margin-left: 0;
+    }
+
+    .our_test_Arrow {
+        padding-left: 0;
+        margin-top: 0px;
+    }
+
+    .test-aside2 {
+        width: 100%;
+    }
+
+    .test-content {
+        width: 100%;
+        margin: 0 auto 20px;
+        padding: 20px 16px;
+        border-radius: 16px;
+        background-size: 60px;
+        /* smaller quote graphic */
+        background-position: top 12px center;
+    }
+
+    .test-text {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1%;
+        text-align: center;
+    }
+
+    .test-content-parent2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 16px 0 0;
+    }
+
+    .test-content-parent2 img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .name-of-person {
+        font-size: 16px;
+        margin-top: 0;
+        padding-top: 4px;
+    }
+
+    .name-of-person-caption {
+        font-size: 13px;
+        color: #666;
+    }
+
+    /* Slick carousel arrows/dots adjustments */
+    #test-aside2-caresel .slick_btn {
+        display: none !important;
+        /* hide arrows on mobile */
+    }
+
+    #test-aside2-caresel .slick-dots {
+        justify-content: center;
+        gap: 6px;
+        top: 10px;
+    }
+
+    #test-aside2-caresel .slick-dots li button {
+        width: 30px;
+        height: 6px;
+        left: 0;
+    }
+}
+
 
 /* ------------------------------------------contact page----------------------- */
 

@@ -29,8 +29,10 @@
 @media (max-width: 480px) {
   .section1 {
     height: auto;
-    padding-top: 50px;
+    /* padding-top: 23px; */
     padding-bottom: 20px;
+    background-color: white;
+    margin-top: 0;
   }
 
   .section-background {
@@ -66,7 +68,7 @@
   .section2 {
     margin: 0;
     width: 100%;
-    padding: 0;
+    /* padding: 0; */
   }
 
   .ourservice-section,
@@ -195,11 +197,10 @@
 
   /* Section 2: Our Services */
   .section2 {
-    padding: 2%;
     background-color: white;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
-    padding-top: 10px;
+    padding-top: 15%;
   }
 
   .ourservice-section {
@@ -317,9 +318,11 @@
 /* section3 */
 @media (max-width: 768px) {
   .section3 {
-    padding: 15px;
+    padding: 12px;
     padding-bottom: 20px;
     padding-top: 20px;
+    width: 100%;
+    margin-left: 10px;
   }
 
   .about-company-section {
@@ -617,10 +620,8 @@
 
   .test-content {
     width: 100%;
-    /* Make content full width */
-    margin: 10px 0;
-    /* Adjust margin */
-    padding: 20px;
+    /* margin: 10px 0; */
+    padding: 0px;
     /* Adjust padding */
   }
 
@@ -632,7 +633,7 @@
 
   .test-content-parent2 {
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
     align-items: center;
     padding: 10px;
   }
@@ -692,191 +693,7 @@
   }
 }
 
-/* section-contact */
-@media screen and (min-width: 1600px) {
-  .section5 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 96%;
-    margin: auto;
-  }
 
-  .section6-contactus {
-    width: 100%;
-    margin: 0;
-    padding-top: 0;
-  }
-
-  .section-contact {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding: 15px 25px;
-    display: flex;
-    flex-direction: row;
-    /* background-image: url(/Assets/Images/form bgc.png); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 40px;
-  }
-
-  .slider-contact {
-    width: 45%;
-    /* Adjusted width to fit larger screens */
-    height: 500px;
-    /* Fixed height for consistency */
-    object-fit: cover;
-    /* Ensures images cover their container */
-  }
-
-  .footer-image-container {
-    width: 100%;
-  }
-
-  .footer-images {
-    width: 100%;
-    height: 50vh;
-    border-radius: 40px;
-    padding-left: 5px;
-    object-fit: cover;
-  }
-
-  .form-container {
-    width: 50%;
-    padding-left: 30px;
-  }
-
-  .form-heading {
-    font-family: var(--font2);
-    font-weight: 700;
-    font-size: 32px;
-    color: #e2ddd0;
-  }
-
-  .form-caption {
-    color: #e2ddd0;
-    font-family: var(--font2);
-    font-size: 20px;
-    font-weight: 400;
-    padding-top: 5px;
-  }
-
-  .label1 {
-    color: #e2ddd0;
-    font-family: var(--font2);
-    font-size: 20px;
-  }
-
-  .fullName,
-  .comment {
-    width: 100%;
-    max-width: 570px;
-    /* Ensures form fields don't exceed desired width */
-    border-radius: 15px;
-    padding: 15px;
-    background: transparent;
-    border: 1.2px solid #e2ddd0;
-    font-family: var(--font2);
-    font-size: 18px;
-  }
-
-  .fullName::placeholder {
-    font-size: 16px;
-  }
-
-  .comment {
-    height: 100px;
-    /* Increased height for better usability on larger screens */
-  }
-
-  .send {
-    width: auto;
-    max-width: 157px;
-    height: 40px;
-    border: 1.5px solid #e2ddd0;
-    border-radius: 15px;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #sendimage {
-    width: 20px;
-  }
-
-  #formpre {
-    font-family: var(--font2);
-    font-size: 14px;
-    color: #e2ddd0;
-    padding-top: 25px;
-  }
-}
-
-/* small screens */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .section5 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .section6-contactus {
-    width: 100%;
-  }
-
-  .section-contact {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding: 30px;
-    flex-direction: row;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .slider-contact {
-    width: 40% !important;
-    height: auto;
-    /* Adjust height based on content */
-  }
-
-  .footer-images {
-    width: 100%;
-    height: 400px;
-  }
-
-  .form-container {
-    width: 50%;
-    padding-left: 30px;
-  }
-
-  .fullName,
-  .comment {
-    width: 100%;
-    height: 15px;
-  }
-
-  .send {
-    width: auto;
-  }
-
-  #sendimage {
-    position: relative;
-    /* top: 7px; */
-    width: 20px;
-  }
-
-  #formpre {
-    position: relative;
-    top: -15px;
-    font-family: var(--font2);
-    font-size: 14px;
-    color: #e2ddd0;
-  }
-}
 
 /* mobile view  */
 @media (max-width: 767px) {
