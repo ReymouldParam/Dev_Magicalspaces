@@ -438,18 +438,13 @@ form {
     }
 }
 
-/* Laptops & Medium Screens */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .section2 {
-        padding: 4% 6%;
-        gap: 4%;
+        margin-top: 6%;
     }
 
-    .section2-mini-block1,
-    .section2-mini-block2 {
-        flex: 1 1 48%;
-    }
 }
+
 
 /* Tablets & Mobiles */
 @media only screen and (max-width: 768px) {
@@ -517,6 +512,9 @@ form {
     height: auto;
 }
 
+.para {
+    text-align: left;
+}
 
 /********************** section3 */
 .section3 {
@@ -724,7 +722,7 @@ form {
     }
 
     .socialmedia-section {
-        width: 10%;
+        /* width: 10%; */
     }
 
     .nav-list-options {
