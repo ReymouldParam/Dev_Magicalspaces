@@ -370,6 +370,7 @@ form {
     align-items: center;
     gap: 20px;
     padding-top: 20px;
+    width: 100%;
 }
 
 .icon-block {
