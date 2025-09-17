@@ -63,8 +63,9 @@ body {
 
     .heading-font2,
     .heading-font1 {
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
+        font-weight: 700;
     }
 }
 
@@ -211,7 +212,7 @@ body {
         align-items: center;
         justify-content: space-around;
         /* Adjust for toggler alignment */
-        padding: 2%;
+        /* padding: 2%; */
         border-bottom-left-radius: 60px;
         border-bottom-right-radius: 60px;
         position: fixed;

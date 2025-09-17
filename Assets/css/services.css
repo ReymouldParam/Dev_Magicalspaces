@@ -108,6 +108,19 @@
         margin: auto;
         padding-top: 10px;
     }
+
+    .heading-font1-port,
+    .heading-font2-port {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .numeric-para {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+    }
 }
 
 
@@ -433,8 +446,9 @@
 
     .serv-p {
         font-size: 14px;
-        /* Reduce paragraph size for better readability */
         text-align: center;
+        font-weight: 400;
+        padding: 15px;
     }
 
     .list-con-bottom {
@@ -460,6 +474,7 @@
         text-align: center;
         width: 80%;
         margin: auto;
+        margin-top: 10px;
     }
 
     .sub-serv-para {

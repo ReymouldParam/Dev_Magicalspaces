@@ -126,7 +126,9 @@
 
   .aboutcompany-block {
     flex-direction: column;
-    margin-top: -5%;
+    margin-top: -2%;
+    width: 95%;
+    padding-top: 40px;
   }
 
   /* Our Projects */
@@ -219,11 +221,13 @@
 
   /* Headings and Captions */
   .heading-font.center {
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 0px;
     padding-bottom: 0;
     text-align: center;
     text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1.2px;
   }
 
   .ourserviceService {
@@ -240,6 +244,7 @@
     text-align: center;
     padding-top: 42px;
     width: 100%;
+    font-weight: 400;
   }
 
   .miniheading {
@@ -258,6 +263,7 @@
     margin: 0;
     padding: 0;
     padding-bottom: 8px;
+    font-weight: 400;
   }
 
   /* Slider Adjustments */
@@ -322,7 +328,7 @@
     padding-bottom: 20px;
     padding-top: 20px;
     width: 100%;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .about-company-section {
@@ -348,6 +354,8 @@
     position: relative;
     z-index: 1;
     width: 100%;
+    width: 95% !important;
+    margin: auto;
   }
 
   .aboutcompanyaside1-card1,
@@ -355,6 +363,12 @@
   .aboutcompanyaside1-card3 {
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    width: 95% !important;
+    margin: auto;
+    margin-right: 25px;
   }
 
   .aboutcompanyaside1-card1-content,
@@ -372,7 +386,7 @@
   }
 
   .aboutcompany-content-line {
-    margin-left: 0;
+    margin-left: -14px;
     width: 100%;
     /* Ensure it fits within the mobile view */
   }
@@ -615,7 +629,20 @@
     padding-top: 15px; */
     padding-top: -5px;
     padding-right: 5px;
+    width: 40px;
+    height: 40px;
     /* Remove left padding */
+  }
+
+  .our_com_Arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .our_ser_Arrow {
+    width: 40px;
+    height: 40px;
+
   }
 
   .test-content {
@@ -643,6 +670,7 @@
     /* Reduce font size */
     line-height: 20px;
     /* Adjust line height */
+    font-weight: 400;
   }
 
   .name-of-person {
