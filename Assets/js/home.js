@@ -71,7 +71,6 @@ $('.ourService-aside-slider2').slick({
 $('#slider_content').slick({
     centerMode: true,
     // center:true,
-    centerPadding: 10,
     slidesToShow: 5,
     infinity: true,
     autoplay: true,
@@ -79,6 +78,7 @@ $('#slider_content').slick({
     asNavFor: '#our_project_slider_content_caption',
     // dots: true,
     autoplaySpeed: 10000,
+    centerPadding: 0,
     responsive: [
         {
             breakpoint: 500,
@@ -86,8 +86,7 @@ $('#slider_content').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
-                // center:true,
-                centerPadding: 10
+                centerPadding: 0
             }
         },
         {
@@ -96,13 +95,8 @@ $('#slider_content').slick({
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                // dots: true
-
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
 

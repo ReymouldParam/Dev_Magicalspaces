@@ -174,7 +174,7 @@
 }
 
 .ourservicesCaption {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 10%;
     font-weight: 400;
 }
@@ -182,6 +182,7 @@
 .oursercaption {
     padding-top: 5%;
     color: lightslategrey;
+    margin-bottom: 20px;
 }
 
 .slick-initialized .slick-slide {
@@ -192,13 +193,13 @@
 
 .miniheading {
     color: var(--brown-color);
-    font-size: 36px;
+    font-size: 30px;
     padding-top: 10px;
     margin-left: 10%;
 }
 
 .miniheading-caption {
-    font-size: 18px;
+    font-size: 16px;
     /* margin-top: 10px; */
     margin-left: 10%;
     color: lightslategrey;
@@ -621,7 +622,7 @@
 }
 
 .slick-dots li button:before {
-    color: transparent;
+    color: transparent !important;
 }
 
 #our_project_slider_content_caption .slick-dots .slick-active button {

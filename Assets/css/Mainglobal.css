@@ -108,8 +108,6 @@ body {
     justify-content: space-around;
     /* Adjust for toggler alignment */
     padding: 5px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -133,7 +131,7 @@ body {
 
 .logo-icon {
     width: 100%;
-    height: 60px;
+    height: 55px;
 }
 
 .nav-item {
@@ -162,7 +160,7 @@ body {
 
 .icon-size {
     padding-top: 2%;
-    height: 25px;
+    height: 22px;
 }
 
 /* Toggler Button Styles */
@@ -211,10 +209,6 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        /* Adjust for toggler alignment */
-        /* padding: 2%; */
-        border-bottom-left-radius: 60px;
-        border-bottom-right-radius: 60px;
         position: fixed;
         top: 0;
         z-index: 1000;
