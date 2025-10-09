@@ -1,0 +1,118 @@
+.contact-section {
+    background-color: #E2DDD04A;
+}
+
+.contact-section .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+.contact-section .grid-container .details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .list-container .contact-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-section .list-container .contact-item .icon {
+    border: 0;
+    width: 25px;
+    height: 25px;
+    background-color: var(--theme-color-1);
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.contact-section .list-container .contact-item .text {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.contact-section .map-container {
+    flex: 1;
+}
+
+.contact-section .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--theme-color-1);
+}
+
+.contact-section .form-container .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.contact-section .form-container .input-container .label {
+    margin-bottom: 2px;
+    font-size: 16px;
+    color: var(--theme-color-1);
+    font-weight: 600;
+}
+
+.contact-section .form-container .input-container .input {
+    padding: 5px 8px;
+    font-size: 14px;
+    border: 1px solid var(--theme-color-1);
+    border-radius: 10px;
+}
+
+.contact-section .form-container .submit-btn {
+    width: 100%;
+    background-color: var(--theme-color-1);
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* *************************** */
+/*         Media Queries      */
+/* ************************* */
+
+/* Large laptop */
+@media screen and (max-width:1400px) {}
+
+/* Small laptop */
+@media screen and (max-width:1200px) {}
+
+/* Tablet */
+@media screen and (max-width:992px) {}
+
+@media screen and (max-width:768px) {}
+
+/* Large mobile */
+@media screen and (max-width:576px) {
+    .contact-section .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section .map-container{
+        height: 300px;
+        flex: unset;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small mobile */
+@media screen and (max-width:375px) {}
+
+@media screen and (max-width:320px) {}
+
+/* *************************** */
+/*         Media Queries END     */
+/* ************************* */

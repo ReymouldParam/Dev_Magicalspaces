@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title and favicon -->
+    <title>Magical Spaces</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- slick carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font awosome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Global CSS -->
+    <!-- Link custom global CSS file here -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <header class="header-main-container">
+        <nav class="navbar navbar-expand-lg padding-x py-0">
+            <a class="navbar-brand" href=".">
+                <div class="header-logo-container">
+                    <img src="assets/images/logo-dark.png" alt="Logo" class="logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href=".">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-banner-section">
+            <div class="home-banner-carousel-container">
+                <div class="home-banner-carousel" id="homeBannerCarousel">
+                    <div class="item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img1.webp);">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img2.webp);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-services-section padding-x py-3 section-100vh">
+            <div class="section-title-container mb-3">
+                <div class="title-container">
+                    <h3 class="title">Our <span class="target">Services</span></h3>
+                </div>
+                <div class="toolbar-container">
+                    <a href="services.html">
+                        <button class="navigation-button"><i class="fa-solid fa-arrow-up"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="mt-3">
+                    <div class="d-flex justify-content-between services-flex-container">
+                        <div class="services-headings-main-container">
+                            <div class="feature-titles-carousel">
+                                <div class="single-feature-container">
+                                    <div>
+                                        <p class="title">Residential Interiors</p>
+                                    </div>
+                                </div>
+
+                                <div class="single-feature-container">
+                                    <div>
+                                        <p class="title">Commercial Interiors</p>
+                                    </div>
+                                </div>
+
+                                <div class="single-feature-container">
+                                    <div>
+                                        <p class="title">Corporate Interiors</p>
+                                    </div>
+                                </div>
+
+                                <div class="single-feature-container">
+                                    <div>
+                                        <p class="title">Architecture Design</p>
+                                    </div>
+                                </div>
+
+                                <div class="single-feature-container">
+                                    <div>
+                                        <p class="title">Project Management</p>
+                                    </div>
+                                </div>
+
+                                <div class="single-feature-container">
+                                    <div>
+                                        <p class="title">Interior Styling</p>
+                                    </div>
+                                </div>
+
+                                <div class="single-feature-container">
+                                    <div>
+                                        <p class="title">Turnkey Projects</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-details-main-container">
+                            <div class="feature-details-carousel w-100">
+                                <div class="carousel-item">
+                                    <div class="img-container">
+                                        <div class="img bg-cover"
+                                            style="background-image: url(assets/images/home/banner-img2.webp);">
+                                            <div class="text-container">
+                                                <b class="page-text">Homes that reflect who you are</b>
+                                                <p class="page-text mt-1">We design living spaces that balance
+                                                    aesthetics and function, creating timeless homes tailored to
+                                                    your lifestyle.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="img-container">
+                                        <div class="img bg-cover"
+                                            style="background-image: url(assets/images/home/banner-img1.webp);">
+                                            <div class="text-container">
+                                                <b class="page-text">Designs that drive business success</b>
+                                                <p class="page-text mt-1">
+                                                    Smart, brand-focused interiors for retail, hospitality, and
+                                                    commercial spaces that engage customers
+                                                    and enhance business.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="img-container">
+                                        <div class="img bg-cover"
+                                            style="background-image: url(assets/images/home/banner-img2.webp);">
+                                            <div class="text-container">
+                                                <b class="page-text">Inspiring spaces for work and growth</b>
+                                                <p class="page-text mt-1">
+                                                    Workplaces that foster productivity, collaboration, and innovation
+                                                    while reflecting your corporate
+                                                    culture.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="img-container">
+                                        <div class="img bg-cover"
+                                            style="background-image: url(assets/images/home/banner-img1.webp);">
+                                            <div class="text-container">
+                                                <b class="page-text">From vision to lasting structures
+                                                </b>
+                                                <p class="page-text mt-1">
+                                                    End-to-end architectural design with efficient layouts,
+                                                    vastu-friendly planning, and modern
+                                                    aesthetics.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="img-container">
+                                        <div class="img bg-cover"
+                                            style="background-image: url(assets/images/home/banner-img2.webp);">
+                                            <div class="text-container">
+                                                <b class="page-text">Your single point of control</b>
+                                                <p class="page-text mt-1">
+                                                    We manage vendors, budgets, and timelines seamlessly to deliver
+                                                    projects on time with complete
+                                                    quality control.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="img-container">
+                                        <div class="img bg-cover"
+                                            style="background-image: url(assets/images/home/banner-img1.webp);">
+                                            <div class="text-container">
+                                                <b class="page-text">The finishing touch that makes it yours</b>
+                                                <p class="page-text mt-1">
+                                                    Curated furniture, décor, art, and soft furnishings to give your
+                                                    space a complete designer look.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="img-container">
+                                        <div class="img bg-cover"
+                                            style="background-image: url(assets/images/home/banner-img2.webp);">
+                                            <div class="text-container">
+                                                <b class="page-text">Complete solutions, end-to-end</b>
+                                                <p class="page-text mt-1">
+                                                    From concept to handover, we handle everything so you move into a
+                                                    fully finished, ready-to-live
+                                                    space.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="padding-x">
+            <div class="section-divider"></div>
+        </div>
+
+        <section class="section-100vh home-projects-section padding-x py-3">
+            <div class="section-title-container mb-3">
+                <div class="title-container">
+                    <h3 class="title">Our <span class="target">Projects</span></h3>
+                </div>
+                <div class="toolbar-container">
+                    <a href="projects.html">
+                        <button class="navigation-button"><i class="fa-solid fa-arrow-up"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div id="homeProjectsCarousel" class="projects-carousel-container">
+                    <div class="home-project-carousel-item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img1.webp);">
+                            <p class="label">Residential</p>
+                        </div>
+                    </div>
+                    <div class="home-project-carousel-item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img2.webp);">
+                            <p class="label">Residential</p>
+                        </div>
+                    </div>
+                    <div class="home-project-carousel-item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img1.webp);">
+                            <p class="label">Commercial</p>
+                        </div>
+                    </div>
+                    <div class="home-project-carousel-item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img2.webp);">
+                            <p class="label">Commercial</p>
+                        </div>
+                    </div>
+                    <div class="home-project-carousel-item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img1.webp);">
+                            <p class="label">Corporate</p>
+                        </div>
+                    </div>
+                    <div class="home-project-carousel-item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img2.webp);">
+                            <p class="label">Corporate</p>
+                        </div>
+                    </div>
+                    <div class="home-project-carousel-item">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img1.webp);">
+                            <p class="label">Architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="padding-x">
+            <div class="section-divider"></div>
+        </div>
+
+        <section class="section-100vh home-about-section padding-x py-3">
+            <div class="section-title-container mb-3">
+                <div class="title-container">
+                    <h3 class="title">Why <span class="target">Choose</span> Us</h3>
+                </div>
+                <div class="toolbar-container">
+                    <a href="about.html">
+                        <button class="navigation-button"><i class="fa-solid fa-arrow-up"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="about-grid-container">
+                    <div class="grid-item">
+                        <div class="grid-inner-container">
+                            <div class="title-container">
+                                <img src="assets/icons/experience.png" alt="" class="icon">
+                                <p class="title">Experience</p>
+                            </div>
+                            <div class="text-container">
+                                <ul>
+                                    <li>22+ years in design consultancy</li>
+                                    <li>100+ completed homes</li>
+                                    <li>Fourth-generation entrepreneurial legacy, blending creativity with process</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-inner-container">
+                            <div class="title-container">
+                                <img src="assets/icons/expertise.png" alt="" class="icon">
+                                <p class="title">Expertise</p>
+                            </div>
+                            <div class="text-container">
+                                <ul>
+                                    <li>Strong architectural foundation</li>
+                                    <li>Mentored under top design masters for 13 years</li>
+                                    <li>Deep understanding of functional, aesthetic, and site-responsive design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-inner-container">
+                            <div class="title-container">
+                                <img src="assets/icons/process.png" alt="" class="icon">
+                                <p class="title">Collaborative Process</p>
+                            </div>
+                            <div class="text-container">
+                                <ul>
+                                    <li>Single-point contact: design → execution → styling → handover</li>
+                                    <li>Collaborates with experts in every field — structural, lighting, interiors,
+                                        landscape, and
+                                        execution teams</li>
+                                    <li>Focuses on the entire journey, ensuring a seamless, memorable experience</li>
+                                    <li>System-driven with regular progress updates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-inner-container">
+                            <div class="title-container">
+                                <img src="assets/icons/transparency.png" alt="" class="icon">
+                                <p class="title">Transparency</p>
+                            </div>
+                            <div class="text-container">
+                                <ul>
+                                    <li>Open communication throughout</li>
+                                    <li>Stage-wise billing linked to work completed</li>
+                                    <li>Detailed material specifications provided at every stage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="padding-x">
+            <div class="section-divider"></div>
+        </div>
+
+        <section class="home-testimonials-section padding-x py-3">
+            <div class="inner-container">
+                <div class="section-title-container">
+                    <div class="title-container">
+                        <h3 class="title"><span class="target">Testimonials</span></h3>
+                    </div>
+                </div>
+                <div class="testimonials-main-container">
+                    <div class="testmonials-carousel-container w-100" id="testimonialsCarousel">
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">Ar. Vinaya has been part of consulting team for two of our
+                                        homes.Being a Real Estate developer & Civil Engineer, I have worked with quite a
+                                        few architects over the years and was extremely impressed with Vinaya’s thorough
+                                        approach to the work. Her first order of business was to listen to our wishes,
+                                        determine what was important to us, and get an understanding of our aesthetic
+                                        sense. She then incorporated all of that into his design. Her ability to
+                                        communicate the rationale for her decisions, and willingness to share what she
+                                        deemed crucial, versus a choice that could be equally beautiful had she made a
+                                        different choice, was outstanding.</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-1.webp);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Ankush Asabe</b><br>Chairman & Managing Director,
+                                        Venkatesh Buildcon Pvt. Ltd, Pune</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">I never hesitate to send our clients to Vinaya and her design
+                                        team. It’s always a win-win situation. The ideas of the design team are
+                                        innovative, creative, and really bring out the individual style and personality
+                                        of each homeowner. Vinaya and her team are great partners with our clients
+                                        because they are open communicators and know how to make a client feel
+                                        comfortable about all the decisions that are made in the design process</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-2.webp);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Macquin Monteiro</b><br> Macquin Monteiro – Builder and
+                                        Real estate Developer, Udupi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">Magical Space entire team was super fun to work with from concept
+                                        to final Products. They have provided excellent interior design service; this is
+                                        all inclusive from architectural design, furniture, room layout, lighting, &
+                                        color selection, comprehensive & complete from idea to implementation.
+                                        Vinaya’s innate ability to understand my family style needs & preferences – that
+                                        we didn’t even know we had – was uncanny. Her keen eye & expert design sense is
+                                        beyond compare.She strives to satisfy & does so. I am proud to recommend Vinaya
+                                        & her team for all the interior design needs.</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-3.webp);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Sandeep Mutha</b><br> Proprietor, Maharashtra Stores, Pune
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">I am writing to acknowledge the excellent service provided by you
+                                        and your team…… THE MAGICAL SPACES!
+                                        When project started I was tensed and unaware of many aspects in this world; but
+                                        because of your full team extended support, experience and confidence, it gave
+                                        me a chance to explore a totally unique vision and knowledge of many untouched
+                                        details. The detailing of all the drawings with different views and angles was
+                                        the best things I have ever liked….This house is full of extras and has a
+                                        superior plans & designs in which our comfort level is as per our requirements.I
+                                        would love to work with you again if any opportunity comes up in the near
+                                        future. Also undoubtedly recommend your company to anyone, so that they get what
+                                        they deserve.</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-4.webp);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Bharathi Mutha</b><br> Pune</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">Life changing experience! Despite the challenges and demands,
+                                        always professional and smiling. The thinking is done and the project is taken
+                                        care of – rest assured.</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-5.webp);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Anitha Saldanha</b><br> Proprietor, Alwyn Bakery, Udupi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">Magical Spaces is a best architectural and interior design firm.
+                                        Work culture is extremely professional with respect to business ethics. Out of
+                                        the box thinking and constant R&D makes it a standout from the rest. Got the
+                                        opportunity to learn a lot under Ar. Vinaya Bagade.</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-6.jpg);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Tanmay Patil</b><br> Architect, Pune</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">The exceptional service that I received from Ar Vinaya Bagade is
+                                        beyond compare. She has a great eye for detail and colors. She was able to
+                                        transform my ideas into realities. I could not seek a better and rewarding
+                                        professional service. I highly recommend Ar. Vinaya wholeheartedly.</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-7.jpg);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Lahuraj Asabe</b><br> Chairman and Managing Director,
+                                        Venkatesh Buildcon Pvt. Ltd, Pune</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">From thoughtful planning around what we need right now or later
+                                        after 4-5 years with growing kids, to thinking through smart ideas like the
+                                        living room partition to kids room and kitchen designs, it not just made it look
+                                        aesthetically good but also kept utiliy in mind.
+                                        Thank you for all the effort and the extra mile that you went to make sure our
+                                        ideas were also thought through and challengednus wherebit didn’t make sense.
+                                        All in all very happy especially my wife on how it has come through!</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-8.webp);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Arun Nair</b><br> Senior Program Manager, Hyderabad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <div class="testimonal-item">
+                                <div>
+                                    <p class="content">I am extremely glad about the work that you have done. I truly
+                                        value the way you put in so much thought into outlining my store according to my
+                                        requirement and lit it up with your incredible taste and new thoughts. Many
+                                        thanks to you for the breathtaking work that you have done. I look forward to
+                                        working with you again.</p>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <div class="user-image bg-cover mr-3"
+                                            style="background-image: url(assets/images/testimonials/testimonial-9.jpg);">
+                                        </div>
+                                    </div>
+                                    <p class="footer w-50"><b>Prem Prasad</b><br> Owner, Fantasies Gift Shop, Hyderabad
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="padding-x">
+            <div class="section-divider"></div>
+        </div>
+
+        <section class="page-contact-section padding-x py-3">
+            <div class="inner-container">
+                <div class="contact-main-container bg-cover"
+                    style="background-image: url(assets/images/form\ bgc.png);">
+                    <div class="image-container">
+                        <div class="image bg-cover" style="background-image: url(assets/images/home/banner-img1.webp);">
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <p class="form-title">Get In Touch</p>
+                        <p class="form-sub-title">We would love to hear about your project! Fill out the form or reach
+                            us directly for a seamless,
+                            personalized experience.</p>
+
+                        <form action="">
+                            <div class="input-container">
+                                <label for="" class="label">Full Name*</label>
+                                <input type="text" class="input" placeholder="Your Full Name">
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="label">Phone Number*</label>
+                                <input type="text" class="input" placeholder="Your Phone Number">
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="label">Email</label>
+                                <input type="text" class="input" placeholder="Your Email">
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="label">Project Location</label>
+                                <input type="text" class="input" placeholder="Ex - Hyderabad">
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="label">Project Type</label>
+                                <select name="" id="" class="input">
+                                    <option value="Residential">Residential</option>
+                                    <option value="Commercial">Commercial</option>
+                                    <option value="Corporate">Corporate</option>
+                                    <option value="Architecture">Architecture</option>
+                                </select>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="label">Project Requirements</label>
+                                <textarea name="" id="" class="input"
+                                    placeholder="Enter your requirements here..."></textarea>
+                            </div>
+
+                            <div>
+                                <button class="submit-btn" type="submit">Send</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="padding-x">
+            <div class="footer-main-container">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="mr-2"><i class="fa-solid fa-envelope"></i></div>
+                            <p class="text">sales@themagicalspaces.com</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="mr-2"><i class="fa-solid fa-phone"></i></div>
+                            <p class="text">+91 95032 37693</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="mr-2"><i class="fa-solid fa-location-dot"></i></div>
+                            <p class="text">Block 15 , Flat no 704 Hill Ridge Spring ISB Road Gachibowli Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-container py-1">
+                <p class="copyright-text">MagicalSpace | © Copyright @ 2025. All Rights Reserved</p>
+            </div>
+            <div class="floating-elements-container">
+                <a href="https://wa.me/+919503237693" class="whatsapp-btn" target="_blank">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+                <a href="tel:+919503237693">
+                    <button class="phone-btn"><i class="fa-solid fa-phone"></i></button>
+                </a>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- JQuery JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Slick carousel script CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--  -->
+
+    <script src="assets/js/global.js"></script>
+
+    <script>
+        $('#homeBannerCarousel').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            nextArrow: '<button class="nextBtn slick-btn"><i class="fa-solid fa-chevron-right"></i></button>',
+            prevArrow: '<button class="prevBtn slick-btn"><i class="fa-solid fa-chevron-left"></i></button>',
+            fade: true
+        });
+
+        $('.feature-titles-carousel').slick({
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            arrows: false,
+            vertical: true,
+            verticalSwiping: true,
+            focusOnSelect: true,
+            asNavFor: '.feature-details-carousel',
+            responsive: [
+                {
+                    breakpoint: 557,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        vertical: false,
+                        verticalSwiping: false,
+                        dots: false,
+                        arrows: false,
+                        fade: true
+                    }
+                }
+            ]
+        });
+
+        $('.feature-details-carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.feature-titles-carousel',
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: false,
+            arrows: false,
+            fade: true,
+            nextArrow: '<button class="nextBtn slick-btn"><i class="fa-solid fa-chevron-right"></i></button>',
+            prevArrow: '<button class="prevBtn slick-btn"><i class="fa-solid fa-chevron-left"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 557,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        vertical: false,
+                        verticalSwiping: false,
+                        dots: false,
+                        arrows: true,
+                    }
+                }
+            ]
+        });
+
+
+        $('#homeProjectsCarousel').slick({
+            centerMode: true,
+            slidesToShow: 5,
+            infinity: true,
+            autoplay: true,
+            arrows: true,
+            // asNavFor: '#our_project_slider_content_caption',
+            autoplaySpeed: 3000,
+            centerPadding: 0,
+            nextArrow: '<button class="nextBtn slick-btn"><i class="fa-solid fa-chevron-right"></i></button>',
+            prevArrow: '<button class="prevBtn slick-btn"><i class="fa-solid fa-chevron-left"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: true,
+                        centerPadding: 0,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                    }
+                }
+            ]
+        });
+
+        $('#homeProjectsCarousel').on('afterChange', function () {
+            ourProjectCarouselChanges();
+        });
+
+        // Manually trigger init event if already initialized
+        if ($('#homeProjectsCarousel').hasClass('slick-initialized')) {
+            ourProjectCarouselChanges();
+        }
+
+        function ourProjectCarouselChanges() {
+            let slides = document.querySelectorAll("#homeProjectsCarousel .slick-slide");
+            let slidesArray = Array.from(slides);
+            let currentIndex = slidesArray.findIndex(slide => slide.classList.contains("slick-current"));
+
+            // Remove small_slides from all slides
+            slidesArray.forEach(slide => slide.classList.remove("small_slides"));
+
+            // Add small_slides only to the previous and next slides of slick-current
+            if (currentIndex > 0) {
+                slidesArray[currentIndex - 1].classList.add("small_slides");
+            }
+            if (currentIndex < slidesArray.length - 1) {
+                slidesArray[currentIndex + 1].classList.add("small_slides");
+            }
+        }
+
+        $('#testimonialsCarousel').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            nextArrow: '<button class="nextBtn slick-btn"><i class="fa-solid fa-chevron-right"></i></button>',
+            prevArrow: '<button class="prevBtn slick-btn"><i class="fa-solid fa-chevron-left"></i></button>',
+        });
+    </script>
+</body>
+
+</html>
