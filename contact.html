@@ -95,33 +95,33 @@
                             <div class="map-container">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6289741436626!2d78.3222238736903!3d17.429584501591055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dcaa3d043d%3A0x4bd49d5f6f3f0f22!2sMagical%20Spaces!5e0!3m2!1sen!2sin!4v1759940100608!5m2!1sen!2sin"
-                                     allowfullscreen="" loading="lazy"
+                                    allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
 
                         <div class="form-container">
 
-                            <form action="">
+                            <form action="contact-form-home.php" method="post">
                                 <div class="input-container">
                                     <label for="" class="label">Full Name*</label>
-                                    <input type="text" class="input" placeholder="Your Full Name">
+                                    <input type="text" class="input" name="name" placeholder="Your Full Name">
                                 </div>
                                 <div class="input-container">
                                     <label for="" class="label">Phone Number*</label>
-                                    <input type="text" class="input" placeholder="Your Phone Number">
+                                    <input type="text" class="input" name="number" placeholder="Your Phone Number">
                                 </div>
                                 <div class="input-container">
                                     <label for="" class="label">Email</label>
-                                    <input type="text" class="input" placeholder="Your Email">
+                                    <input type="text" class="input" name="email" placeholder="Your Email">
                                 </div>
                                 <div class="input-container">
                                     <label for="" class="label">Project Location</label>
-                                    <input type="text" class="input" placeholder="Ex - Hyderabad">
+                                    <input type="text" class="input" name="location" placeholder="Ex - Hyderabad">
                                 </div>
                                 <div class="input-container">
                                     <label for="" class="label">Project Type</label>
-                                    <select name="" id="" class="input">
+                                    <select name="" id="" class="input" name="service">
                                         <option value="Residential">Residential</option>
                                         <option value="Commercial">Commercial</option>
                                         <option value="Corporate">Corporate</option>
@@ -130,7 +130,7 @@
                                 </div>
                                 <div class="input-container">
                                     <label for="" class="label">Project Requirements</label>
-                                    <textarea name="" id="" class="input"
+                                    <textarea name="" id="" class="input" name="message"
                                         placeholder="Enter your requirements here..."></textarea>
                                 </div>
 
@@ -207,7 +207,21 @@
     <script src="assets/js/global.js"></script>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const flagValue = urlParams.get('emailSuccess');
 
+            if (flagValue === 'true') {
+                alert("Your Enquiry Is Sent Successfully, We Will Reach Out To You As Soon As Possible :)")
+
+            } else if (flagValue === 'false') {
+                alert("Failed to send message, please contact is directly!")
+            }
+
+            // Remove query params from URL
+            const baseUrl = window.location.href.split('?')[0];
+            history.replaceState(null, null, baseUrl);
+        });
     </script>
 </body>
 
